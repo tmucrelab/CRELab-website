@@ -51,9 +51,9 @@ permalink: /people/
   <div class="people-name">{{ p.name }}</div>
   <div class="people-title">{{ p.title }}</div>
 </a>
-
+{% endfor %}
 </div>
-
+{% endfor %}
 
 
 
