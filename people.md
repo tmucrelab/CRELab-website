@@ -11,7 +11,7 @@ permalink: /people/
     <img 
       src="https://raw.githubusercontent.com/tmucrelab/CRELab-website/master/assets/assets/images/Lee_ChengFan.jpg"
       alt="Dr. Cheng-Fan Lee"
-      style="width:220px; border-radius:12px; object-fit:cover;" >
+      style="width:220px; border-radius:12px; object-fit:cover;" />
   </div>
 </div>
 
