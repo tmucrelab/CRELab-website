@@ -30,12 +30,7 @@ permalink: /people/
 ## 🎓 Education
 - **Ph.D.**, Graduate Institute of Biochemistry and Molecular Biology  
   College of Medicine, National Taiwan University, Taiwan  
-  *(2012 – 2019)*
-
-- **M.S.**, Department of Medical Laboratory Science and Biotechnology  
-  Taipei Medical University, Taiwan  
-  *(2008 – 2011)*
-
+ 
 ---
 
 ## 🧪 Professional Experience
