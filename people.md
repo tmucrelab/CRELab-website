@@ -1,37 +1,7 @@
----
-layout: single
-title: "People"
-permalink: /people/
----
-{% assign groups = "PI,PhD,Master,Undergraduate,RA,Alumni" | split: "," %}
-
-<style>
-.people-grid{display:flex;flex-wrap:wrap;gap:24px}
-.people-card{width:200px;text-decoration:none;color:inherit}
-.people-card img{width:200px;height:240px;object-fit:cover;border-radius:12px;display:block}
-.people-name{margin-top:8px;font-weight:700}
-.people-title{font-size:.95em;opacity:.75}
-</style>
-
-{% for g in groups %}
-## {{ g }}
-
-<div class="people-grid">
-  {% assign members = site.people | where: "group", g %}
-  {% for p in members %}
-    <a class="people-card" href="{{ p.url | relative_url }}">
-      <img src="{{ p.image | relative_url }}" alt="{{ p.name }}">
-      <div class="people-name">{{ p.name }}</div>
-      {% if p.title %}<div class="people-title">{{ p.title }}</div>{% endif %}
-    </a>
-  {% endfor %}
-</div>
-
-{% endfor %}
 
 
 
-<!--
+# <!--
 ---
 layout: single
 title: "People"
@@ -110,4 +80,4 @@ permalink: /people/
 - Predictive models for therapeutic targets
 **Contact**  
 Email: bryancflee@tmu.edu.tw
--->
+# -->
