@@ -10,9 +10,7 @@ permalink: /people/
     <img 
       src="/assets/assets/images/Lee_ChengFan.jpg"
       alt="Dr. Cheng-Fan Lee"
-      style="width:220px; border-radius:12px; object-fit:cover;"
-    />
-
+      style="width:220px; border-radius:12px; object-fit:cover;" />
 </div>
 
   <div style="flex:1; min-width:260px;">
