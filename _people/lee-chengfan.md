@@ -14,7 +14,7 @@ permalink: /people/
       # style="display:block; border-radius:12px; object-fit:cover;"
       # style="width:220px; border-radius:12px; object-fit:cover;"
     >
-  </div>
+
 </div>
 
   <div style="flex:1; min-width:260px;">
