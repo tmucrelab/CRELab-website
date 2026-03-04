@@ -1,3 +1,4 @@
+/*
 ---
 layout: single
 title: "People"
@@ -76,3 +77,4 @@ permalink: /people/
 - Predictive models for therapeutic targets
 **Contact**  
 Email: bryancflee@tmu.edu.tw
+/*
