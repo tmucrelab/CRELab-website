@@ -1,3 +1,65 @@
+---
+layout: single
+title: "People"
+permalink: /people/
+---
+
+<style>
+.people-grid{
+  display:flex;
+  flex-wrap:wrap;
+  gap:24px;
+}
+
+.people-card{
+  width:200px;
+  text-align:center;
+  text-decoration:none;
+  color:inherit;
+}
+
+.people-card img{
+  width:200px;
+  height:240px;
+  object-fit:cover;
+  border-radius:12px;
+}
+
+.people-name{
+  margin-top:8px;
+  font-weight:600;
+}
+
+.people-title{
+  font-size:0.9em;
+  opacity:0.7;
+}
+</style>
+
+{% assign groups = "PI,PhD,Master,Undergraduate,RA,Alumni" | split: "," %}
+
+{% for g in groups %}
+## {{ g }}
+
+<div class="people-grid">
+
+{% assign members = site.people | where: "group", g %}
+
+{% for p in members %}
+<a class="people-card" href="{{ p.url | relative_url }}">
+  <img src="{{ p.image }}" alt="{{ p.name }}">
+  <div class="people-name">{{ p.name }}</div>
+  <div class="people-title">{{ p.title }}</div>
+</a>
+{% endfor %}
+
+</div>
+
+{% endfor %}
+
+
+
+
 <!--
 ---
 layout: single
