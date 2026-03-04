@@ -8,11 +8,12 @@ permalink: /people/
 <div style="display:flex; gap:24px; align-items:flex-start; flex-wrap:wrap;">
   <div style="flex:0 0 220px;">
     <img 
-  src="/assets/images/lee_chengfan.png?v=3"
-  alt="Dr. Cheng-Fan Lee"
-  style="width:220px; border-radius:12px; object-fit:cover;"
->
-  </div>
+      src="/assets/images/Lee_ChengFan.jpg"
+      alt="Dr. Cheng-Fan Lee"
+      style="width:220px; border-radius:12px; object-fit:cover;"
+    >
+   </div>
+</div>
 
   <div style="flex:1; min-width:260px;">
     <strong>Dr. Cheng-Fan “Bryan” Lee (李丞釩)</strong><br>
