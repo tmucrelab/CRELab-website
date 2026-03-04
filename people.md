@@ -8,7 +8,7 @@ permalink: /people/
 <div style="display:flex; gap:24px; align-items:flex-start; flex-wrap:wrap;">
   <div style="flex:0 0 220px;">
     <img 
-      src="https://tmucrelab.github.io/tmucrelab/CRELab-website/assets/assets/images/Lee_ChengFan.jpg"
+      src="https://raw.githubusercontent.com/tmucrelab/CRELab-website/master/assets/assets/images/Lee_ChengFan.jpg"
       alt="Dr. Cheng-Fan Lee"
       style="width:220px; border-radius:12px; object-fit:cover;" >
 </div>
