@@ -1,7 +1,7 @@
 ---
 layout: single
-title: "People"
-permalink: /people/
+# title: "People"
+# permalink: /people/
 name: 'Dr. Cheng-Fan “Bryan” Lee (李丞釩)'
 role: pi          # pi / member / student
 position: Assistant Professor
