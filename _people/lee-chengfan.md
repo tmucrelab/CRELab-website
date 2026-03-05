@@ -28,7 +28,8 @@ permalink: /people/lee-chengfan/
    
     <p class="profile-title">
       {{ page.position }}<br>
-      {{ page.affiliation }}<br><br>
+      {{ page.dept }}<br>
+      {{ page.org }}<br><br>
       Dr. Lee’s research focuses on <strong>cancer resistance evolution</strong>, investigating how cancers adapt to therapeutic pressure through transcriptional and metabolic remodeling, with an emphasis on prostate cancer, organoid models, and lipid metabolism.
     </p>
 
