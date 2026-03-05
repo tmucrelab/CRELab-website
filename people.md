@@ -4,6 +4,95 @@ title: "People"
 permalink: /people/
 ---
 
+<section class="people-section">
+  <h2 class="people-section__title">Principal Investigator</h2>
+
+  <div class="people-list">
+    {% assign items = site.people | where: "role", "pi" | sort: "order" %}
+    {% for p in items %}
+      <article class="person">
+        <a class="person__photoLink" href="{{ p.url | relative_url }}" aria-label="View profile: {{ p.name }}">
+          <img class="person__photo" src="{{ p.photo | relative_url }}" alt="{{ p.name }}">
+        </a>
+
+        <div class="person__meta">
+          <h3 class="person__name">
+            <a href="{{ p.url | relative_url }}">{{ p.name }}</a>
+          </h3>
+
+          {% if p.position or p.affiliation %}
+            <p class="person__title">
+              {% if p.position %}{{ p.position }}{% endif %}
+              {% if p.position and p.affiliation %}<span class="person__sep"> · </span>{% endif %}
+              {% if p.affiliation %}{{ p.affiliation }}{% endif %}
+            </p>
+          {% endif %}
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</section>
+
+
+<section class="people-section">
+  <h2 class="people-section__title">Members</h2>
+
+  <div class="people-list">
+    {% assign items = site.people | where: "role", "member" | sort: "order" %}
+    {% for p in items %}
+      <article class="person">
+        <a class="person__photoLink" href="{{ p.url | relative_url }}" aria-label="View profile: {{ p.name }}">
+          <img class="person__photo" src="{{ p.photo | relative_url }}" alt="{{ p.name }}">
+        </a>
+
+        <div class="person__meta">
+          <h3 class="person__name">
+            <a href="{{ p.url | relative_url }}">{{ p.name }}</a>
+          </h3>
+
+          {% if p.position or p.affiliation %}
+            <p class="person__title">
+              {% if p.position %}{{ p.position }}{% endif %}
+              {% if p.position and p.affiliation %}<span class="person__sep"> · </span>{% endif %}
+              {% if p.affiliation %}{{ p.affiliation }}{% endif %}
+            </p>
+          {% endif %}
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</section>
+
+
+<section class="people-section">
+  <h2 class="people-section__title">Students</h2>
+
+  <div class="people-list">
+    {% assign items = site.people | where: "role", "student" | sort: "order" %}
+    {% for p in items %}
+      <article class="person">
+        <a class="person__photoLink" href="{{ p.url | relative_url }}" aria-label="View profile: {{ p.name }}">
+          <img class="person__photo" src="{{ p.photo | relative_url }}" alt="{{ p.name }}">
+        </a>
+
+        <div class="person__meta">
+          <h3 class="person__name">
+            <a href="{{ p.url | relative_url }}">{{ p.name }}</a>
+          </h3>
+
+          {% if p.position or p.affiliation %}
+            <p class="person__title">
+              {% if p.position %}{{ p.position }}{% endif %}
+              {% if p.position and p.affiliation %}<span class="person__sep"> · </span>{% endif %}
+              {% if p.affiliation %}{{ p.affiliation }}{% endif %}
+            </p>
+          {% endif %}
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</section>
+
 
 ## Principal Investigator
 
