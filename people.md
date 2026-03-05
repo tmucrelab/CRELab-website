@@ -19,7 +19,14 @@ permalink: /people/
           <h3 class="person__name">
             <a href="{{ p.url | relative_url }}">{{ p.name }}</a>
           </h3>
-
+          
+         {% if p.position or p.affiliation %}
+            <p class="person__title">
+              {% if p.position %}{{ p.position }}{% endif %}
+              {% if p.position and p.affiliation %}<span class="person__sep"> · </span>{% endif %}
+              {% if p.affiliation %}{{ p.affiliation }}{% endif %}
+            </p>
+          {% endif %}
          
         </div>
       </article>
