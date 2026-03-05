@@ -68,7 +68,7 @@ permalink: /people/
   <h2 class="people-section__title">Former Members</h2>
 
   <div class="people-list">
-    {% assign items = site.people | where: "role", "former members" | sort: "order" %}
+    {% assign items = site.people | where: "role", "formermembers" | sort: "order" %}
     {% for p in items %}
       <article class="person">
         <a class="person__photoLink" href="{{ p.url | relative_url }}" aria-label="View profile: {{ p.name }}">
