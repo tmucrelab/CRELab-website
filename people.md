@@ -95,6 +95,7 @@ permalink: /people/
 
 <img class="person__photo" src="{{ p.photo | relative_url }}" alt="{{ p.name }}">
 
+
 <!--
 ## Principal Investigator
 
