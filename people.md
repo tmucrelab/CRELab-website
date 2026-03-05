@@ -2,6 +2,7 @@
 layout: single
 title: "People"
 permalink: /people/
+classes: wide
 ---
 
 <section class="people-section">
