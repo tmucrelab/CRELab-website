@@ -48,7 +48,7 @@ permalink: /people/
         <div class="person__meta">
           <h3 class="person__name">
             <a href="{{ p.url | relative_url }}">{{ p.name }}</a>
-          </h3>
+          </h3> 
 
           {% if p.position or p.affiliation %}
             <p class="person__title">
