@@ -4,7 +4,7 @@ title: "People"
 permalink: /people/
 ---
 
-
+`<!--
 ## Principal Investigator
 
 <div style="display:flex; gap:24px; align-items:flex-start; flex-wrap:wrap;">
@@ -73,8 +73,8 @@ permalink: /people/
 - Urological cancers  
 - Cancer metabolism and lipid metabolism  
 - Transcriptional and metabolic remodeling  
-- Mechanisms of cancer therapy resistance  
+- Mechanisms of cancer therapy resistance
 - Predictive models for therapeutic targets
 **Contact**  
 Email: bryancflee@tmu.edu.tw
-
+-->`
