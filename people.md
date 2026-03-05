@@ -20,9 +20,10 @@ permalink: /people/
             <a href="{{ p.url | relative_url }}">{{ p.name }}</a>
           </h3>
           
-         {% if p.affiliation %}
+         {% if p.dept or p.org %}
             <p class="person__title">
-              {{ p.affiliation }}
+              {% if p.dept %}{{ p.dept }}<br>{% endif %}
+              {% if p.org %}{{ p.org }}{% endif %}
             </p>
           {% endif %}
          
