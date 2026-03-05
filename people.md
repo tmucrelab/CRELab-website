@@ -65,10 +65,10 @@ permalink: /people/
 
 
 <section class="people-section">
-  <h2 class="people-section__title">Students</h2>
+  <h2 class="people-section__title">Former Members</h2>
 
   <div class="people-list">
-    {% assign items = site.people | where: "role", "student" | sort: "order" %}
+    {% assign items = site.people | where: "role", "former members" | sort: "order" %}
     {% for p in items %}
       <article class="person">
         <a class="person__photoLink" href="{{ p.url | relative_url }}" aria-label="View profile: {{ p.name }}">
