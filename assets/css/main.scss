@@ -115,10 +115,15 @@ search: false
 }
 
 /* Optional: wider screens show 2 columns (still list-like) */
-@media (min-width: 900px) {
+@media (min-width: 1100px) {
   .people-list {
     grid-template-columns: 1fr 1fr;
     column-gap: 2.5rem;
     row-gap: 1.25rem;
+  }
+}
+@media (max-width: 1099px) {
+  .people-list {
+    grid-template-columns: 1fr;
   }
 }
