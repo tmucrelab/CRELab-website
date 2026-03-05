@@ -17,7 +17,7 @@ permalink: /people/lee-chengfan/
 
 <div class="profile-info">
 
-<h2>{{ page.name }}</h2>
+# <h2>{{ page.name }}</h2>
 
 # <p>
 # {{ page.position }}<br>
