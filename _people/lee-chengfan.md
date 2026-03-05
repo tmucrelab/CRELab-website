@@ -28,8 +28,6 @@ permalink: /people/lee-chengfan/
 
 </div>
 
-## Dr. Cheng-Fan “Bryan” Lee (李丞釩)
-
 Assistant Professor  
 Department of Biochemistry and Molecular Biology  
 Taipei Medical University  
