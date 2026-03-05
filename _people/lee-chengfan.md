@@ -8,7 +8,7 @@ position: Assistant Professor
 affiliation: Department of Biochemistry and Molecular Biology, Taipei Medical University
 photo: /assets/assets/images/Lee_ChengFan.jpg
 order: 1
-# permalink: /people/lee-chengfan/
+permalink: /people/lee-chengfan/
 ---
 
 <div class="profile-header">
