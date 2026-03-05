@@ -7,3 +7,72 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+/* People page (Stanford-style list) */
+.people-section {
+  margin: 2rem 0 2.5rem;
+}
+
+.people-section__title {
+  margin: 0 0 1rem;
+}
+
+.people-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.person {
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  gap: 16px;
+  align-items: center;
+}
+
+.person__photoLink {
+  display: block;
+  width: 72px;
+  height: 72px;
+}
+
+.person__photo {
+  width: 72px;
+  height: 72px;
+  border-radius: 999px;
+  object-fit: cover;
+  display: block;
+}
+
+.person__name {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.person__name a {
+  text-decoration: none;
+}
+
+.person__name a:hover {
+  text-decoration: underline;
+}
+
+.person__title {
+  margin: 0.25rem 0 0;
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
+
+.person__sep {
+  opacity: 0.6;
+}
+
+/* Optional: wider screens show 2 columns (still list-like) */
+@media (min-width: 900px) {
+  .people-list {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2.5rem;
+    row-gap: 1.25rem;
+  }
+}
