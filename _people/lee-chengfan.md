@@ -11,6 +11,23 @@ order: 1
 # permalink: /people/lee-chengfan/
 ---
 
+<div class="profile-header">
+
+<img src="{{ page.photo | relative_url }}" class="profile-photo">
+
+<div class="profile-info">
+
+<h2>{{ page.name }}</h2>
+
+<p>
+{{ page.position }}<br>
+{{ page.affiliation }}
+</p>
+
+</div>
+
+</div>
+
 ## Dr. Cheng-Fan “Bryan” Lee (李丞釩)
 
 Assistant Professor  
