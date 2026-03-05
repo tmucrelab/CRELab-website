@@ -1,33 +1,44 @@
 ---
 layout: single
-# title: "People"
-# permalink: /people/
+title: ""            # 讓頁首不要有可點大標
+header: false        # 不顯示上方 header 區塊（避免 theme 自動輸出）
 name: 'Dr. Cheng-Fan “Bryan” Lee (李丞釩)'
-role: pi          # pi / member / student
+role: pi
 position: Assistant Professor
 affiliation: Department of Biochemistry and Molecular Biology, Taipei Medical University
+photo: /assets/assets/images/Lee_ChengFan.jpg
+
+# title: "People"
+# permalink: /people/
+# name: 'Dr. Cheng-Fan “Bryan” Lee (李丞釩)'
+# role: pi          # pi / member / student
+# position: Assistant Professor
+# affiliation: Department of Biochemistry and Molecular Biology, Taipei Medical University
 photo: /assets/assets/images/Lee_ChengFan.jpg
 order: 1
 permalink: /people/lee-chengfan/
 ---
-
 <div class="profile-header">
 
-<img src="{{ page.photo | relative_url }}" class="profile-photo">
+  <img src="{{ page.photo | relative_url }}" class="profile-photo" alt="{{ page.name }}">
 
-<div class="profile-info">
+  <div class="profile-info">
+    <h1 class="profile-name">{{ page.name }}</h1>
 
-<h2>{{ page.name }}</h2>
+    <p class="profile-title">
+      {{ page.position }}<br>
+      {{ page.affiliation }}
+    </p>
 
-<p>
-{{ page.position }}<br>
-{{ page.affiliation }}
-</p>
+    <p class="profile-bio">
+      Dr. Lee’s research focuses on <strong>cancer resistance evolution</strong>, investigating how cancers adapt to therapeutic pressure through transcriptional and metabolic remodeling, with an emphasis on prostate cancer, organoid models, and lipid metabolism.
+    </p>
+  </div>
 
 </div>
-</div>
-Assistant Professor  
-Department of Biochemistry and Molecular Biology  
+
+# Assistant Professor  
+# Department of Biochemistry and Molecular Biology  
 Taipei Medical University  
 
 Dr. Lee’s research focuses on **cancer resistance evolution**, investigating how cancers adapt to therapeutic pressure through transcriptional and metabolic remodeling, with an emphasis on prostate cancer, organoid models, and lipid metabolism.
