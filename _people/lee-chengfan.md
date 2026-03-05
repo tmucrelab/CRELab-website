@@ -8,7 +8,58 @@ position: Assistant Professor
 affiliation: Department of Biochemistry and Molecular Biology, Taipei Medical University
 photo: /assets/assets/images/Lee_ChengFan.jpg
 order: 1
+# permalink: /people/lee-chengfan/
 ---
+
+## Dr. Cheng-Fan “Bryan” Lee (李丞釩)
+
+Assistant Professor  
+Department of Biochemistry and Molecular Biology  
+Taipei Medical University  
+
+Dr. Lee’s research focuses on **cancer resistance evolution**, investigating how cancers adapt to therapeutic pressure through transcriptional and metabolic remodeling, with an emphasis on prostate cancer, organoid models, and lipid metabolism.
+
+---
+
+## 🎓 Education
+
+- **Ph.D.**, Graduate Institute of Biochemistry and Molecular Biology  
+  National Taiwan University *(2012–2019)*
+
+- **M.S.**, Department of Medical Laboratory Science and Biotechnology  
+  Taipei Medical University *(2008–2011)*
+
+---
+
+## 🧪 Professional Experience
+
+- Assistant Professor  
+  Taipei Medical University *(2024–Present)*
+
+- Postdoctoral Fellow  
+  Johns Hopkins University School of Medicine *(2022–2024)*
+
+- Postdoctoral Researcher  
+  National Taiwan University *(2019–2021)*
+
+---
+
+## 🔬 Research Interests
+
+- Urological cancers
+- Cancer metabolism and lipid metabolism
+- Transcriptional and metabolic remodeling
+- Mechanisms of cancer therapy resistance
+
+---
+
+## 📧 Contact
+
+Email: bryancflee@tmu.edu.tw
+
+
+
+<!--
 ## Principal Investigator
 
 <div  markdown="0" style="display:flex; gap:24px; align-items:flex-start; flex-wrap:wrap;">
@@ -80,3 +131,4 @@ order: 1
 - Predictive models for therapeutic targets
 **Contact**  
 Email: bryancflee@tmu.edu.tw
+-->
