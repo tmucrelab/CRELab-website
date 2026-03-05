@@ -19,10 +19,10 @@ permalink: /people/lee-chengfan/
 
 <h2>{{ page.name }}</h2>
 
-# <p>
-# {{ page.position }}<br>
-# {{ page.affiliation }}
-# </p>
+<p>
+{{ page.position }}<br>
+{{ page.affiliation }}
+</p>
 
 </div>
 
