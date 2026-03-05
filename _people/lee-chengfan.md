@@ -19,14 +19,14 @@ permalink: /people/lee-chengfan/
 
 <h2>{{ page.name }}</h2>
 
-<p>
-{{ page.affiliation }}
-</p>
+# <p>
+# {{ page.position }}<br>
+# {{ page.affiliation }}
+# </p>
 
 </div>
 
 </div>
-
 Assistant Professor  
 Department of Biochemistry and Molecular Biology  
 Taipei Medical University  
