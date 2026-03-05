@@ -23,9 +23,6 @@ permalink: /people/
          {% if p.position or p.affiliation %}
             <p class="person__title">
               {% if p.affiliation %}
-              # {% if p.position %}{{ p.position }}{% endif %}
-              # {% if p.position and p.affiliation %}<span class="person__sep"> · </span>{% endif %}
-              # {% if p.affiliation %}{{ p.affiliation }}{% endif %}
             </p>
           {% endif %}
          
