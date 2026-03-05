@@ -8,6 +8,52 @@ search: false
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
+/* Profile page header (photo + text side-by-side) */
+.profile-header{
+  display: flex;
+  gap: 28px;
+  align-items: flex-start;
+  margin: 1rem 0 2rem;
+}
+
+.profile-photo{
+  width: 320px;     /* 長方形大圖 */
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.profile-info{
+  flex: 1;
+  min-width: 240px;
+}
+
+.profile-name{
+  margin: 0 0 .5rem;
+}
+
+.profile-title{
+  margin: 0 0 1rem;
+  opacity: .85;
+}
+
+.profile-bio{
+  margin: 0;
+}
+
+/* Mobile: stack */
+@media (max-width: 700px){
+  .profile-header{
+    flex-direction: column;
+  }
+  .profile-photo{
+    width: 100%;
+    max-width: 420px;
+  }
+}
+
+
 /* People page (Stanford-style list) */
 .people-section {
   margin: 2rem 0 2.5rem;
