@@ -127,3 +127,12 @@ search: false
     grid-template-columns: 1fr;
   }
 }
+
+/* Make Minimal Mistakes content area wider */
+.page {
+  max-width: 1400px; /* 你可以改成 1500/1600 看喜好 */
+}
+
+.page__inner-wrap {
+  max-width: 1400px;
+}
