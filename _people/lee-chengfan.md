@@ -5,7 +5,8 @@ header: false        # 不顯示上方 header 區塊（避免 theme 自動輸出
 name: 'Dr. Cheng-Fan “Bryan” Lee (李丞釩)'
 role: pi
 position: Assistant Professor
-affiliation: Department of Biochemistry and Molecular Biology, Taipei Medical University
+dept: Department of Biochemistry and Molecular Biology
+org: Taipei Medical University
 photo: /assets/assets/images/Lee_ChengFan.jpg
 
 # title: "People"
