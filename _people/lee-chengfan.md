@@ -27,15 +27,10 @@ permalink: /people/lee-chengfan/
    
     <p class="profile-title">
       {{ page.position }}<br>
-      {{ page.affiliation }}
-    </p>
-
-    <p class="profile-bio">
-      Assistant ProfessorPermalink
-      Department of Biochemistry and Molecular Biology
-      Taipei Medical University
+      {{ page.affiliation }}<br><br>
       Dr. Lee’s research focuses on <strong>cancer resistance evolution</strong>, investigating how cancers adapt to therapeutic pressure through transcriptional and metabolic remodeling, with an emphasis on prostate cancer, organoid models, and lipid metabolism.
     </p>
+
   </div>
 
 </div>
