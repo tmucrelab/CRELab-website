@@ -93,6 +93,8 @@ permalink: /people/
   </div>
 </section>
 
+<img class="person__photo" src="{{ p.photo | relative_url }}" alt="{{ p.name }}">
+
 <!--
 ## Principal Investigator
 
