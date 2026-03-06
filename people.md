@@ -94,7 +94,10 @@ classes: wide
   </div>
 </section>
 
-<img class="person__photo" src="{{ p.photo | relative_url }}" alt="{{ p.name }}">
+<img class="person__photo"
+     src="{{ p.photo | relative_url }}"
+     alt="{{ p.name }}"
+     style="object-position: {{ p.thumb_position | default: '50% 50%' }};">
 
 
 <!--
