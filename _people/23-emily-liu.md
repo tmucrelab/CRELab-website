@@ -10,7 +10,7 @@ org: Taipei Medical University
 photo: /assets/assets/images/Bryan-Emily.jpg
 thumb_position: 50% 25%
 
-order: 22
+order: 23
 permalink: /people/emily-liu/
 ---
 
