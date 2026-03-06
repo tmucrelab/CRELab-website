@@ -86,7 +86,8 @@ search: false
   width: 72px;
   height: 72px;
   border-radius: 999px;
-  object-fit: cover;
+  object-position: 50% 25%; /* 預設偏上，通常人臉比較好看 */
+  # object-fit: cover;
   display: block;
 }
 
