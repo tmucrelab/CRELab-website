@@ -83,16 +83,20 @@ search: false
 }
 
 .person__photo {
-  width: 75px;
-  height: 75px;
-  border-radius: 999px;
-  object-position: 50% 25%; /* 預設值，可被每個人的 thumb_position 覆蓋 */
+  width: 72px;
+  height: 72px;
+  border-radius: 50%
+  #  border-radius: 999px;
   object-fit: cover;
+  object-position: 50% 25%; /* 預設值，可被每個人的 thumb_position 覆蓋 */
   display: block;
 }
 
 .person__meta {
   min-width: 0;
+  display: flex;
+  felx-direction: column;
+  justify-content: center;
 }
 
 .person__name {
@@ -113,7 +117,7 @@ search: false
   margin: 0.25rem 0 0;
   font-size: 0.95rem;
   opacity: 0.85;
-  # line-height: 1.35;
+  /* line-height: 1.35; */
 }
 
 .person__sep {
