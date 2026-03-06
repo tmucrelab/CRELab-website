@@ -10,7 +10,7 @@ org: Taipei Medical University
 photo: /assets/assets/images/Bryan-Louies.jpg
 thumb_position: 50% 25%
 
-order: 12
+order: 13
 permalink: /people/louies-xie/
 ---
 
