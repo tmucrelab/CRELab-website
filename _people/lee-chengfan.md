@@ -15,7 +15,7 @@ photo: /assets/assets/images/Lee_ChengFan.jpg
 # position: Assistant Professor
 # affiliation: Department of Biochemistry and Molecular Biology, Taipei Medical University
 photo: /assets/assets/images/Lee_ChengFan.jpg
-thumb_position: 50% 35%
+
 order: 1
 permalink: /people/lee-chengfan/
 ---
