@@ -85,8 +85,8 @@ search: false
 .person__photo {
   width: 72px;
   height: 72px;
-  border-radius: 50%
-  #  border-radius: 999px;
+  border-radius: 50%;
+  /* border-radius: 999px; */
   object-fit: cover;
   object-position: 50% 25%; /* 預設值，可被每個人的 thumb_position 覆蓋 */
   display: block;
@@ -95,7 +95,7 @@ search: false
 .person__meta {
   min-width: 0;
   display: flex;
-  felx-direction: column;
+  flex-direction: column;
   justify-content: center;
 }
 
