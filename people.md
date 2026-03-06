@@ -33,7 +33,7 @@ classes: wide
       </article>
     {% endfor %}
   </div>
-</section>
+# </section>
 
 
 <section class="people-section">
