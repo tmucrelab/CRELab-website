@@ -28,7 +28,6 @@ classes: wide
               {% if p.org %}{{ p.org }}{% endif %}
             </p>
           {% endif %}
-        #  
         </div>
       </article>
     {% endfor %}
