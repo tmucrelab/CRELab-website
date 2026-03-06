@@ -83,11 +83,10 @@ classes: wide
             <a href="{{ p.url | relative_url }}">{{ p.name }}</a>
           </h3> 
 
-          {% if p.position or p.affiliation %}
+          {% if p.dept or p.org %}
             <p class="person__title">
-              {% if p.position %}{{ p.position }}{% endif %}
-              {% if p.position and p.affiliation %}<span class="person__sep"> · </span>{% endif %}
-              {% if p.affiliation %}{{ p.affiliation }}{% endif %}
+              {% if p.dept %}{{ p.dept }}<br>{% endif %}
+              {% if p.org %}{{ p.org }}{% endif %}
             </p>
           {% endif %}
         </div>
