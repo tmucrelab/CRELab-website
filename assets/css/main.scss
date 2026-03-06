@@ -83,12 +83,16 @@ search: false
 }
 
 .person__photo {
-  width: 99px;
-  height: 99px;
+  width: 72px;
+  height: 72px;
   border-radius: 999px;
-  object-position: 50% 25%; /* 預設偏上，通常人臉比較好看 */
+  object-position: 50% 25%; /* 預設值，可被每個人的 thumb_position 覆蓋 */
   # object-fit: cover;
   display: block;
+}
+
+.person__meta {
+  min-width: 0;
 }
 
 .person__name {
@@ -109,21 +113,42 @@ search: false
   margin: 0.25rem 0 0;
   font-size: 0.95rem;
   opacity: 0.85;
+  # line-height: 1.35;
 }
 
 .person__sep {
   opacity: 0.6;
 }
 
+.affil-dept {
+  display: inline-block;
+}
+
+.affil-org {
+  display: inline-block;
+}
+
+@media (min-width: 700px) {
+  .affil-dept {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 699px) {
+  .affil-dept {
+    white-space: normal;
+  }
+}
+
 /* Optional: wider screens show 2 columns (still list-like) */
-@media (min-width: 1100px) {
+@media (min-width: 1400px) {
   .people-list {
     grid-template-columns: 1fr 1fr;
     column-gap: 2.5rem;
     row-gap: 1.25rem;
   }
 }
-@media (max-width: 1099px) {
+@media (max-width: 1399px) {
   .people-list {
     grid-template-columns: 1fr;
   }
@@ -131,7 +156,7 @@ search: false
 
 /* Make Minimal Mistakes content area wider */
 .page {
-  max-width: 1400px; /* 你可以改成 1500/1600 看喜好 */
+  max-width: 1500px; /* 你可以改成 1500/1600 看喜好 */
 }
 
 .page__inner-wrap {
@@ -146,3 +171,10 @@ search: false
   width: 100% !important;
 }
 
+/* Widen only pages with classes: wide */
+.wide .initial-content,
+.wide .page__inner-wrap,
+.wide .page__content {
+  max-width: 1400px !important;
+  width: 100% !important;
+}
