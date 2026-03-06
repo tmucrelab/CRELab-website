@@ -10,7 +10,7 @@ org: Taipei Medical University
 photo: /assets/assets/images/Bryan-Charlotte.jpg
 thumb_position: 50% 25%
 
-order: 14
+order: 15
 permalink: /people/charlotte-huang/
 ---
 
