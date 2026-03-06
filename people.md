@@ -13,7 +13,7 @@ classes: wide
     {% for p in items %}
       <article class="person">
         <a class="person__photoLink" href="{{ p.url | relative_url }}" aria-label="View profile: {{ p.name }}">
-          <img class="person__photo" src="{{ p.photo | relative_url }}" alt="{{ p.name }}">
+          <img class="person__photo" src="{{ p.photo | relative_url }}" alt="{{ p.name }}"
           {% if p.thumb_position %}style="object-position: {{ p.thumb_position }};"{% endif %}>
         </a>
 
