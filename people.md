@@ -97,7 +97,7 @@ classes: wide
 <img class="person__photo"
      src="{{ p.photo | relative_url }}"
      alt="{{ p.name }}"
-     style="object-position: {{ p.thumb_position | default: '50% 50%' }};">
+     {% if p.thumb_position %}style="object-position: {{ p.thumb_position }};"{% endif %}>
 
 
 <!--
