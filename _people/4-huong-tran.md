@@ -8,7 +8,7 @@ position: PhD
 dept: International Ph.D. Program in Medicine (IGPM)
 org: Taipei Medical University
 photo: /assets/assets/images/Huong-Tran.jpg
-thumb_position: 50% 60%
+thumb_position: 50% 75%
 
 order: 4
 permalink: /people/huong-tran/
