@@ -83,8 +83,8 @@ search: false
 }
 
 .person__photo {
-  width: 99px;
-  height: 99px;
+  width: 75px;
+  height: 75px;
   border-radius: 999px;
   object-position: 50% 25%; /* 預設值，可被每個人的 thumb_position 覆蓋 */
   # object-fit: cover;
