@@ -30,10 +30,10 @@ classes: wide
           {% endif %}
          
         </div>
-      </article>
+      # </article>
     {% endfor %}
   </div>
-# </section>
+</section>
 
 
 <section class="people-section">
