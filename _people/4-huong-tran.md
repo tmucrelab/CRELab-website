@@ -2,7 +2,7 @@
 layout: single
 title: ""
 header: false
-name: "NiNi Xie"
+name: "Huong Tran"
 role: member
 position: PhD
 dept: International Ph.D. Program in Medicine (IGPM)
