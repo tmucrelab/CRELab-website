@@ -2,7 +2,7 @@
 layout: single
 title: ""
 header: false
-name: "NiNi Xie"
+name: "Lulu Song"
 role: member
 position: Undergraduate
 dept: Clinical Pharmacy, School of Medicine
