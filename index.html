@@ -22,34 +22,48 @@ Research Areas
 - Organoid models <br>
 - Lipid metabolism and transcriptional remodeling
 
+
 <section class="home-panels">
+
   <div class="home-panel">
     <h2>News</h2>
-    <p>Latest updates, research highlights, and announcements from CRE Lab.</p>
-
-    <ul class="home-news-list">
-      {% for post in site.posts limit:3 %}
-        <li>
-          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-          <span class="home-date">{{ post.date | date: "%Y.%m.%d" }}</span>
-        </li>
-      {% endfor %}
-    </ul>
-
-    <a class="home-panel__button" href="{{ '/news/' | relative_url }}">More News</a>
+    <div class="simple-slider" data-slider="news">
+      <div class="simple-slider__track">
+        <img src="{{ '/assets/assets/images/news1.jpg' | relative_url }}" alt="News 1" class="simple-slider__img is-active">
+        <img src="{{ '/assets/assets/images/news2.jpg' | relative_url }}" alt="News 2" class="simple-slider__img">
+        <img src="{{ '/assets/assets/images/news3.jpg' | relative_url }}" alt="News 3" class="simple-slider__img">
+      </div>
+    </div>
   </div>
 
   <div class="home-panel">
     <h2>Events</h2>
-    <p>Upcoming seminars, workshops, and lab activities.</p>
-
-    <ul class="home-event-list">
-      <li>Coming soon</li>
-      <li>Add your seminars and lab events here</li>
-      <li>You can update this list anytime</li>
-    </ul>
-
-    <a class="home-panel__button" href="{{ '/events/' | relative_url }}">More Events</a>
+    <div class="simple-slider" data-slider="events">
+      <div class="simple-slider__track">
+        <img src="{{ '/assets/assets/images/event1.jpg' | relative_url }}" alt="Event 1" class="simple-slider__img is-active">
+        <img src="{{ '/assets/assets/images/event2.jpg' | relative_url }}" alt="Event 2" class="simple-slider__img">
+        <img src="{{ '/assets/assets/images/event3.jpg' | relative_url }}" alt="Event 3" class="simple-slider__img">
+      </div>
+    </div>
   </div>
+
 </section>
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const sliders = document.querySelectorAll(".simple-slider");
+
+  sliders.forEach((slider) => {
+    const images = slider.querySelectorAll(".simple-slider__img");
+    let current = 0;
+
+    if (images.length <= 1) return;
+
+    setInterval(() => {
+      images[current].classList.remove("is-active");
+      current = (current + 1) % images.length;
+      images[current].classList.add("is-active");
+    }, 3000);
+  });
+});
+</script>
