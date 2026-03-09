@@ -214,11 +214,14 @@ search: false
 .simple-slider__img {
   position: absolute;
   inset: 0;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.simple-slider__img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0;
-  transition: opacity 0.8s ease;
 }
 
 .simple-slider__img.is-active {
