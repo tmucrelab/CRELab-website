@@ -42,10 +42,7 @@ permalink: /people/lee-chengfan/
 ## 🎓 Education
 
 - **Ph.D.**, Graduate Institute of Biochemistry and Molecular Biology  
-  National Taiwan University *(2012–2019)*
-
-- **M.S.**, Department of Medical Laboratory Science and Biotechnology  
-  Taipei Medical University *(2008–2011)*
+  National Taiwan University 
 
 ---
 
@@ -55,11 +52,14 @@ permalink: /people/lee-chengfan/
   Taipei Medical University *(2024–Present)*
 
 - Postdoctoral Fellow  
-  Johns Hopkins University School of Medicine *(2022–2024)*
+  Johns Hopkins University School of Medicine (JHU) *(2022–2024)*
 
 - Postdoctoral Researcher  
-  National Taiwan University *(2019–2021)*
+  National Taiwan University (NTU) *(2019–2021)*
 
+- Visiting Fellow  
+  UT southwestern Medicine (UTSW) *(2022–2024)*
+  
 ---
 
 ## 🔬 Research Interests
