@@ -198,6 +198,9 @@ keep_files:
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
+# Logo
+logo: "/assets/assets/images/cre-logo.jpg"
+masthead_title: "CRE Lab"
 
 # Conversion
 markdown: kramdown
