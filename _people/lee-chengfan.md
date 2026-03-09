@@ -57,7 +57,7 @@ permalink: /people/lee-chengfan/
 - Postdoctoral Researcher  
   National Taiwan University (NTU) *(2019–2021)*
 
-- Visiting Fellow  
+- Visiting PhD scholar  
   UT southwestern Medicine (UTSW) *(2022–2024)*
   
 ---
