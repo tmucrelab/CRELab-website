@@ -1,6 +1,7 @@
 ---
 layout: splash
 title: "CRE Lab"
+classes: wide
 header:
   overlay_color: "#1f3a5f"
   overlay_filter: "0.6"
@@ -9,15 +10,46 @@ excerpt: >
   Understanding how cancers evolve under therapeutic pressure and develop drug resistance.
 ---
 
-## Research Focus
+Research Focus
 
 The CRE Lab investigates the mechanisms of <strong>cancer resistance evolution</strong>,  
 with an emphasis on prostate cancer, organoid models, and metabolic remodeling.
+<br>
 
----
-
-## Research Areas
-- Cancer resistance evolution  
-- Prostate cancer biology  
-- Organoid models  
+Research Areas
+- Cancer resistance evolution <br>
+- Prostate cancer biology <br>
+- Organoid models <br>
 - Lipid metabolism and transcriptional remodeling
+
+<section class="home-panels">
+  <div class="home-panel">
+    <h2>News</h2>
+    <p>Latest updates, research highlights, and announcements from CRE Lab.</p>
+
+    <ul class="home-news-list">
+      {% for post in site.posts limit:3 %}
+        <li>
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          <span class="home-date">{{ post.date | date: "%Y.%m.%d" }}</span>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <a class="home-panel__button" href="{{ '/news/' | relative_url }}">More News</a>
+  </div>
+
+  <div class="home-panel">
+    <h2>Events</h2>
+    <p>Upcoming seminars, workshops, and lab activities.</p>
+
+    <ul class="home-event-list">
+      <li>Coming soon</li>
+      <li>Add your seminars and lab events here</li>
+      <li>You can update this list anytime</li>
+    </ul>
+
+    <a class="home-panel__button" href="{{ '/events/' | relative_url }}">More Events</a>
+  </div>
+</section>
+
