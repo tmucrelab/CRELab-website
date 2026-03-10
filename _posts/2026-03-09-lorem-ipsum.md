@@ -36,7 +36,7 @@ excerpt_separator: <!--more-->
   </div>
 </div>
 
-![Lorem ipsum]({{ '/assets/assets/images/test-event-2.png' | relative_url }})
+<!-- ![Lorem ipsum]({{ '/assets/assets/images/test-event-2.png' | relative_url }}) -->
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 <!--more-->
