@@ -474,8 +474,17 @@ search: false
   margin-right: calc(50% - 50vw);
   margin-top: 0;
   margin-bottom: 0;
-  padding: 1.25rem clamp(1rem, 4vw, 4rem);
+  padding: 1.25rem /* clamp(1rem, 4vw, 4rem); */
   background: rgba(0, 0, 0, 0.45);
+  box-sizing: border-box;
+}
+
+.layout--splash .page__hero--overlay .page__excerpt > * {
+  width: min(96vw, 1800px);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(1rem, 4vw, 4rem);
+  padding-right: clamp(1rem, 4vw, 4rem);
   box-sizing: border-box;
 }
 
