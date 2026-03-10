@@ -51,8 +51,100 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
 <div class="post-gallery">
   {% for img in page.gallery %}
-    <a href="{{ img | relative_url }}" class="post-gallery__item" target="_blank">
+    <a href="{{ img | relative_url }}" class="post-gallery__item">
       <img src="{{ img | relative_url }}" alt="{{ page.title }} thumbnail {{ forloop.index }}">
     </a>
   {% endfor %}
 </div>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox__close" type="button" aria-label="Close image">&times;</button>
+  <img src="" alt="Expanded image" id="lightbox-img">
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const sliders = document.querySelectorAll(".simple-slider");
+
+  sliders.forEach((slider) => {
+    const slides = slider.querySelectorAll(".simple-slider__img");
+    const prevBtn = slider.querySelector(".simple-slider__arrow--prev");
+    const nextBtn = slider.querySelector(".simple-slider__arrow--next");
+    const dotsWrap = slider.querySelector(".simple-slider__dots");
+
+    let current = 0;
+    let intervalId = null;
+
+    if (slides.length <= 1) return;
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle("is-active", i === index);
+      });
+
+      const dots = dotsWrap.querySelectorAll(".simple-slider__dot");
+      dots.forEach((dot, i) => {
+        dot.classList.toggle("is-active", i === index);
+      });
+
+      current = index;
+    }
+
+    function nextSlide() {
+      showSlide((current + 1) % slides.length);
+    }
+
+    function prevSlide() {
+      showSlide((current - 1 + slides.length) % slides.length);
+    }
+
+    function startSlider() {
+      if (intervalId) return;
+      intervalId = setInterval(nextSlide, 3000);
+    }
+
+    function stopSlider() {
+      clearInterval(intervalId);
+      intervalId = null;
+    }
+
+    if (dotsWrap) {
+      slides.forEach((_, i) => {
+        const dot = document.createElement("button");
+        dot.type = "button";
+        dot.className = "simple-slider__dot" + (i === 0 ? " is-active" : "");
+        dot.setAttribute("aria-label", `Go to slide ${i + 1}`);
+        dot.addEventListener("click", () => {
+          stopSlider();
+          showSlide(i);
+          startSlider();
+        });
+        dotsWrap.appendChild(dot);
+      });
+    }
+
+    if (prevBtn) {
+      prevBtn.addEventListener("click", () => {
+        stopSlider();
+        prevSlide();
+        startSlider();
+      });
+    }
+
+    if (nextBtn) {
+      nextBtn.addEventListener("click", () => {
+        stopSlider();
+        nextSlide();
+        startSlider();
+      });
+    }
+
+    slider.addEventListener("mouseenter", stopSlider);
+    slider.addEventListener("mouseleave", startSlider);
+
+    showSlide(0);
+    startSlider();
+  });
+});
+</script>
+
