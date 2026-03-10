@@ -2,7 +2,7 @@
 layout: single
 title: ""
 header: false
-name: "Eva Zhu"
+name: "Eva Chu"
 role: member
 position: Undergraduate
 dept: Nutrition
