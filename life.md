@@ -11,29 +11,61 @@ We believe great science happens in a supportive and collaborative environment.
 Here are some moments from our lab life — seminars, group meetings, celebrations, and more.
 
 ---
-
-## Posts
-
+<div class="life-grid">
 {% assign lablife_posts = site.categories.lab-life %}
 {% for post in lablife_posts %}
-### [{{ post.title }}]({{ post.url | relative_url }})
+  <article class="life-card">
+    <a href="{{ post.url | relative_url }}" class="life-card__media">
+      <div class="life-card__slider">
+        {% if post.gallery %}
+          {% for img in post.gallery %}
+            <img
+              src="{{ img | relative_url }}"
+              alt="{{ post.title }}"
+              class="life-card__img {% if forloop.first %}is-active{% endif %}">
+          {% endfor %}
+        {% elsif post.image %}
+          <img
+            src="{{ post.image | relative_url }}"
+            alt="{{ post.title }}"
+            class="life-card__img is-active">
+        {% endif %}
+      </div>
+    </a>
 
-{% if post.image %}
-<a href="{{ post.url | relative_url }}">
-  <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" style="max-width: 420px; height: auto; border-radius: 10px; margin-bottom: 1rem;">
-</a>
-{% endif %}
+    <div class="life-card__content">
+      <h3 class="life-card__title">
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </h3>
 
-{{ post.excerpt }}
+      <p class="life-card__date">{{ post.date | date: "%Y.%m.%d" }}</p>
 
----
-
+      <div class="life-card__excerpt">
+        {{ post.excerpt }}
+      </div>
+    </div>
+  </article>
 {% endfor %}
+</div>
 
-### 📸 Gallery
-*(Add photos here)*
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const sliders = document.querySelectorAll(".life-card__slider");
 
-<img src="/assets/images/life_placeholder.png" alt="Lab Life photo" width="700" style="border-radius:12px;">
+  sliders.forEach((slider) => {
+    const images = slider.querySelectorAll(".life-card__img");
+    let current = 0;
+
+    if (images.length <= 1) return;
+
+    setInterval(() => {
+      images[current].classList.remove("is-active");
+      current = (current + 1) % images.length;
+      images[current].classList.add("is-active");
+    }, 2500);
+  });
+});
+</script>
 
 ---
 
