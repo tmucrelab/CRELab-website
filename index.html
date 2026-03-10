@@ -29,9 +29,19 @@ Research Areas
     <h2>News</h2>
     <div class="simple-slider" data-slider="news">
       <div class="simple-slider__track">
-        <img src="{{ '/assets/assets/images/test-lab-1.jpg' | relative_url }}" alt="News 1" class="simple-slider__img is-active">
-        <img src="{{ '/assets/assets/images/test-lab-2.png' | relative_url }}" alt="News 2" class="simple-slider__img">
-        <img src="{{ '/assets/assets/images/test-lab-3.png' | relative_url }}" alt="News 3" class="simple-slider__img">
+        <div class="simple-slider__slides">
+          <img src="{{ '/assets/assets/images/test-lab-1.jpg' | relative_url }}" alt="News 1" class="simple-slider__img is-active">
+          <img src="{{ '/assets/assets/images/test-lab-2.png' | relative_url }}" alt="News 2" class="simple-slider__img">
+          <img src="{{ '/assets/assets/images/test-lab-3.png' | relative_url }}" alt="News 3" class="simple-slider__img">
+        </div>
+        <button class="simple-slider__arrow simple-slider__arrow--prev" type="button" aria-label="Previous slide">
+        &#10094;
+        </button>
+        <button class="simple-slider__arrow simple-slider__arrow--next" type="button" aria-label="Next slide">
+        &#10095;
+        </button>
+
+        <div class="simple-slider__dots"></div>
       </div>
     </div>
   </div>
@@ -69,25 +79,90 @@ Research Areas
 
 </section>
 
+
 <script>
 document.addEventListener("DOMContentLoaded", function () {
   const sliders = document.querySelectorAll(".simple-slider");
 
   sliders.forEach((slider) => {
-    const images = slider.querySelectorAll(".simple-slider__img");
+    const slides = slider.querySelectorAll(".simple-slider__img");
+    const prevBtn = slider.querySelector(".simple-slider__arrow--prev");
+    const nextBtn = slider.querySelector(".simple-slider__arrow--next");
+    const dotsWrap = slider.querySelector(".simple-slider__dots");
+
     let current = 0;
     let intervalId = null;
 
-    if (images.length <= 1) return;
+    if (slides.length <= 1) return;
 
-    setInterval(() => {
-      images[current].classList.remove("is-active");
-      current = (current + 1) % images.length;
-      images[current].classList.add("is-active");
-    }, 3000);
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle("is-active", i === index);
+      });
+
+      const dots = dotsWrap.querySelectorAll(".simple-slider__dot");
+      dots.forEach((dot, i) => {
+        dot.classList.toggle("is-active", i === index);
+      });
+
+      current = index;
+    }
+
+    function nextSlide() {
+      const next = (current + 1) % slides.length;
+      showSlide(next);
+    }
+
+    function prevSlide() {
+      const prev = (current - 1 + slides.length) % slides.length;
+      showSlide(prev);
+    }
+
+    function startSlider() {
+      if (intervalId) return;
+      intervalId = setInterval(nextSlide, 3000);
+    }
+
+    function stopSlider() {
+      clearInterval(intervalId);
+      intervalId = null;
+    }
+
+    slides.forEach((_, i) => {
+      const dot = document.createElement("button");
+      dot.type = "button";
+      dot.className = "simple-slider__dot" + (i === 0 ? " is-active" : "");
+      dot.setAttribute("aria-label", `Go to slide ${i + 1}`);
+      dot.addEventListener("click", () => {
+        stopSlider();
+        showSlide(i);
+        startSlider();
+      });
+      dotsWrap.appendChild(dot);
+    });
+
+    if (prevBtn) {
+      prevBtn.addEventListener("click", () => {
+        stopSlider();
+        prevSlide();
+        startSlider();
+      });
+    }
+
+    if (nextBtn) {
+      nextBtn.addEventListener("click", () => {
+        stopSlider();
+        nextSlide();
+        startSlider();
+      });
+    }
+
+    slider.addEventListener("mouseenter", stopSlider);
+    slider.addEventListener("mouseleave", startSlider);
+
+    showSlide(0);
+    startSlider();
   });
 });
 </script>
-
-    
 
