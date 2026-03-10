@@ -4,7 +4,7 @@ title: "Lorem ipsum"
 date: 2026-03-09
 categories: [lab-life]
 tags: [event, lab-life]
-image: /assets/assets/images/test-event-2.png
+# image: /assets/assets/images/test-event-2.png
 permalink: /life/lorem-ipsum/
 classes: wide
 
