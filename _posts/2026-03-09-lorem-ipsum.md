@@ -16,7 +16,7 @@ gallery:
   - /assets/assets/images/test-event-2.png
   - /assets/assets/images/test-event-3.jpg
 
-# excerpt_separator: <!--more-->
+<!-- excerpt_separator: <!--more--> -->
 ---
 <div class="simple-slider post-slider">
   <div class="simple-slider__track">
