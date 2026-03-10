@@ -65,14 +65,29 @@ document.addEventListener("DOMContentLoaded", function () {
   sliders.forEach((slider) => {
     const images = slider.querySelectorAll(".simple-slider__img");
     let current = 0;
+    let intervalId = null;
 
     if (images.length <= 1) return;
 
-    setInterval(() => {
-      images[current].classList.remove("is-active");
-      current = (current + 1) % images.length;
-      images[current].classList.add("is-active");
-    }, 3000);
+    function startSlider() {
+      if (intervalId) return;
+      intervalId = setInterval(() => {
+        slides[current].classList.remove("is-active");
+        current = (current + 1) % slides.length;
+        slides[current].classList.add("is-active");
+      }, 3000);
+    }
+
+    function stopSlider() {
+      clearInterval(intervalId);
+      intervalId = null;
+    }
+
+    startSlider();
+
+    slider.addEventListener("mouseenter", stopSlider);
+    slider.addEventListener("mouseleave", startSlider);
   });
 });
 </script>
+
