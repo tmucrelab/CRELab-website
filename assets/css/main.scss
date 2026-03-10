@@ -158,6 +158,7 @@ search: false
   }
 }
 
+<!--
 /* Make Minimal Mistakes content area wider */
 .page {
   max-width: 1500px; /* 你可以改成 1500/1600 看喜好 */
@@ -181,6 +182,24 @@ search: false
 .wide .page__content {
   max-width: 1500px !important;
   width: 100% !important;
+}
+-->
+
+/* Responsive full-width content area */
+.initial-content,
+.page__inner-wrap,
+.page__content {
+  width: 100%;
+  max-width: none !important;
+  box-sizing: border-box;
+}
+
+/* Add responsive side padding instead of fixed max-width */
+.page__content,
+.page__inner-wrap,
+.initial-content {
+  padding-left: clamp(1rem, 4vw, 4rem);
+  padding-right: clamp(1rem, 4vw, 4rem);
 }
 
 .home-panels {
@@ -297,7 +316,7 @@ search: false
   }
 }
 
-#lab life照片輪播
+/* lab life照片輪播 */
 .life-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -386,14 +405,20 @@ search: false
 
 .post-gallery__item {
   display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #f3f3f3;
 }
 
 .post-gallery__item img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  height: 100%;
   object-fit: cover;
+  object-position: center;
   display: block;
-  border-radius: 10px;
+  border-radius: 0;
   cursor: pointer;
 }
 
@@ -435,24 +460,12 @@ search: false
   }
 }
 
-/* Make splash hero content wider */
+/* Responsive full-width splash hero */
 .page__hero--overlay .wrapper {
-  max-width: 100% !important;
-  padding-left: 3rem;
-  padding-right: 3rem;
-}
-
-/* Make the dark text block itself wider */
-.page__hero--overlay .page__title,
-.page__hero--overlay .page__lead,
-.page__hero--overlay .page__excerpt {
-  max-width: 1100px;
-}
-
-/* Full-width dark band on splash hero */
-.page__hero--overlay .wrapper {
-  max-width: 100% !important;
+  width: 100%;
+  max-width: none !important;
   padding: 0 !important;
+  box-sizing: border-box;
 }
 
 .page__hero--overlay .page__title,
@@ -462,11 +475,24 @@ search: false
   width: 100%;
   max-width: none;
   margin: 0;
-  padding: 1.25rem 3rem;
-  background: rgba(0, 0, 0, 0.45);
+  /* padding: 1.25rem 3rem; */
+  /* background: rgba(0, 0, 0, 0.45); */
   box-sizing: border-box;
 }
 
+/* Full-width dark band */
+.page__hero--overlay .page__excerpt {
+  background: rgba(0, 0, 0, 0.45);
+  padding: clamp(1rem, 2vw, 1.5rem) clamp(1rem, 4vw, 4rem);
+}
+
+/* Title can also have responsive side padding */
+.page__hero--overlay .page__title {
+  padding-left: clamp(1rem, 4vw, 4rem);
+  padding-right: clamp(1rem, 4vw, 4rem);
+}
+
+<!--
 @media (max-width: 700px) {
   .page__hero--overlay .page__title,
   .page__hero--overlay .page__lead,
@@ -474,3 +500,4 @@ search: false
     padding: 1rem 1rem;
   }
 }
+-->
