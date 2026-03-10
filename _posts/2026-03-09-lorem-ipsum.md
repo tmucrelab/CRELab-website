@@ -18,6 +18,7 @@ gallery:
 
 # excerpt_separator: <!--more-->
 ---
+
 <div class="simple-slider post-slider">
   <div class="simple-slider__track">
     <div class="simple-slider__slides">
@@ -43,7 +44,15 @@ gallery:
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 <!--more-->
-<!-- 以上文字是會顯示的文章摘要 -->
+
 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
+## Photo Gallery
 
+<div class="post-gallery">
+  {% for img in page.gallery %}
+    <a href="{{ img | relative_url }}" class="post-gallery__item" target="_blank">
+      <img src="{{ img | relative_url }}" alt="{{ page.title }} thumbnail {{ forloop.index }}">
+    </a>
+  {% endfor %}
+</div>
