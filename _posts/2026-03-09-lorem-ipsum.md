@@ -1,6 +1,6 @@
 ---
 layout: single
-# title: "Lorem ipsum"
+title: "Lorem ipsum"
 date: 2026-03-09
 categories: [lab-life]
 tags: [event, lab-life]
