@@ -421,7 +421,7 @@ search: false
 
 /* ===== Layout width fix ===== */
 
-/* Make regular pages wide, but still readable */
+/* Regular pages: make text area much wider */
 .page,
 .page__inner-wrap,
 .archive {
@@ -439,7 +439,7 @@ search: false
   box-sizing: border-box;
 }
 
-/* Splash layout: let hero truly span full viewport */
+/* Splash pages: remove inner width constraints */
 .layout--splash .page,
 .layout--splash .page__inner-wrap,
 .layout--splash .page__content,
@@ -450,7 +450,7 @@ search: false
   padding-right: 0 !important;
 }
 
-/* Full-width hero background area */
+/* Full-width hero area */
 .layout--splash .page__hero--overlay {
   width: 100vw;
   max-width: 100vw;
@@ -458,7 +458,6 @@ search: false
   margin-right: calc(50% - 50vw);
 }
 
-/* Remove inner wrapper constraints in hero */
 .layout--splash .page__hero--overlay .wrapper {
   max-width: none !important;
   width: 100%;
@@ -466,7 +465,18 @@ search: false
   margin: 0 !important;
 }
 
-/* Full-width dark band for excerpt */
+/* Title area: wide, readable */
+.layout--splash .page__hero--overlay .page__title {
+  width: min(96vw, 1800px);
+  max-width: none !important;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(1.25rem, 4vw, 4rem);
+  padding-right: clamp(1.25rem, 4vw, 4rem);
+  box-sizing: border-box;
+}
+
+/* Full-width dark band */
 .layout--splash .page__hero--overlay .page__excerpt {
   width: 100vw;
   max-width: 100vw;
@@ -474,28 +484,22 @@ search: false
   margin-right: calc(50% - 50vw);
   margin-top: 0;
   margin-bottom: 0;
-  padding: 1.25rem /* clamp(1rem, 4vw, 4rem); */
   background: rgba(0, 0, 0, 0.45);
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  padding-left: clamp(1.25rem, 4vw, 4rem);
+  padding-right: clamp(1.25rem, 4vw, 4rem);
   box-sizing: border-box;
 }
 
-.layout--splash .page__hero--overlay .page__excerpt > * {
-  width: min(96vw, 1800px);
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: clamp(1rem, 4vw, 4rem);
-  padding-right: clamp(1rem, 4vw, 4rem);
-  box-sizing: border-box;
-}
-
-/* Make splash title align nicely and use more width */
-.layout--splash .page__hero--overlay .page__title {
-  width: min(96vw, 1800px);
-  max-width: none !important;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 0;
-  padding-right: 0;
+/* If theme outputs a lead block too, keep it aligned */
+.layout--splash .page__hero--overlay .page__lead {
+  width: 100vw;
+  max-width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  padding-left: clamp(1.25rem, 4vw, 4rem);
+  padding-right: clamp(1.25rem, 4vw, 4rem);
   box-sizing: border-box;
 }
 
