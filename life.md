@@ -41,7 +41,7 @@ Here are some moments from our lab life — seminars, group meetings, celebratio
       <p class="life-card__date">{{ post.date | date: "%Y.%m.%d" }}</p>
 
       <div class="life-card__excerpt">
-        {{ post.excerpt }}
+        {{ post.summary }}
       </div>
     </div>
   </article>
