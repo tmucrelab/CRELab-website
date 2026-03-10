@@ -8,7 +8,7 @@ image: /assets/assets/images/test-event-2.png
 permalink: /life/lorem-ipsum/
 classes: wide
 
-<!-- 自訂會顯示在縮圖的文章摘要 -->
+# 自訂會顯示在縮圖的文章摘要
 summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 
 gallery:
@@ -16,7 +16,7 @@ gallery:
   - /assets/assets/images/test-event-2.png
   - /assets/assets/images/test-event-3.jpg
 
-<!-- excerpt_separator: <!--more--> -->
+# excerpt_separator: <!--more-->
 ---
 <div class="simple-slider post-slider">
   <div class="simple-slider__track">
