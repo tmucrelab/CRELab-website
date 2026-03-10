@@ -148,3 +148,31 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+  const closeBtn = lightbox.querySelector(".lightbox__close");
+  const items = document.querySelectorAll(".post-gallery__item");
+
+  items.forEach((item) => {
+    item.addEventListener("click", function (e) {
+      e.preventDefault();
+      lightboxImg.src = item.getAttribute("href");
+      lightbox.classList.add("is-open");
+    });
+  });
+
+  closeBtn.addEventListener("click", function () {
+    lightbox.classList.remove("is-open");
+    lightboxImg.src = "";
+  });
+
+  lightbox.addEventListener("click", function (e) {
+    if (e.target === lightbox) {
+      lightbox.classList.remove("is-open");
+      lightboxImg.src = "";
+    }
+  });
+});
+</script>
