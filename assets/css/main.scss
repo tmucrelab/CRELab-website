@@ -158,49 +158,8 @@ search: false
   }
 }
 
-<!--
-/* Make Minimal Mistakes content area wider */
-.page {
-  max-width: 1500px; /* 你可以改成 1500/1600 看喜好 */
-}
 
-.page__inner-wrap {
-  max-width: 1400px;
-}
 
-/* Global widen */
-.initial-content,
-.page__inner-wrap,
-.page__content {
-  max-width: 1500px !important;
-  width: 100% !important;
-}
-
-/* Widen only pages with classes: wide */
-.wide .initial-content,
-.wide .page__inner-wrap,
-.wide .page__content {
-  max-width: 1500px !important;
-  width: 100% !important;
-}
--->
-
-/* Responsive full-width content area */
-.initial-content,
-.page__inner-wrap,
-.page__content {
-  width: 100%;
-  max-width: none !important;
-  box-sizing: border-box;
-}
-
-/* Add responsive side padding instead of fixed max-width */
-.page__content,
-.page__inner-wrap,
-.initial-content {
-  padding-left: clamp(1rem, 4vw, 4rem);
-  padding-right: clamp(1rem, 4vw, 4rem);
-}
 
 .home-panels {
   display: grid;
@@ -492,12 +451,70 @@ search: false
   padding-right: clamp(1rem, 4vw, 4rem);
 }
 
-<!--
-@media (max-width: 700px) {
-  .page__hero--overlay .page__title,
-  .page__hero--overlay .page__lead,
-  .page__hero--overlay .page__excerpt {
-    padding: 1rem 1rem;
-  }
+/* ===== Full-bleed layout: truly edge-to-edge ===== */
+
+/* Remove width limits from main wrappers */
+.page,
+.page__inner-wrap,
+.initial-content,
+.page__content,
+.layout--splash .initial-content {
+  max-width: none !important;
+  width: 100% !important;
 }
--->
+
+/* Make normal page content span full viewport width */
+.page__content {
+  width: 100vw;
+  max-width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  box-sizing: border-box;
+}
+
+/* Make splash hero truly full width */
+.page__hero--overlay,
+.layout--splash .page__hero--overlay {
+  width: 100vw;
+  max-width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+.page__hero--overlay .wrapper {
+  width: 100%;
+  max-width: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Full-width title / excerpt bands */
+.page__hero--overlay .page__title,
+.page__hero--overlay .page__lead,
+.page__hero--overlay .page__excerpt {
+  width: 100vw;
+  max-width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  margin-top: 0;
+  margin-bottom: 0;
+  box-sizing: border-box;
+}
+
+/* Dark band behind excerpt */
+.page__hero--overlay .page__excerpt {
+  background: rgba(0, 0, 0, 0.45);
+  padding: 1.25rem 2rem;
+}
+
+/* Title band spacing */
+.page__hero--overlay .page__title {
+  padding: 1rem 2rem 0.5rem;
+}
+
+/* Avoid horizontal scroll caused by 100vw */
+html, body {
+  overflow-x: hidden;
+}
