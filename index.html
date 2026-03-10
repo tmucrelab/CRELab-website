@@ -40,21 +40,32 @@ Research Areas
     <h2>Events</h2>
     <div class="simple-slider" data-slider="events">
       <div class="simple-slider__track">
+        <div class="simple-slider__slides">
 
-        <a href="{{ '/life/lorem-ipsum/' | relative_url }}" class="simple-slider__img is-active">
-          <img src="{{ '/assets/assets/images/test-event-1.jpg' | relative_url }}" alt="Lorem Ipsum">
-        </a>
+          <a href="{{ '/life/lorem-ipsum/' | relative_url }}" class="simple-slider__img is-active">
+            <img src="{{ '/assets/assets/images/test-event-1.jpg' | relative_url }}" alt="Lorem Ipsum">
+          </a>
 
-        <a href="{{ '/life/test-event-2/' | relative_url }}" class="simple-slider__img">
-          <img src="{{ '/assets/assets/images/test-post-2.jpeg' | relative_url }}" alt="Test Event 2">
-        </a>
+          <a href="{{ '/life/test-event-2/' | relative_url }}" class="simple-slider__img">
+            <img src="{{ '/assets/assets/images/test-post-2.jpeg' | relative_url }}" alt="Test Event 2">
+          </a>
 
-        <a href="{{ '/life/test-event-3/' | relative_url }}" class="simple-slider__img">
-          <img src="{{ '/assets/assets/images/test-post-3.jpg' | relative_url }}" alt="Test Event 3">
-        </a>
-      </div>
+          <a href="{{ '/life/test-event-3/' | relative_url }}" class="simple-slider__img">
+            <img src="{{ '/assets/assets/images/test-post-3.jpg' | relative_url }}" alt="Test Event 3">
+          </a>
+        </div>
+
+        <button class="simple-slider__arrow simple-slider__arrow--prev" type="button" aria-label="Previous slide">
+        &#10094;
+        </button>
+        <button class="simple-slider__arrow simple-slider__arrow--next" type="button" aria-label="Next slide">
+        &#10095;
+        </button>
+
+        <div class="simple-slider__dots"></div>
     </div>
   </div>
+</div>
 
 </section>
 
