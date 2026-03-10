@@ -216,12 +216,14 @@ search: false
   inset: 0;
   opacity: 0;
   transition: opacity 0.8s ease;
+  display: block;
 }
 
 .simple-slider__img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
 
 .simple-slider__img.is-active {
