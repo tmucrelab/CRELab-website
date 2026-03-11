@@ -2,7 +2,7 @@
 layout: single
 title: ""
 header: false
-name: "Jolie He"
+name: "Jolie Ho"
 role: member
 position: Undergraduate
 dept: Pharmacy
