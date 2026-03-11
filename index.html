@@ -54,23 +54,18 @@ Research Areas
 
           <!-- 取得所有 lab-life 文章，並依日期由新到舊排序 -->
           {% assign latest_lab_posts = site.categories.lab-life | sort: "date" | reverse %}
-
           <!-- 只顯示最新三篇 -->
           {% for post in latest_lab_posts limit: 3 %}
-
             <!-- 優先抓 slider_images 的第一張圖片 -->
             {% assign thumb = post.slider_images[0] %}
-
             <!-- 如果沒有 slider_images，改抓 image -->
             {% if thumb == nil or thumb == "" %}
               {% assign thumb = post.image %}
             {% endif %}
-
             <!-- 如果連 image 都沒有，就使用預設圖片 -->
             {% if thumb == nil or thumb == "" %}
-              {% assign thumb = "/assets/assets/images/default-event.jpg" %}
+              {% assign thumb = "/assets/assets/images/CRE_logo-for-default-event.png" %}
             {% endif %}
-
             <!-- 每一張圖片都會連到對應的文章 -->
             <a href="{{ post.url | relative_url }}"
                class="simple-slider__img {% if forloop.first %}is-active{% endif %}">
