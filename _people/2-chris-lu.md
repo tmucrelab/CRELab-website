@@ -10,7 +10,7 @@ org:Taipei Medical University
 photo: /assets/assets/images/anonymous-user.jpg
 thumb_position: 50% 25%
 
-order:  2
+order: 2
 permalink: /people/chris-lu/
 ---
 
