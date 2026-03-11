@@ -1,0 +1,34 @@
+---
+layout: single
+title: ""
+header: false
+name: "Cindy Lu"
+role: Former Members
+position: Master
+dept: Peabody Conservatory, 
+org: Johns Hopkins University (JHU)
+photo: /assets/assets/images/anonymous-user.jpg 
+thumb_position: 50% 25%
+
+order: 1
+permalink: /people/ Cindy-Lu /
+---
+
+<div class="profile-header">
+
+<img src="{{ page.photo | relative_url }}" class="profile-photo">
+
+<div class="profile-info">
+
+<h1 class="profile-name">{{ page.name }}</h1>
+
+<p class="profile-title">
+{{ page.position }}<br>
+{{ page.affiliation }}
+</p>
+
+<p class="profile-bio">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+</div>
+</div>
