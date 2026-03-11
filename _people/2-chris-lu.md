@@ -10,8 +10,8 @@ org:Taipei Medical University
 photo: /assets/assets/images/anonymous-user.jpg
 thumb_position: 50% 25%
 
-order:  ( = 檔名最前面的編號)
-permalink: /people/Name-Last_name/
+order:  2
+permalink: /people/chris-lu/
 ---
 
 <div class="profile-header">
