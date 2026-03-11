@@ -5,8 +5,8 @@ header: false
 name: "Chris Lu"
 role: formermembers
 position: Undergraduate
-dept:Public Health
-org:Taipei Medical University
+dept: Public Health
+org: Taipei Medical University
 photo: /assets/assets/images/anonymous-user.jpg
 thumb_position: 50% 25%
 
