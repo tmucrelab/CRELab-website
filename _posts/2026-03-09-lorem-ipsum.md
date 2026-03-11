@@ -101,7 +101,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
   <img src="" alt="Expanded image" id="lightbox-img">
 
   <video id="lightbox-video" controls playsinline>
-    <source src="" type="video/quicktime">
+    <source src="" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </div>
