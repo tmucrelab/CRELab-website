@@ -35,7 +35,7 @@ gallery_items:
     orientation: portrait
 
   - type: video
-    src: /assets/assets/images/test-video-straight.MOV
+    src: /assets/assets/images/test-video-straight.mp4
     # poster: /assets/assets/images/test-straight-photo.jpg
 
 # excerpt_separator: <!--more-->
