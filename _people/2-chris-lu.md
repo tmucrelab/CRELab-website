@@ -2,7 +2,7 @@
 layout: single
 title: ""
 header: false
-name: "Name Last_name"
+name: "Chris Lu"
 role: formermembers
 position: Undergraduate
 dept: Public Health
