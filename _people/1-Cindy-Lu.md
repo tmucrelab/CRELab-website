@@ -24,7 +24,8 @@ permalink: /people/Cindy-Lu/
 
 <p class="profile-title">
 {{ page.position }}<br>
-{{ page.affiliation }}
+{{ page.dept }}<br>
+{{ page.org }}
 </p>
 
 <p class="profile-bio">
