@@ -52,26 +52,46 @@ Research Areas
       <div class="simple-slider__track">
         <div class="simple-slider__slides">
 
-          <a href="{{ '/life/lorem-ipsum/' | relative_url }}" class="simple-slider__img is-active">
-            <img src="{{ '/assets/assets/images/test-event-1.jpg' | relative_url }}" alt="Lorem Ipsum">
-          </a>
+          <!-- 取得所有 lab-life 文章，並依日期由新到舊排序 -->
+          {% assign latest_lab_posts = site.categories.lab-life | sort: "date" | reverse %}
 
-          <a href="{{ '/life/test-event-2/' | relative_url }}" class="simple-slider__img">
-            <img src="{{ '/assets/assets/images/test-post-2.jpeg' | relative_url }}" alt="Test Event 2">
-          </a>
+          <!-- 只顯示最新三篇 -->
+          {% for post in latest_lab_posts limit: 3 %}
 
-          <a href="{{ '/life/test-event-3/' | relative_url }}" class="simple-slider__img">
-            <img src="{{ '/assets/assets/images/test-post-3.jpg' | relative_url }}" alt="Test Event 3">
-          </a>
+            <!-- 優先抓 slider_images 的第一張圖片 -->
+            {% assign thumb = post.slider_images[0] %}
+
+            <!-- 如果沒有 slider_images，改抓 image -->
+            {% if thumb == nil or thumb == "" %}
+              {% assign thumb = post.image %}
+            {% endif %}
+
+            <!-- 如果連 image 都沒有，就使用預設圖片 -->
+            {% if thumb == nil or thumb == "" %}
+              {% assign thumb = "/assets/assets/images/default-event.jpg" %}
+            {% endif %}
+
+            <!-- 每一張圖片都會連到對應的文章 -->
+            <a href="{{ post.url | relative_url }}"
+               class="simple-slider__img {% if forloop.first %}is-active{% endif %}">
+
+              <img src="{{ thumb | relative_url }}" alt="{{ post.title }}">
+
+            </a>
+          {% endfor %}
         </div>
 
+        <!-- 左箭頭 -->
         <button class="simple-slider__arrow simple-slider__arrow--prev" type="button" aria-label="Previous slide">
         &#10094;
         </button>
+        
+        <!-- 右箭頭 -->
         <button class="simple-slider__arrow simple-slider__arrow--next" type="button" aria-label="Next slide">
         &#10095;
         </button>
 
+        <!-- 小圓點導航 -->
         <div class="simple-slider__dots"></div>
     </div>
   </div>
