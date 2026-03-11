@@ -17,8 +17,8 @@ Here are some moments from our lab life — seminars, group meetings, celebratio
   <article class="life-card">
     <a href="{{ post.url | relative_url }}" class="life-card__media">
       <div class="life-card__slider">
-        {% if post.gallery %}
-          {% for img in post.gallery %}
+        {% if post.slider_images %}
+          {% for img in post.slider_images %}
             <img
               src="{{ img | relative_url }}"
               alt="{{ post.title }}"
