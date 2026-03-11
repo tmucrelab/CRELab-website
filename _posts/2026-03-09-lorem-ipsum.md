@@ -36,7 +36,7 @@ gallery_items:
 
   - type: video
     src: /assets/assets/images/test-video-straight.MOV
-    poster: /assets/assets/images/test-straight-photo.jpg
+    # poster: /assets/assets/images/test-straight-photo.jpg
 
 # excerpt_separator: <!--more-->
 ---
