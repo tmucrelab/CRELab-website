@@ -7,7 +7,7 @@ role: member
 position: Undergraduate
 dept: Medicine
 org: Taipei Medical University
-photo: /assets/assets/images/Bryan-Emily.jpg
+photo: /assets/assets/images/Emily-Liu.jpg
 thumb_position: 50% 25%
 
 order: 23
