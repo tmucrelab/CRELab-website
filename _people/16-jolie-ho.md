@@ -7,7 +7,7 @@ role: member
 position: Undergraduate
 dept: Pharmacy
 org: Taipei Medical University
-photo: /assets/assets/images/Bryan-Jolie.jpg
+photo: /assets/assets/images/Jolie-Ho.jpg
 thumb_position: 50% 25%
 
 order: 16
