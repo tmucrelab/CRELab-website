@@ -4,9 +4,9 @@ title: ""
 header: false
 name: "Cindy Lu"
 role: formermembers
-position: Master
+position: PhD
 dept: Peabody Conservatory
-org: Johns Hopkins University (JHU)
+org: University of Utah
 photo: /assets/assets/images/Cindy-Lu.jpg
 thumb_position: 50% 10%
 
