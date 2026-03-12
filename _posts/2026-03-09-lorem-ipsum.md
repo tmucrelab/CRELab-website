@@ -3,7 +3,7 @@ layout: single
 title: "Lorem ipsum"
 date: 2026-03-09
 categories: [lab-life]
-tags: [event, lab-life]
+event_type: seminar   # seminar / social / academic
 # image: /assets/assets/images/test-event-2.png
 permalink: /life/lorem-ipsum/
 classes: wide
