@@ -8,7 +8,7 @@ position: Lab Manager
 dept: Biochemistry and Molecular Cell Biology, School of Medicine
 org: Taipei Medical University
 photo: /assets/assets/images/Jane-Hung.jpg
-thumb_position: 50% 25%
+thumb_position: 30% 75%
 
 order: 3
 permalink: /people/jane-hung/
@@ -28,7 +28,7 @@ permalink: /people/jane-hung/
 </p>
 
 <p class="profile-bio">
-*Somewhere, something incredible is waiting to be known.*
+<i>Somewhere, something incredible is waiting to be known.</i>
 </p>
 
 </div>
