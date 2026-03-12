@@ -8,7 +8,7 @@ position: Undergraduate
 dept: Pharmacy
 org: Taipei Medical University
 photo: /assets/assets/images/Michelle-Hung.jpg
-thumb_position: 50% 25%
+thumb_position: 50% 65%
 
 order: 14
 permalink: /people/michelle-hung/
