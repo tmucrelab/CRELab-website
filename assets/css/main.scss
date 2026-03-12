@@ -548,3 +548,23 @@ body {
   overflow-x: hidden;
 }
 
+.research-project {
+  margin: 2.5rem 0 3rem;
+}
+
+.research-project__text {
+  margin-bottom: 1rem;
+}
+
+.research-project__text h2 {
+  margin-bottom: 0.5rem;
+}
+
+.research-slider {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.research-slider.simple-slider {
+  aspect-ratio: 16 / 9;
+}
