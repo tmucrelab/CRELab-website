@@ -26,14 +26,22 @@ Research Areas
 <section class="home-panels">
 
   <div class="home-panel">
-    <h2>News</h2>
-    <div class="simple-slider" data-slider="news">
+    <h2>Research Focus</h2>
+    <div class="simple-slider" data-slider="research-focus">
       <div class="simple-slider__track">
         <div class="simple-slider__slides">
-          <img src="{{ '/assets/assets/images/test-lab-1.jpg' | relative_url }}" alt="News 1" class="simple-slider__img is-active">
-          <img src="{{ '/assets/assets/images/test-lab-2.png' | relative_url }}" alt="News 2" class="simple-slider__img">
-          <img src="{{ '/assets/assets/images/test-lab-3.png' | relative_url }}" alt="News 3" class="simple-slider__img">
+
+          <a href="{{ '/research/#project-a' | relative_url }}" class="simple-slider__img is-active">
+            <img src="{{ '/assets/assets/images/test-lab-1.jpg' | relative_url }}" alt="Project A">
+          </a>
+          <a href="{{ '/research/#project-b' | relative_url }}" class="simple-slider__img">
+            <img src="{{ '/assets/assets/images/test-lab-2.png' | relative_url }}" alt="Project B">
+          </a>
+          <a href="{{ '/research/#project-c' | relative_url }}" class="simple-slider__img">
+            <img src="{{ '/assets/assets/images/test-lab-3.png' | relative_url }}" alt="Project C">
+          </a>
         </div>
+
         <button class="simple-slider__arrow simple-slider__arrow--prev" type="button" aria-label="Previous slide">
         &#10094;
         </button>
