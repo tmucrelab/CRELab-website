@@ -7,7 +7,7 @@ role: formermembers
 position: Master
 dept: Peabody Conservatory
 org: Johns Hopkins University (JHU)
-photo: /assets/assets/images/anonymous-user.jpg 
+photo: /assets/assets/images/Cindy-Lu.jpg
 thumb_position: 50% 25%
 
 order: 1
