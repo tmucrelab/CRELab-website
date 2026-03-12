@@ -7,7 +7,7 @@ role: member
 position: Undergraduate
 dept: Medicine
 org: Taipei Medical University
-photo: /assets/assets/images/Bryan-Debby.jpg
+photo: /assets/assets/images/Debby-Lee.jpg
 thumb_position: 50% 25%
 
 order: 22
