@@ -7,7 +7,7 @@ role: formermembers
 position: Undergraduate
 dept: Public Health
 org: Taipei Medical University
-photo: /assets/assets/images/anonymous-user.jpg
+photo: /assets/assets/images/Chris-Lu.jpg
 thumb_position: 50% 25%
 
 order: 2
