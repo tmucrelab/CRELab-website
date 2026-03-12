@@ -5,8 +5,8 @@ header: false
 name: "Miro Yu"
 role: formermembers
 position: Undergraduate
-dept: Pharmacy, USYD
-org: Nutrition, TMU
+dept: Pharmacy
+org: USYD
 photo: /assets/assets/images/anonymous-user.jpg
 thumb_position: 50% 25%
 
