@@ -28,8 +28,8 @@ permalink: /people/heankie-wan/
 </p>
 
 <p class="profile-bio">
-From TMU Nutrition and Health Science.
-Interested in cancer immune escape mechanisms & cancer metabolisms 
+From TMU Nutrition and Health Science.<br>
+Interested in cancer immune escape mechanisms & cancer metabolisms.<br>
 Like to exercise especially badminton & basketball. Also enjoy to play percussion and video games to spend time.
 </p>
 
