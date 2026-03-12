@@ -2,7 +2,7 @@
 layout: single
 title: ""
 header: false
-name: "Tran Thi Huong, MScPhm"
+name: "Huong Tran, MScPhm"
 role: member
 position: PhD
 dept: International Ph.D. Program in Medicine (IGPM)
