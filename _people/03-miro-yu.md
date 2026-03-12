@@ -10,7 +10,7 @@ org: Nutrition, TMU
 photo: /assets/assets/images/anonymous-user.jpg
 thumb_position: 50% 25%
 
-order: 5
+order: 3
 permalink: /people/Miro-yu/
 ---
 
