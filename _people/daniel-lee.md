@@ -14,7 +14,7 @@ photo: /assets/assets/images/Bryan-Daniel.jpg
 # role: pi          # pi / member / student
 # position: Assistant Professor
 # affiliation: Department of Biochemistry and Molecular Biology, Taipei Medical University
-photo: /assets/assets/images/Bryan-Daniel.jpg
+photo: /assets/assets/images/Daniel-Lee.png
 
 order: 1
 permalink: /people/daniel-lee/
