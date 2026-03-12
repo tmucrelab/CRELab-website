@@ -7,7 +7,7 @@ role: member
 position: Undergraduate
 dept: MLSB
 org: Taipei Medical University
-photo: /assets/assets/images/Bryan-Mandy.jpg
+photo: /assets/assets/images/Mandy-Song.jpeg
 thumb_position: 50% 25%
 
 order: 21
