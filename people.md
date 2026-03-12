@@ -103,7 +103,9 @@ classes: wide
     {% assign items = site.people | where: "role", "formermembers" | sort: "order" %}
     {% for p in items %}
       <article class="person">
-        <a class="person__photoLink" href="{{ p.url | relative_url }}" aria-label="View profile: {{ p.name }}">
+         <!-- Former members 照片 (不可點擊) -->
+         <div class="person__photoLink">
+           
           <img 
             class="person__photo"
             src="{{ p.photo | relative_url }}"
@@ -112,8 +114,9 @@ classes: wide
         </a>
 
         <div class="person__meta">
+          <!-- 名字不加連結 -->
           <h3 class="person__name">
-            <a href="{{ p.url | relative_url }}">{{ p.name }}</a>
+            {{ p.name }}
           </h3>
 
           {% if p.dept or p.org %}
