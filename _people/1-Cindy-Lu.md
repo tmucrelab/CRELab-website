@@ -8,7 +8,7 @@ position: Master
 dept: Peabody Conservatory
 org: Johns Hopkins University (JHU)
 photo: /assets/assets/images/Cindy-Lu.jpg
-thumb_position: 50% 25%
+thumb_position: 50% 15%
 
 order: 1
 permalink: /people/Cindy-Lu/
