@@ -111,7 +111,7 @@ classes: wide
             src="{{ p.photo | relative_url }}"
             alt="{{ p.name }}"
             {% if p.thumb_position %}style="object-position: {{ p.thumb_position }};"{% endif %}>
-        </a>
+        </div>
 
         <div class="person__meta">
           <!-- 名字不加連結 -->
