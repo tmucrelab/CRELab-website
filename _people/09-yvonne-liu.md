@@ -7,7 +7,7 @@ role: formermembers
 position: Undergraduate
 dept: Medicine
 org: Taipei Medical University
-photo: /assets/assets/images/anonymous-user.jpg
+photo: /assets/assets/images/Yvonne-Liu.jpg
 thumb_position: 50% 25%
 
 order: 9
