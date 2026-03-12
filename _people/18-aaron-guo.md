@@ -2,7 +2,7 @@
 layout: single
 title: ""
 header: false
-name: "Aaron Su"
+name: "Aaron Guo"
 role: member
 position: Undergraduate
 dept: Clinical Pharmacy
@@ -10,7 +10,7 @@ org: Taipei Medical University
 photo: /assets/assets/images/Aaron-Guo.jpg
 thumb_position: 50% 25%
 
-order: 16
+order: 18
 permalink: /people/aaron-su/
 ---
 
