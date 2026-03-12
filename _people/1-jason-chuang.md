@@ -7,7 +7,7 @@ role: member
 position: Undergraduate
 dept: Department of Medicine
 org: University of Lancashire (UCLan)
-photo: /assets/assets/images/Bryan-Jason.jpg
+photo: /assets/assets/images/Jason-Chuang.png
 thumb_position: 50% 25%
 order: 1
 permalink: /people/jason-chuang/
