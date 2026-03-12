@@ -13,7 +13,7 @@ thumb_position: 50% 10%
 order: 1
 permalink: /people/Cindy-Lu/
 ---
-
+<!--
 <div class="profile-header">
 
 <img src="{{ page.photo | relative_url }}" class="profile-photo">
@@ -34,3 +34,4 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 </div>
 </div>
+-->
