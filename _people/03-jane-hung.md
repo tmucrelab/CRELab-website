@@ -4,10 +4,10 @@ title: ""
 header: false
 name: "Jane Hung"
 role: member
-position: Research Scientist
+position: Lab Manager
 dept: Biochemistry and Molecular Cell Biology, School of Medicine
 org: Taipei Medical University
-photo: /assets/assets/images/Bryan-Jane.jpg
+photo: /assets/assets/images/Jane-Hung.jpg
 thumb_position: 50% 25%
 
 order: 3
@@ -28,7 +28,7 @@ permalink: /people/jane-hung/
 </p>
 
 <p class="profile-bio">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+*Somewhere, something incredible is waiting to be known.*
 </p>
 
 </div>
