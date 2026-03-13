@@ -7,7 +7,7 @@ role: member
 position: Undergraduate
 dept: MLSB
 org: Taipei Medical University
-photo: /assets/assets/images/Sunny-Guo.jpg
+photo: /assets/assets/images/Member-Profile/Sunny-Guo.jpg
 thumb_position: 50% 25%
 
 order: 20
