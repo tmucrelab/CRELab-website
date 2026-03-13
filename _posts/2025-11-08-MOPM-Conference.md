@@ -2,21 +2,21 @@
 # ===== 基本文章資訊 =====
 layout: single
 title: "MOPM Conference"
-date: 2025-10-14
+date: 2025-11-08
 
 categories: [lab-life]
 tags: [event, lab-life]
 event_type: seminar   # seminar / social / academic
 # 文章網址
 # 建議和 title 對應
-permalink: /life/2025108-mopm-conference/
+permalink: /life/20251108-mopm-conference/
 
 # 讓頁面使用較寬版面
 classes: wide
 
 # ===== Lab Life 頁面卡片摘要 =====
 # 這段會顯示在 /life/ 的卡片介紹
-summary: "Halloween party."
+summary: "MOPM Conference."
 
 # ===== 上方照片輪播 (Slider) =====
 # 這裡只放圖片，會自動輪播
