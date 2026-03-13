@@ -28,7 +28,7 @@ permalink: /people/lulu-song/
 </p>
 
 <p class="profile-bio">
-Dogs | Painting | Novels | Fanworks 🎨
+Dogs | Painting | Novels | Fanworks 🎨<br>
 CSIA Level 1 Ski Instructor
 </p>
 
