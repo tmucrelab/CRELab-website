@@ -7,7 +7,7 @@ role: formermembers
 position: Postdoc fellow
 dept: Biochemistry and Molecular Cell Biology, School of Medicine
 org: Taipei Medical University
-photo: /assets/assets/images/anonymous-user.jpg
+photo: /assets/assets/images/Member-Profile/anonymous-user.jpg
 thumb_position: 50% 25%
 
 order: 5
