@@ -7,7 +7,7 @@ role: member
 position: Undergraduate
 dept: Clinical Pharmacy
 org: Taipei Medical University
-photo: /assets/assets/images/Member-Profile/Aaron-Guo.jpgAaron-Guo.jpg
+photo: /assets/assets/images/Member-Profile/Aaron-Guo.jpg
 thumb_position: 50% 25%
 
 order: 18
