@@ -137,14 +137,16 @@ Professor YC gave a talk.
 <!--                   Lightbox，集錦                       -->
 <!-- ===================================================== -->
 
-<div class="lightbox" id="lightbox">
-  <button class="lightbox__close" type="button">&times;</button>
+<div class="post-lightbox" id="post-lightbox" hidden>
+  <button class="post-lightbox__close" type="button" aria-label="Close media">&times;</button>
 
-  <img src="" alt="Expanded image" id="lightbox-img">
+  <div class="post-lightbox__inner">
+    <img src="" alt="Expanded image" id="post-lightbox-img">
 
-  <video id="lightbox-video" controls playsinline>
-    <source src="" type="video/mp4">
-  </video>
+    <video id="post-lightbox-video" controls playsinline>
+      <source src="" type="video/mp4">
+    </video>
+  </div>
 </div>
 
 <!-- ===================================================== -->
@@ -237,16 +239,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  const lightbox = document.getElementById("lightbox");
-  const lightboxImg = document.getElementById("lightbox-img");
-  const lightboxVideo = document.getElementById("lightbox-video");
+  const lightbox = document.getElementById("post-lightbox");
+  const lightboxInner = lightbox.querySelector(".post-lightbox__inner");
+  const lightboxImg = document.getElementById("post-lightbox-img");
+  const lightboxVideo = document.getElementById("post-lightbox-video");
   const lightboxVideoSource = lightboxVideo.querySelector("source");
-  const closeBtn = lightbox.querySelector(".lightbox__close");
+  const closeBtn = lightbox.querySelector(".post-lightbox__close");
   const items = document.querySelectorAll(".post-gallery__item");
 
-
   function closeLightbox() {
-    lightbox.classList.remove("is-open");
     lightboxImg.src = "";
     lightboxImg.style.display = "none";
 
@@ -254,42 +255,71 @@ document.addEventListener("DOMContentLoaded", function () {
     lightboxVideoSource.src = "";
     lightboxVideo.load();
     lightboxVideo.style.display = "none";
+
+    lightbox.hidden = true;
+    document.body.classList.remove("post-lightbox-open");
+  }
+
+  function openImage(src) {
+    lightboxVideo.pause();
+    lightboxVideoSource.src = "";
+    lightboxVideo.load();
+    lightboxVideo.style.display = "none";
+
+    lightboxImg.src = src;
+    lightboxImg.style.display = "block";
+
+    lightbox.hidden = false;
+    document.body.classList.add("post-lightbox-open");
+  }
+
+  function openVideo(src) {
+    lightboxImg.src = "";
+    lightboxImg.style.display = "none";
+
+    lightboxVideoSource.src = src;
+    lightboxVideo.load();
+    lightboxVideo.style.display = "block";
+
+    lightbox.hidden = false;
+    document.body.classList.add("post-lightbox-open");
   }
 
   items.forEach((item) => {
     item.addEventListener("click", function (e) {
       e.preventDefault();
+      e.stopPropagation();
+      e.stopImmediatePropagation();
 
       const type = item.dataset.type;
       const href = item.getAttribute("href");
 
       if (type === "video") {
-        lightboxImg.style.display = "none";
-        
-        lightboxVideoSource.src = href;
-        lightboxVideo.load();
-        lightboxVideo.style.display = "block";
-        
+        openVideo(href);
       } else {
-        lightboxVideo.pause();
-        lightboxVideoSource.src = "";
-        lightboxVideo.load();
-        lightboxVideo.style.display = "none";
-
-        lightboxImg.src = href;
-        lightboxImg.style.display = "block";
+        openImage(href);
       }
-
-      lightbox.classList.add("is-open");
     });
   });
 
-  closeBtn.addEventListener("click", closeLightbox);
+  closeBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    e.stopImmediatePropagation();
+    closeLightbox();
+  });
 
   lightbox.addEventListener("click", function (e) {
-    if (e.target === lightbox) {
+    if (!lightboxInner.contains(e.target)) {
+      closeLightbox();
+    }
+  });
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && !lightbox.hidden) {
       closeLightbox();
     }
   });
 });
 </script>
+
