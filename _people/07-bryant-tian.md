@@ -7,7 +7,7 @@ role: member
 position: Undergraduate
 dept: Public Health
 org: Taipei Medical University
-photo: /assets/assets/images/Bryant-Tian.jpg
+photo: /assets/assets/images/Member-Profile/Bryant-Tian.jpg
 thumb_position: 50% 25%
 
 order: 7
