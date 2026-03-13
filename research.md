@@ -24,25 +24,27 @@ Below are three major project directions currently featured on the site.
   <div class="simple-slider research-slider" data-slider="project-a">
     <div class="simple-slider__track">
       <div class="simple-slider__slides">
-
-        <div class="simple-slider__img is-active">
+        
+        <a href="{{ '/assets/assets/images/test-research-1.jpg' | relative_url }}"
+           class="simple-slider__img is-active research-lightbox-trigger">
           <img src="{{ '/assets/assets/images/test-research-1.jpg' | relative_url }}" alt="Project A image 1">
-        </div>
+        </a>
 
-        <div class="simple-slider__img">
+        <a href="{{ '/assets/assets/images/test-research-2.jpeg' | relative_url }}"
+           class="simple-slider__img research-lightbox-trigger">
           <img src="{{ '/assets/assets/images/test-research-2.jpeg' | relative_url }}" alt="Project A image 2">
-        </div>
+        </a>
 
-        <div class="simple-slider__img">
+        <a href="{{ '/assets/assets/images/test-research-3.jpg' | relative_url }}"
+           class="simple-slider__img research-lightbox-trigger">
           <img src="{{ '/assets/assets/images/test-research-3.jpg' | relative_url }}" alt="Project A image 3">
-        </div>
-
+        </a>
       </div>
 
       <button class="simple-slider__arrow simple-slider__arrow--prev" type="button" aria-label="Previous slide">
         &#10094;
       </button>
-
+      
       <button class="simple-slider__arrow simple-slider__arrow--next" type="button" aria-label="Next slide">
         &#10095;
       </button>
@@ -67,17 +69,20 @@ Below are three major project directions currently featured on the site.
     <div class="simple-slider__track">
       <div class="simple-slider__slides">
 
-        <div class="simple-slider__img is-active">
+        <a href="{{ '/assets/assets/images/test-research-1.jpg' | relative_url }}"
+           class="simple-slider__img is-active research-lightbox-trigger">
           <img src="{{ '/assets/assets/images/test-research-1.jpg' | relative_url }}" alt="Project B image 1">
-        </div>
+        </a>
 
-        <div class="simple-slider__img">
+        <a href="{{ '/assets/assets/images/test-research-2.jpeg' | relative_url }}"
+           class="simple-slider__img research-lightbox-trigger">
           <img src="{{ '/assets/assets/images/test-research-2.jpeg' | relative_url }}" alt="Project B image 2">
-        </div>
+        </a>
 
-        <div class="simple-slider__img">
+        <a href="{{ '/assets/assets/images/test-research-3.jpg' | relative_url }}"
+           class="simple-slider__img research-lightbox-trigger">
           <img src="{{ '/assets/assets/images/test-research-3.jpg' | relative_url }}" alt="Project B image 3">
-        </div>
+        </a>
 
       </div>
 
@@ -109,17 +114,20 @@ Below are three major project directions currently featured on the site.
     <div class="simple-slider__track">
       <div class="simple-slider__slides">
 
-        <div class="simple-slider__img is-active">
+        <a href="{{ '/assets/assets/images/test-research-1.jpg' | relative_url }}"
+           class="simple-slider__img is-active research-lightbox-trigger">
           <img src="{{ '/assets/assets/images/test-research-1.jpg' | relative_url }}" alt="Project C image 1">
-        </div>
+        </a>
 
-        <div class="simple-slider__img">
+        <a href="{{ '/assets/assets/images/test-research-2.jpeg' | relative_url }}"
+           class="simple-slider__img research-lightbox-trigger">
           <img src="{{ '/assets/assets/images/test-research-2.jpeg' | relative_url }}" alt="Project C image 2">
-        </div>
+        </a>
 
-        <div class="simple-slider__img">
+        <a href="{{ '/assets/assets/images/test-research-3.jpg' | relative_url }}"
+           class="simple-slider__img research-lightbox-trigger">
           <img src="{{ '/assets/assets/images/test-research-3.jpg' | relative_url }}" alt="Project C image 3">
-        </div>
+        </a>
 
       </div>
 
@@ -137,6 +145,124 @@ Below are three major project directions currently featured on the site.
 </section>
 
 
+<div class="lightbox" id="research-lightbox">
+  <button class="lightbox__close" type="button" aria-label="Close image">&times;</button>
+  <img src="" alt="Expanded research image" id="research-lightbox-img">
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const sliders = document.querySelectorAll(".simple-slider");
+
+  sliders.forEach((slider) => {
+    const slides = slider.querySelectorAll(".simple-slider__img");
+    const prevBtn = slider.querySelector(".simple-slider__arrow--prev");
+    const nextBtn = slider.querySelector(".simple-slider__arrow--next");
+    const dotsWrap = slider.querySelector(".simple-slider__dots");
+
+    let current = 0;
+    let intervalId = null;
+
+    if (slides.length <= 1) return;
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle("is-active", i === index);
+      });
+
+      const dots = dotsWrap.querySelectorAll(".simple-slider__dot");
+      dots.forEach((dot, i) => {
+        dot.classList.toggle("is-active", i === index);
+      });
+
+      current = index;
+    }
+
+    function nextSlide() {
+      const next = (current + 1) % slides.length;
+      showSlide(next);
+    }
+
+    function prevSlide() {
+      const prev = (current - 1 + slides.length) % slides.length;
+      showSlide(prev);
+    }
+
+    function startSlider() {
+      if (intervalId) return;
+      intervalId = setInterval(nextSlide, 3000);
+    }
+
+    function stopSlider() {
+      clearInterval(intervalId);
+      intervalId = null;
+    }
+
+    slides.forEach((_, i) => {
+      const dot = document.createElement("button");
+      dot.type = "button";
+      dot.className = "simple-slider__dot" + (i === 0 ? " is-active" : "");
+      dot.setAttribute("aria-label", `Go to slide ${i + 1}`);
+      dot.addEventListener("click", () => {
+        stopSlider();
+        showSlide(i);
+        startSlider();
+      });
+      dotsWrap.appendChild(dot);
+    });
+
+    if (prevBtn) {
+      prevBtn.addEventListener("click", () => {
+        stopSlider();
+        prevSlide();
+        startSlider();
+      });
+    }
+
+    if (nextBtn) {
+      nextBtn.addEventListener("click", () => {
+        stopSlider();
+        nextSlide();
+        startSlider();
+      });
+    }
+
+    slider.addEventListener("mouseenter", stopSlider);
+    slider.addEventListener("mouseleave", startSlider);
+
+    showSlide(0);
+    startSlider();
+  });
+
+  const lightbox = document.getElementById("research-lightbox");
+  const lightboxImg = document.getElementById("research-lightbox-img");
+  const closeBtn = lightbox.querySelector(".lightbox__close");
+  const triggers = document.querySelectorAll(".research-lightbox-trigger");
+
+  function closeLightbox() {
+    lightbox.classList.remove("is-open");
+    lightboxImg.src = "";
+  }
+
+  triggers.forEach((item) => {
+    item.addEventListener("click", function (e) {
+      e.preventDefault();
+      lightboxImg.src = item.getAttribute("href");
+      lightbox.classList.add("is-open");
+    });
+  });
+
+  closeBtn.addEventListener("click", closeLightbox);
+
+  lightbox.addEventListener("click", function (e) {
+    if (e.target === lightbox) {
+      closeLightbox();
+    }
+  });
+});
+</script>
+
+<!--
 <script>
 document.addEventListener("DOMContentLoaded", function () {
   const sliders = document.querySelectorAll(".simple-slider");
@@ -222,7 +348,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 </script>
-
+-->
 
 <!--
 ## Research at CRE Lab
