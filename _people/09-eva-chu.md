@@ -7,8 +7,8 @@ role: member
 position: Undergraduate
 dept: Nutrition
 org: Taipei Medical University
-photo: /assets/assets/images/Eva-Chu.png
-thumb_position: 50% 0%
+photo: /assets/assets/images/Eva-Chu.jpg
+thumb_position: 50% 20%
 
 order: 9
 permalink: /people/eva-zhu/
