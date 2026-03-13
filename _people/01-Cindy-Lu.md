@@ -7,7 +7,7 @@ role: formermembers
 position: PhD
 dept: PhD
 org: University of Utah
-photo: /assets/assets/images/Cindy-Lu.jpg
+photo: /assets/assets/images/Member-Profile/Cindy-Lu.jpg
 thumb_position: 50% 10%
 
 order: 1
