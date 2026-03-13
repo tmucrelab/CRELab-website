@@ -467,6 +467,50 @@ body.post-lightbox-open {
   overflow: hidden;
 }
 
+.post-lightbox__nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 46px;
+  height: 46px;
+  border: none;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.45);
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 100000;
+}
+
+.post-lightbox__nav--prev {
+  left: 24px;
+}
+
+.post-lightbox__nav--next {
+  right: 24px;
+}
+
+.post-lightbox__nav:hover {
+  background: rgba(0, 0, 0, 0.65);
+}
+
+@media (max-width: 700px) {
+  .post-lightbox__nav {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+
+  .post-lightbox__nav--prev {
+    left: 12px;
+  }
+
+  .post-lightbox__nav--next {
+    right: 12px;
+  }
+}
+
 
 <!--
 .lightbox {
