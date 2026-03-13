@@ -548,11 +548,18 @@ body {
   overflow-x: hidden;
 }
 
+
+
 .research-project {
   margin: 2.5rem 0 3rem;
 }
 
 .research-project__text {
+  margin-bottom: 1rem;
+}
+
+.research-project__text {
+  max-width: 900px;
   margin-bottom: 1rem;
 }
 
@@ -562,9 +569,16 @@ body {
 
 .research-slider {
   width: 100%;
-  max-width: 1000px;
+  max-width: 720px;   /* 讓輪播不要太大，再改小，如：600px */
+  margin: 0 auto;     /* 置中 */
 }
 
 .research-slider.simple-slider {
   aspect-ratio: 16 / 9;
+}
+
+@media (max-width: 700px) {
+  .research-slider {
+    max-width: 100%;
+  }
 }
