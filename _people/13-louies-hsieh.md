@@ -2,12 +2,12 @@
 layout: single
 title: ""
 header: false
-name: "Louies Xie"
+name: "Louies Hsieh"
 role: member
 position: Undergraduate
 dept: Pharmacy
 org: Taipei Medical University
-photo: /assets/assets/images/Bryan-Louies.jpg
+photo: /assets/assets/images/Louise-Hsieh.jpg
 thumb_position: 50% 25%
 
 order: 13
