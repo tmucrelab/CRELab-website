@@ -9,7 +9,7 @@ tags: [event, lab-life]
 event_type: seminar   # seminar / social / academic
 # 文章網址
 # 建議和 title 對應
-permalink: /life/20250826-yc's-special-talk/
+permalink: /life/20250826-ycs-special-talk/
 
 # 讓頁面使用較寬版面
 classes: wide
