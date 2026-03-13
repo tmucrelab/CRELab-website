@@ -144,11 +144,14 @@ Below are three major project directions currently featured on the site.
   </div>
 </section>
 
-
-<div class="research-lightbox" id="research-lightbox">
+<div class="research-lightbox" id="research-lightbox" hidden>
   <button class="research-lightbox__close" type="button" aria-label="Close image">&times;</button>
-  <img src="" alt="Expanded research image" id="research-lightbox-img">
+
+  <div class="research-lightbox__inner">
+    <img src="" alt="Expanded research image" id="research-lightbox-img">
+  </div>
 </div>
+
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
@@ -236,31 +239,52 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const lightbox = document.getElementById("research-lightbox");
   const lightboxImg = document.getElementById("research-lightbox-img");
+  const lightboxInner = lightbox.querySelector(".research-lightbox__inner");
   const closeBtn = lightbox.querySelector(".research-lightbox__close");
   const triggers = document.querySelectorAll(".research-lightbox-trigger");
 
+  function openLightbox(src) {
+    lightboxImg.src = src;
+    lightbox.hidden = false;
+    document.body.classList.add("research-lightbox-open");
+  }
+
   function closeLightbox() {
-    lightbox.classList.remove("is-open");
     lightboxImg.src = "";
+    lightbox.hidden = true;
+    document.body.classList.remove("research-lightbox-open");
   }
 
   triggers.forEach((item) => {
     item.addEventListener("click", function (e) {
       e.preventDefault();
-      lightboxImg.src = item.getAttribute("href");
-      lightbox.classList.add("is-open");
+      e.stopPropagation();
+
+      const src = item.getAttribute("href");
+      openLightbox(src);
     });
   });
 
-  closeBtn.addEventListener("click", closeLightbox);
+  closeBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    closeLightbox();
+  });
 
   lightbox.addEventListener("click", function (e) {
-    if (e.target === lightbox) {
+    if (!lightboxInner.contains(e.target)) {
+      closeLightbox();
+    }
+  });
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && !lightbox.hidden) {
       closeLightbox();
     }
   });
 });
 </script>
+
 
 <!--
 <script>
