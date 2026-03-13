@@ -7,7 +7,7 @@ role: member
 position: Undergraduate
 dept: Pharmacy
 org: Taipei Medical University
-photo: /assets/assets/images/Michelle-Hung.jpg
+photo: /assets/assets/images/Member-Profile/Michelle-Hung.jpg
 thumb_position: 50% 5%
 
 order: 14
