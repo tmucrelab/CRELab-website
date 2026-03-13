@@ -7,14 +7,13 @@ role: comentor
 position: Co-Mentor/ Clinical Physician
 dept: Department of Medicine
 org: Fu Jen Catholic University
-photo: /assets/assets/images/Bryan-Daniel.jpg
+photo: /assets/assets/images/Member-Profile/anonymous-user.jpg
 # title: "People"
 # permalink: /people/
 # name: 'Dr. Cheng-Fan “Bryan” Lee (李丞釩)'
 # role: pi          # pi / member / student
 # position: Assistant Professor
 # affiliation: Department of Biochemistry and Molecular Biology, Taipei Medical University
-photo: /assets/assets/images/Daniel-Lee.png
 
 order: 1
 permalink: /people/daniel-lee/
