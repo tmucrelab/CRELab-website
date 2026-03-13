@@ -7,7 +7,7 @@ role: member
 position: Research Scientist
 dept: Biochemistry and Molecular Cell Biology, School of Medicine
 org: Taipei Medical University
-photo: /assets/assets/images/NiNi-Xie.JPG
+photo: /assets/assets/images/Member-Profile/NiNi-Xie.JPG
 thumb_position: 50% 25%
 
 order: 2
