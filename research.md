@@ -145,8 +145,8 @@ Below are three major project directions currently featured on the site.
 </section>
 
 
-<div class="lightbox" id="research-lightbox">
-  <button class="lightbox__close" type="button" aria-label="Close image">&times;</button>
+<div class="research-lightbox" id="research-lightbox">
+  <button class="research-lightbox__close" type="button" aria-label="Close image">&times;</button>
   <img src="" alt="Expanded research image" id="research-lightbox-img">
 </div>
 
@@ -236,7 +236,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const lightbox = document.getElementById("research-lightbox");
   const lightboxImg = document.getElementById("research-lightbox-img");
-  const closeBtn = lightbox.querySelector(".lightbox__close");
+  const closeBtn = lightbox.querySelector(".research-lightbox__close");
   const triggers = document.querySelectorAll(".research-lightbox-trigger");
 
   function closeLightbox() {
