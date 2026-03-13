@@ -2,12 +2,6 @@
 layout: single
 title: "Research"
 permalink: /research/
----
-
----
-layout: single
-title: "Research"
-permalink: /research/
 classes: wide
 ---
 
