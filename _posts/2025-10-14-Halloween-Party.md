@@ -30,6 +30,9 @@ gallery_items:
   - type: image
     src: /assets/assets/images/Lab-Life/2025-10-14-Halloween-Party/2025-10-14-Halloween-Party-01.jpg
     orientation: landscape
+  - type: image
+    src: /assets/assets/images/Lab-Life/2025-10-14-Halloween-Party/2025-10-14-Halloween-Party-02.jpg
+    orientation: landscape
 
 ---
 
@@ -64,7 +67,7 @@ gallery_items:
 <!--                     Article Text                      -->
 <!-- ===================================================== -->
 
-Professor YC gave a talk.
+Halloween Party.
 
 <!-- ===================================================== -->
 <!--                     Photo Gallery                     -->
