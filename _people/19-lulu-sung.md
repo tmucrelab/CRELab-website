@@ -7,11 +7,11 @@ role: member
 position: Undergraduate
 dept: Clinical Pharmacy, School of Medicine
 org: Taipei Medical University
-photo: /assets/assets/images/Lulu-Sung.jpg
+photo: /assets/assets/images/Member-Profile/Lulu-Sung.jpg
 thumb_position: 50% 25%
 
 order: 19
-permalink: /people/lulu-song/
+permalink: /people/lulu-sung/
 ---
 
 <div class="profile-header">
