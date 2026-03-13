@@ -7,7 +7,7 @@ role: member
 position: Lab Manager
 dept: Biochemistry and Molecular Cell Biology, School of Medicine
 org: Taipei Medical University
-photo: /assets/assets/images/Jane-Hung.jpg
+photo: /assets/assets/images/Member-Profile/Jane-Hung.jpg
 thumb_position: 40% 55%
 
 order: 3
