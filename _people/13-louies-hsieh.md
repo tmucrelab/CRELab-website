@@ -7,11 +7,11 @@ role: member
 position: Undergraduate
 dept: Pharmacy
 org: Taipei Medical University
-photo: /assets/assets/images/Louise-Hsieh.jpg
+photo: /assets/assets/images/Member-Profile/Louise-Hsieh.jpg
 thumb_position: 50% 25%
 
 order: 13
-permalink: /people/louies-xie/
+permalink: /people/louies-hsieh/
 ---
 
 <div class="profile-header">
