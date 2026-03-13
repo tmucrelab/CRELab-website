@@ -555,10 +555,6 @@ body {
 }
 
 .research-project__text {
-  margin-bottom: 1rem;
-}
-
-.research-project__text {
   max-width: 900px;
   margin-bottom: 1rem;
 }
@@ -577,8 +573,20 @@ body {
   aspect-ratio: 16 / 9;
 }
 
+.research-lightbox-trigger {
+  cursor: zoom-in;
+}
+
+#research-lightbox-img {
+  display: block;
+  max-width: 90vw;
+  max-height: 85vh;
+  border-radius: 10px;
+}
+
 @media (max-width: 700px) {
   .research-slider {
     max-width: 100%;
   }
 }
+
