@@ -28,7 +28,7 @@ permalink: /people/jolie-he/
 </p>
 
 <p class="profile-bio">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Hello, my name is Jolie, a pharmacy student at Taipei Medical University. I joined the CRE Lab in 2025 and currently exploring the field of anticancer peptides. I am looking forward to learning more and making new discoveries in the lab. Nice to meet everyone!
 </p>
 
 </div>
