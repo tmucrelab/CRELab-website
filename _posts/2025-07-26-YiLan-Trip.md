@@ -9,7 +9,7 @@ tags: [event, lab-life]
 event_type: social   # seminar / social / academic
 # 文章網址
 # 建議和 title 對應
-permalink: /life/20250726-YiLan-Trip/
+permalink: /lab-life/20250726-YiLan-Trip/
 
 # 讓頁面使用較寬版面
 classes: wide
