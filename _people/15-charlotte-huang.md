@@ -7,7 +7,7 @@ role: member
 position: Undergraduate
 dept: Pharmacy
 org: Taipei Medical University
-photo: /assets/assets/images/Charlotte-Huang.jpg
+photo: /assets/assets/images/Member-Profile/Charlotte-Huang.jpg
 thumb_position: 50% 25%
 
 order: 15
