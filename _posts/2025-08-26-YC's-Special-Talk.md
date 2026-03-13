@@ -6,40 +6,66 @@ date: 2025-08-26
 
 categories: [lab-life]
 tags: [event, lab-life]
-event_type: social   # seminar / social / academic
+event_type: seminar   # seminar / social / academic
 # 文章網址
 # 建議和 title 對應
-permalink: /life/20250826-YC's-Special-Talk/
+permalink: /life/20250826-yc's-special-talk/
 
 # 讓頁面使用較寬版面
 classes: wide
 
 # ===== Lab Life 頁面卡片摘要 =====
 # 這段會顯示在 /life/ 的卡片介紹
-summary: "Trip to YiLan with lab members."
+summary: "YC's special talk."
 
 # ===== 上方照片輪播 (Slider) =====
 # 這裡只放圖片，會自動輪播
 slider_images:
-  - /assets/assets/images/test-event-1.jpg
-  - /assets/assets/images/test-event-2.png
-  - /assets/assets/images/test-event-3.jpg
+  - /assets/assets/images/Lab-Life/2025-08-26-YC's-Special-Talk/2025-08-26-YC's-Special-Talk-01.jpg
+  - /assets/assets/images/Lab-Life/2025-08-26-YC's-Special-Talk/2025-08-26-YC's-Special-Talk-02.jpg
+  - /assets/assets/images/Lab-Life/2025-08-26-YC's-Special-Talk/2025-08-26-YC's-Special-Talk-03.jpg
+  - /assets/assets/images/Lab-Life/2025-08-26-YC's-Special-Talk/2025-08-26-YC's-Special-Talk-04.jpg
+  - /assets/assets/images/Lab-Life/2025-08-26-YC's-Special-Talk/2025-08-26-YC's-Special-Talk-05.jpg
+  - /assets/assets/images/Lab-Life/2025-08-26-YC's-Special-Talk/2025-08-26-YC's-Special-Talk-06.jpg
+  - /assets/assets/images/Lab-Life/2025-08-26-YC's-Special-Talk/2025-08-26-YC's-Special-Talk-07.jpg
+  - /assets/assets/images/Lab-Life/2025-08-26-YC's-Special-Talk/2025-08-26-YC's-Special-Talk-08.jpg
+  - /assets/assets/images/Lab-Life/2025-08-26-YC's-Special-Talk/2025-08-26-YC's-Special-Talk-09.jpg
+  - /assets/assets/images/Lab-Life/2025-08-26-YC's-Special-Talk/2025-08-26-YC's-Special-Talk-10.jpg
 
 # ===== Photo Gallery (文章下方集錦) =====
 # 支援：橫式照片、直式照片、影片
 gallery_items:
-  # 橫式照片
   - type: image
-    src: /assets/assets/images//test-event-1.jpg
+    src: /assets/assets/images/Lab-Life/2025-08-26-YC's-Special-Talk/2025-08-26-YC's-Special-Talk-01.jpg
     orientation: landscape
-  # 直式照片
   - type: image
-    src: /assets/assets/images/test-straight-photo.jpg
-    orientation: portrait
-  # 影片
-  - type: video
-    src: /assets/assets/images/test-video-straight.mp4
-    poster: /assets/assets/images/test-straight-photo.jpg
+    src: /assets/assets/images/Lab-Life/2025-08-26-YC's-Special-Talk/2025-08-26-YC's-Special-Talk-02.jpg
+    orientation: landscape
+  - type: image
+    src: /assets/assets/images/Lab-Life/2025-08-26-YC's-Special-Talk/2025-08-26-YC's-Special-Talk-03.jpg
+    orientation: landscape
+  - type: image
+    src: /assets/assets/images/Lab-Life/2025-08-26-YC's-Special-Talk/2025-08-26-YC's-Special-Talk-04.jpg
+    orientation: landscape
+  - type: image
+    src: /assets/assets/images/Lab-Life/2025-08-26-YC's-Special-Talk/2025-08-26-YC's-Special-Talk-05.jpg
+    orientation: landscape
+  - type: image
+    src: /assets/assets/images/Lab-Life/2025-08-26-YC's-Special-Talk/2025-08-26-YC's-Special-Talk-06.jpg
+    orientation: landscape
+  - type: image
+    src: /assets/assets/images/Lab-Life/2025-08-26-YC's-Special-Talk/2025-08-26-YC's-Special-Talk-07.jpg
+    orientation: landscape
+  - type: image
+    src: /assets/assets/images/Lab-Life/2025-08-26-YC's-Special-Talk/2025-08-26-YC's-Special-Talk-08.jpg
+    orientation: landscape
+  - type: image
+    src: /assets/assets/images/Lab-Life/2025-08-26-YC's-Special-Talk/2025-08-26-YC's-Special-Talk-09.jpg
+    orientation: landscape
+  - type: image
+    src: /assets/assets/images/Lab-Life/2025-08-26-YC's-Special-Talk/2025-08-26-YC's-Special-Talk-10.jpg
+    orientation: landscape
+
 ---
 
 <!-- ===================================================== -->
@@ -73,15 +99,7 @@ gallery_items:
 <!--                     Article Text                      -->
 <!-- ===================================================== -->
 
-Write the main description of the event here.
-
-You can add multiple paragraphs describing the event, seminar,
-meeting, celebration, or conference.
-
-Example:
-Our lab held a seminar discussing the latest research on cancer
-evolution and resistance mechanisms. Members of the lab presented
-their work and exchanged ideas with visiting researchers.
+Professor YC gave a talk.
 
 <!-- ===================================================== -->
 <!--                     Photo Gallery                     -->
