@@ -25,26 +25,36 @@ Below are three major project directions currently featured on the site.
     <div class="simple-slider__track">
       <div class="simple-slider__slides">
         
-        <a href="{{ '/assets/assets/images/test-research-1.jpg' | relative_url }}"
-           class="simple-slider__img is-active research-lightbox-trigger">
+        <button
+          type="button"
+          class="simple-slider__img is-active research-lightbox-trigger"
+          data-full="{{ '/assets/assets/images/test-research-1.jpg' | relative_url }}"
+          aria-label="Open Project A image 1">
           <img src="{{ '/assets/assets/images/test-research-1.jpg' | relative_url }}" alt="Project A image 1">
-        </a>
+        </button>
 
-        <a href="{{ '/assets/assets/images/test-research-2.jpeg' | relative_url }}"
-           class="simple-slider__img research-lightbox-trigger">
+        <button
+          type="button"
+          class="simple-slider__img research-lightbox-trigger"
+          data-full="{{ '/assets/assets/images/test-research-2.jpeg' | relative_url }}"
+          aria-label="Open Project A image 2">
           <img src="{{ '/assets/assets/images/test-research-2.jpeg' | relative_url }}" alt="Project A image 2">
-        </a>
+        </button>
 
-        <a href="{{ '/assets/assets/images/test-research-3.jpg' | relative_url }}"
-           class="simple-slider__img research-lightbox-trigger">
+        <button
+          type="button"
+          class="simple-slider__img research-lightbox-trigger"
+          data-full="{{ '/assets/assets/images/test-research-3.jpg' | relative_url }}"
+          aria-label="Open Project A image 3">
           <img src="{{ '/assets/assets/images/test-research-3.jpg' | relative_url }}" alt="Project A image 3">
-        </a>
+        </button>
+
       </div>
 
       <button class="simple-slider__arrow simple-slider__arrow--prev" type="button" aria-label="Previous slide">
         &#10094;
       </button>
-      
+
       <button class="simple-slider__arrow simple-slider__arrow--next" type="button" aria-label="Next slide">
         &#10095;
       </button>
@@ -69,20 +79,29 @@ Below are three major project directions currently featured on the site.
     <div class="simple-slider__track">
       <div class="simple-slider__slides">
 
-        <a href="{{ '/assets/assets/images/test-research-1.jpg' | relative_url }}"
-           class="simple-slider__img is-active research-lightbox-trigger">
+        <button
+          type="button"
+          class="simple-slider__img is-active research-lightbox-trigger"
+          data-full="{{ '/assets/assets/images/test-research-1.jpg' | relative_url }}"
+          aria-label="Open Project B image 1">
           <img src="{{ '/assets/assets/images/test-research-1.jpg' | relative_url }}" alt="Project B image 1">
-        </a>
+        </button>
 
-        <a href="{{ '/assets/assets/images/test-research-2.jpeg' | relative_url }}"
-           class="simple-slider__img research-lightbox-trigger">
+        <button
+          type="button"
+          class="simple-slider__img research-lightbox-trigger"
+          data-full="{{ '/assets/assets/images/test-research-2.jpeg' | relative_url }}"
+          aria-label="Open Project B image 2">
           <img src="{{ '/assets/assets/images/test-research-2.jpeg' | relative_url }}" alt="Project B image 2">
-        </a>
+        </button>
 
-        <a href="{{ '/assets/assets/images/test-research-3.jpg' | relative_url }}"
-           class="simple-slider__img research-lightbox-trigger">
+        <button
+          type="button"
+          class="simple-slider__img research-lightbox-trigger"
+          data-full="{{ '/assets/assets/images/test-research-3.jpg' | relative_url }}"
+          aria-label="Open Project B image 3">
           <img src="{{ '/assets/assets/images/test-research-3.jpg' | relative_url }}" alt="Project B image 3">
-        </a>
+        </button>
 
       </div>
 
@@ -114,20 +133,29 @@ Below are three major project directions currently featured on the site.
     <div class="simple-slider__track">
       <div class="simple-slider__slides">
 
-        <a href="{{ '/assets/assets/images/test-research-1.jpg' | relative_url }}"
-           class="simple-slider__img is-active research-lightbox-trigger">
+        <button
+          type="button"
+          class="simple-slider__img is-active research-lightbox-trigger"
+          data-full="{{ '/assets/assets/images/test-research-1.jpg' | relative_url }}"
+          aria-label="Open Project C image 1">
           <img src="{{ '/assets/assets/images/test-research-1.jpg' | relative_url }}" alt="Project C image 1">
-        </a>
+        </button>
 
-        <a href="{{ '/assets/assets/images/test-research-2.jpeg' | relative_url }}"
-           class="simple-slider__img research-lightbox-trigger">
+        <button
+          type="button"
+          class="simple-slider__img research-lightbox-trigger"
+          data-full="{{ '/assets/assets/images/test-research-2.jpeg' | relative_url }}"
+          aria-label="Open Project C image 2">
           <img src="{{ '/assets/assets/images/test-research-2.jpeg' | relative_url }}" alt="Project C image 2">
-        </a>
+        </button>
 
-        <a href="{{ '/assets/assets/images/test-research-3.jpg' | relative_url }}"
-           class="simple-slider__img research-lightbox-trigger">
+        <button
+          type="button"
+          class="simple-slider__img research-lightbox-trigger"
+          data-full="{{ '/assets/assets/images/test-research-3.jpg' | relative_url }}"
+          aria-label="Open Project C image 3">
           <img src="{{ '/assets/assets/images/test-research-3.jpg' | relative_url }}" alt="Project C image 3">
-        </a>
+        </button>
 
       </div>
 
@@ -259,8 +287,9 @@ document.addEventListener("DOMContentLoaded", function () {
     item.addEventListener("click", function (e) {
       e.preventDefault();
       e.stopPropagation();
+      e.stopImmediatePropagation();
 
-      const src = item.getAttribute("href");
+      const src = item.dataset.full;
       openLightbox(src);
     });
   });
@@ -268,6 +297,7 @@ document.addEventListener("DOMContentLoaded", function () {
   closeBtn.addEventListener("click", function (e) {
     e.preventDefault();
     e.stopPropagation();
+    e.stopImmediatePropagation();
     closeLightbox();
   });
 
