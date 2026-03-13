@@ -7,7 +7,7 @@ role: formermembers
 position: Research Scientist
 dept: Biochemistry and Molecular Cell Biology, School of Medicine
 org: Taipei Medical University
-photo: /assets/assets/images/Jenny-Chen.jpg
+photo: /assets/assets/images/Member-Profile/Jenny-Chen.jpg
 thumb_position: 50% 25%
 
 order: 6
