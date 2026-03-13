@@ -7,7 +7,7 @@ role: formermembers
 position: Undergraduate
 dept: Undergraduate, Environmental and Occupational Health Science
 org: National Taiwan University
-photo: /assets/assets/images/Chris-Lu.jpg
+photo: /assets/assets/images/Member-Profile/Chris-Lu.jpg
 thumb_position: 50% 25%
 
 order: 2
