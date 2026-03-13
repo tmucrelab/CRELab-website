@@ -28,7 +28,7 @@ permalink: /people/louies-xie/
 </p>
 
 <p class="profile-bio">
-Joined the Cancer Resistance Evolution (CRE) Lab in 2025
+Joined the Cancer Resistance Evolution (CRE) Lab in 2025.<br>
 Currently exploring cannabinoid receptors in prostate cancer.
 </p>
 
