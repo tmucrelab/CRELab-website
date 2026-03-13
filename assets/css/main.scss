@@ -584,6 +584,43 @@ body {
   border-radius: 10px;
 }
 
+.research-lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.82);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 2rem;
+}
+
+.research-lightbox.is-open {
+  display: flex;
+}
+
+.research-lightbox img {
+  display: block;
+  max-width: 90vw;
+  max-height: 85vh;
+  border-radius: 10px;
+}
+
+.research-lightbox__close {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  width: 44px;
+  height: 44px;
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
+}
+
 @media (max-width: 700px) {
   .research-slider {
     max-width: 100%;
