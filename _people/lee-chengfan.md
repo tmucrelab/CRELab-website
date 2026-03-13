@@ -7,14 +7,13 @@ role: pi
 position: Assistant Professor
 dept: Department of Biochemistry and Molecular Biology
 org: Taipei Medical University
-photo: /assets/assets/images/Lee_ChengFan.jpg
+photo: /assets/assets/images/Member-Profile/Lee_ChengFan.jpg
 # title: "People"
 # permalink: /people/
 # name: 'Dr. Cheng-Fan “Bryan” Lee'
 # role: pi          # pi / member / student
 # position: Assistant Professor
 # affiliation: Department of Biochemistry and Molecular Biology, Taipei Medical University
-photo: /assets/assets/images/Lee_ChengFan.jpg
 
 order: 1
 permalink: /people/lee-chengfan/
