@@ -7,7 +7,7 @@ role: member
 position: Undergraduate
 dept: Nutrition
 org: Taipei Medical University
-photo: /assets/assets/images/William-Yang.jpg
+photo: /assets/assets/images/Member-Profile/William-Yang.jpg
 thumb_position: 50% 25%
 
 order: 10
