@@ -28,7 +28,7 @@ permalink: /people/michelle-hung/
 </p>
 
 <p class="profile-bio">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Hi, I'm Michelle, a pharmacy student at TMU. I've been exploring anticancer peptides over the past year, and I'm excited for the future exploration. It's great to meet everyone!
 </p>
 
 </div>
