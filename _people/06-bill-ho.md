@@ -7,7 +7,7 @@ role: member
 position: Undergraduate
 dept: Public Health
 org: Taipei Medical University
-photo: /assets/assets/images/Bill-Ho.jpg
+photo: /assets/assets/images/Member-Profile/Bill-Ho.jpg
 thumb_position: 50% 25%
 
 order: 6
