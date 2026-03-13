@@ -140,6 +140,10 @@ Professor YC gave a talk.
 <div class="post-lightbox" id="post-lightbox" hidden>
   <button class="post-lightbox__close" type="button" aria-label="Close media">&times;</button>
 
+  <button class="post-lightbox__nav post-lightbox__nav--prev" type="button" aria-label="Previous media">
+    &#10094;
+  </button>
+
   <div class="post-lightbox__inner">
     <img src="" alt="Expanded image" id="post-lightbox-img">
 
@@ -147,6 +151,10 @@ Professor YC gave a talk.
       <source src="" type="video/mp4">
     </video>
   </div>
+
+  <button class="post-lightbox__nav post-lightbox__nav--next" type="button" aria-label="Next media">
+    &#10095;
+  </button>
 </div>
 
 <!-- ===================================================== -->
@@ -245,7 +253,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const lightboxVideo = document.getElementById("post-lightbox-video");
   const lightboxVideoSource = lightboxVideo.querySelector("source");
   const closeBtn = lightbox.querySelector(".post-lightbox__close");
-  const items = document.querySelectorAll(".post-gallery__item");
+  const prevBtn = lightbox.querySelector(".post-lightbox__nav--prev");
+  const nextBtn = lightbox.querySelector(".post-lightbox__nav--next");
+  const items = Array.from(document.querySelectorAll(".post-gallery__item"));
+
+  let currentIndex = -1;
 
   function closeLightbox() {
     lightboxImg.src = "";
@@ -258,6 +270,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     lightbox.hidden = true;
     document.body.classList.remove("post-lightbox-open");
+    currentIndex = -1;
   }
 
   function openImage(src) {
@@ -268,9 +281,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     lightboxImg.src = src;
     lightboxImg.style.display = "block";
-
-    lightbox.hidden = false;
-    document.body.classList.add("post-lightbox-open");
   }
 
   function openVideo(src) {
@@ -280,25 +290,51 @@ document.addEventListener("DOMContentLoaded", function () {
     lightboxVideoSource.src = src;
     lightboxVideo.load();
     lightboxVideo.style.display = "block";
+  }
+
+  function showItem(index) {
+    if (items.length === 0) return;
+
+    if (index < 0) {
+      index = items.length - 1;
+    }
+
+    if (index >= items.length) {
+      index = 0;
+    }
+
+    currentIndex = index;
+
+    const item = items[currentIndex];
+    const type = item.dataset.type;
+    const href = item.getAttribute("href");
+
+    if (type === "video") {
+      openVideo(href);
+    } else {
+      openImage(href);
+    }
 
     lightbox.hidden = false;
     document.body.classList.add("post-lightbox-open");
   }
 
-  items.forEach((item) => {
+  function showPrev() {
+    if (currentIndex === -1) return;
+    showItem(currentIndex - 1);
+  }
+
+  function showNext() {
+    if (currentIndex === -1) return;
+    showItem(currentIndex + 1);
+  }
+
+  items.forEach((item, index) => {
     item.addEventListener("click", function (e) {
       e.preventDefault();
       e.stopPropagation();
       e.stopImmediatePropagation();
-
-      const type = item.dataset.type;
-      const href = item.getAttribute("href");
-
-      if (type === "video") {
-        openVideo(href);
-      } else {
-        openImage(href);
-      }
+      showItem(index);
     });
   });
 
@@ -309,17 +345,37 @@ document.addEventListener("DOMContentLoaded", function () {
     closeLightbox();
   });
 
+  prevBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    showPrev();
+  });
+
+  nextBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    showNext();
+  });
+
   lightbox.addEventListener("click", function (e) {
-    if (!lightboxInner.contains(e.target)) {
+    if (!lightboxInner.contains(e.target) &&
+        !prevBtn.contains(e.target) &&
+        !nextBtn.contains(e.target) &&
+        !closeBtn.contains(e.target)) {
       closeLightbox();
     }
   });
 
   document.addEventListener("keydown", function (e) {
-    if (e.key === "Escape" && !lightbox.hidden) {
+    if (lightbox.hidden) return;
+
+    if (e.key === "Escape") {
       closeLightbox();
+    } else if (e.key === "ArrowLeft") {
+      showPrev();
+    } else if (e.key === "ArrowRight") {
+      showNext();
     }
   });
 });
 </script>
-
