@@ -27,37 +27,80 @@ Research Areas
 <!--                   Awards & News                       -->
 <!-- ===================================================== -->
 
-<section class="home-feature home-feature--full">
-  <h2>Awards &amp; News</h2>
+<section class="home-news-feature">
+  <div class="home-news-feature__media">
+    <h2>Awards &amp; News</h2>
 
-  <div class="simple-slider home-feature-slider" data-slider="awards-news">
-    <div class="simple-slider__track">
-      <div class="simple-slider__slides">
+    <div class="simple-slider home-feature-slider" data-slider="awards-news">
+      <div class="simple-slider__track">
+        <div class="simple-slider__slides">
 
-        <a href="{{ '/awards-news/#item-1' | relative_url }}" class="simple-slider__img is-active">
-          <img src="{{ '/assets/assets/images/test-award-1.jpg' | relative_url }}" alt="Award or News 1">
-        </a>
+          <a href="{{ '/awards-news/#item-1' | relative_url }}" class="simple-slider__img is-active">
+            <img src="{{ '/assets/assets/images/test-award-1.jpg' | relative_url }}" alt="Award or News 1">
+          </a>
 
-        <a href="{{ '/awards-news/#item-2' | relative_url }}" class="simple-slider__img">
-          <img src="{{ '/assets/assets/images/test-award-2.jpg' | relative_url }}" alt="Award or News 2">
-        </a>
+          <a href="{{ '/awards-news/#item-2' | relative_url }}" class="simple-slider__img">
+            <img src="{{ '/assets/assets/images/test-award-2.jpg' | relative_url }}" alt="Award or News 2">
+          </a>
 
-        <a href="{{ '/awards-news/#item-3' | relative_url }}" class="simple-slider__img">
-          <img src="{{ '/assets/assets/images/test-award-3.jpg' | relative_url }}" alt="Award or News 3">
-        </a>
+          <a href="{{ '/awards-news/#item-3' | relative_url }}" class="simple-slider__img">
+            <img src="{{ '/assets/assets/images/test-award-3.jpg' | relative_url }}" alt="Award or News 3">
+          </a>
 
+        </div>
+
+        <button class="simple-slider__arrow simple-slider__arrow--prev" type="button" aria-label="Previous slide">
+          &#10094;
+        </button>
+
+        <button class="simple-slider__arrow simple-slider__arrow--next" type="button" aria-label="Next slide">
+          &#10095;
+        </button>
+
+        <div class="simple-slider__dots"></div>
       </div>
-
-      <button class="simple-slider__arrow simple-slider__arrow--prev" type="button">
-        &#10094;
-      </button>
-
-      <button class="simple-slider__arrow simple-slider__arrow--next" type="button">
-        &#10095;
-      </button>
-
-      <div class="simple-slider__dots"></div>
     </div>
+  </div>
+
+  <div class="home-news-feature__list">
+    <h3 class="home-news-feature__list-title">Latest Updates</h3>
+
+    <ul class="home-news-list">
+      <li id="item-1">
+        <a href="{{ '/awards-news/#item-1' | relative_url }}">
+          CRE Lab receives recognition for outstanding research presentation
+        </a>
+        <span class="home-news-list__date">2026.03.01</span>
+      </li>
+
+      <li id="item-2">
+        <a href="{{ '/awards-news/#item-2' | relative_url }}">
+          New invited seminar announced for spring research series
+        </a>
+        <span class="home-news-list__date">2026.02.20</span>
+      </li>
+
+      <li id="item-3">
+        <a href="{{ '/awards-news/#item-3' | relative_url }}">
+          CRE Lab featured in departmental academic highlights
+        </a>
+        <span class="home-news-list__date">2026.02.10</span>
+      </li>
+
+      <li id="item-4">
+        <a href="{{ '/awards-news/#item-4' | relative_url }}">
+          Team members present latest work at international meeting
+        </a>
+        <span class="home-news-list__date">2026.01.28</span>
+      </li>
+
+      <li id="item-5">
+        <a href="{{ '/awards-news/#item-5' | relative_url }}">
+          Research milestone reached in organoid model development
+        </a>
+        <span class="home-news-list__date">2026.01.15</span>
+      </li>
+    </ul>
   </div>
 </section>
 
