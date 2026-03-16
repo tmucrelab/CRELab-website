@@ -9,37 +9,181 @@ tags: [event, lab-life]
 event_type: social   # seminar / social / academic
 # 文章網址
 # 建議和 title 對應
-permalink: /life/20250726-YiLan-Trip/
+permalink: /life/20250726-yilan-trip/
 
 # 讓頁面使用較寬版面
 classes: wide
 
 # ===== Lab Life 頁面卡片摘要 =====
 # 這段會顯示在 /life/ 的卡片介紹
-summary: "Trip to YiLan with lab members."
+summary: "Trip to YiLan."
 
 # ===== 上方照片輪播 (Slider) =====
 # 這裡只放圖片，會自動輪播
 slider_images:
-  - /assets/assets/images/test-event-1.jpg
-  - /assets/assets/images/test-event-2.png
-  - /assets/assets/images/test-event-3.jpg
+  - /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-01.jpg
+  - /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-02.jpg
+  - /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-03.jpg
+  - /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-04.jpg
+  - /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-05.jpg
+  - /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-06.jpg
+  - /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-07.jpg
+  - /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-08.jpg
+  - /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-09.jpg
+  - /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-10.jpg
+  - /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-11.jpg
+  - /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-12.jpg
+  - /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-13.jpg
+  - /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-14.jpg
+  - /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-15.jpg
+  - /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-16.PNG
+  - /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-17.PNG
+  - /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-18.jpg
+  - /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-19.jpg
+  - /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-20.jpg
+  - /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-21.jpg
+  - /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-22.jpg
+  - /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-23.jpg
+  - /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-24.jpg
+  - /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-25.jpg
+  - /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-26.JPG
+  - /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-27.JPG
+  - /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-28.JPG
+  - /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-29.JPG
+  - /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-30.jpg
+  - /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-31.jpg
+  - /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-32.jpg
+  - /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-33.jpg
+  - /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-34.jpg
+  - /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-35.jpg
+  - /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-36.jpg
+  - /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-37.JPG
+  - /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-38.JPG
+  - /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-39.JPG
 
 # ===== Photo Gallery (文章下方集錦) =====
 # 支援：橫式照片、直式照片、影片
 gallery_items:
   # 橫式照片
   - type: image
-    src: /assets/assets/images//test-event-1.jpg
+    src: /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-01.jpg
+    orientation: landscape
+  - type: image
+    src: /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-02.jpg
+    orientation: landscape
+  - type: image
+    src: /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-03.jpg
+    orientation: landscape
+  - type: image
+    src: /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-04.jpg
+    orientation: landscape
+  - type: image
+    src: /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-06.jpg
+    orientation: landscape
+  - type: image
+    src: /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-07.jpg
+    orientation: landscape
+  - type: image
+    src: /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-08.jpg
+    orientation: landscape
+  - type: image
+    src: /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-09.jpg
+    orientation: landscape
+  - type: image
+    src: /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-10.jpg
+    orientation: landscape
+  - type: image
+    src: /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-11.jpg
+    orientation: landscape
+  - type: image
+    src: /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-12.jpg
+    orientation: landscape
+  - type: image
+    src: /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-13.jpg
+    orientation: landscape
+  - type: image
+    src: /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-14.jpg
+    orientation: landscape
+  - type: image
+    src: /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-15.jpg
+    orientation: landscape
+  - type: image
+    src: /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-16.PNG
+    orientation: landscape
+  - type: image
+    src: /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-19.jpg
+    orientation: landscape
+  - type: image
+    src: /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-20.jpg
+    orientation: landscape
+  - type: image
+    src: /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-21.jpg
+    orientation: landscape
+  - type: image
+    src: /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-22.jpg
+    orientation: landscape
+  - type: image
+    src: /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-23.jpg
+    orientation: landscape
+  - type: image
+    src: /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-24.jpg
+    orientation: landscape
+  - type: image
+    src: /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-25.jpg
+    orientation: landscape
+  - type: image
+    src: /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-26.JPG
+    orientation: landscape
+  - type: image
+    src: /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-27.JPG
+    orientation: landscape
+  - type: image
+    src: /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-28.JPG
+    orientation: landscape
+  - type: image
+    src: /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-30.jpg
+    orientation: landscape
+  - type: image
+    src: /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-31.jpg
+    orientation: landscape
+  - type: image
+    src: /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-32.jpg
+    orientation: landscape
+  - type: image
+    src: /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-33.jpg
+    orientation: landscape
+  - type: image
+    src: /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-34.jpg
+    orientation: landscape
+  - type: image
+    src: /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-35.jpg
+    orientation: landscape
+  - type: image
+    src: /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-36.jpg
+    orientation: landscape
+  - type: image
+    src: /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-37.JPG
+    orientation: landscape
+  - type: image
+    src: /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-38.JPG
+    orientation: landscape
+  - type: image
+    src: /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-39.JPG
     orientation: landscape
   # 直式照片
   - type: image
-    src: /assets/assets/images/test-straight-photo.jpg
+    src: /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-05.jpg
     orientation: portrait
-  # 影片
-  - type: video
-    src: /assets/assets/images/test-video-straight.mp4
-    poster: /assets/assets/images/test-straight-photo.jpg
+  - type: image
+    src: /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-17.PNG
+    orientation: portrait
+  - type: image
+    src: /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-18.PNG
+    orientation: portrait
+  - type: image
+    src: /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-29.JPG
+    orientation: portrait
+
 ---
 
 <!-- ===================================================== -->
@@ -119,14 +263,24 @@ their work and exchanged ideas with visiting researchers.
 <!--                   Lightbox，集錦                       -->
 <!-- ===================================================== -->
 
-<div class="lightbox" id="lightbox">
-  <button class="lightbox__close" type="button">&times;</button>
+<div class="post-lightbox" id="post-lightbox" hidden>
+  <button class="post-lightbox__close" type="button" aria-label="Close media">&times;</button>
 
-  <img src="" alt="Expanded image" id="lightbox-img">
+  <button class="post-lightbox__nav post-lightbox__nav--prev" type="button" aria-label="Previous media">
+    &#10094;
+  </button>
 
-  <video id="lightbox-video" controls playsinline>
-    <source src="" type="video/mp4">
-  </video>
+  <div class="post-lightbox__inner">
+    <img src="" alt="Expanded image" id="post-lightbox-img">
+
+    <video id="post-lightbox-video" controls playsinline>
+      <source src="" type="video/mp4">
+    </video>
+  </div>
+
+  <button class="post-lightbox__nav post-lightbox__nav--next" type="button" aria-label="Next media">
+    &#10095;
+  </button>
 </div>
 
 <!-- ===================================================== -->
@@ -216,19 +370,21 @@ document.addEventListener("DOMContentLoaded", function () {
 <!-- ===================================================== -->
 <!--                    Gallery Lightbox                   -->
 <!-- ===================================================== -->
-
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  const lightbox = document.getElementById("lightbox");
-  const lightboxImg = document.getElementById("lightbox-img");
-  const lightboxVideo = document.getElementById("lightbox-video");
+  const lightbox = document.getElementById("post-lightbox");
+  const lightboxInner = lightbox.querySelector(".post-lightbox__inner");
+  const lightboxImg = document.getElementById("post-lightbox-img");
+  const lightboxVideo = document.getElementById("post-lightbox-video");
   const lightboxVideoSource = lightboxVideo.querySelector("source");
-  const closeBtn = lightbox.querySelector(".lightbox__close");
-  const items = document.querySelectorAll(".post-gallery__item");
+  const closeBtn = lightbox.querySelector(".post-lightbox__close");
+  const prevBtn = lightbox.querySelector(".post-lightbox__nav--prev");
+  const nextBtn = lightbox.querySelector(".post-lightbox__nav--next");
+  const items = Array.from(document.querySelectorAll(".post-gallery__item"));
 
+  let currentIndex = -1;
 
   function closeLightbox() {
-    lightbox.classList.remove("is-open");
     lightboxImg.src = "";
     lightboxImg.style.display = "none";
 
@@ -236,41 +392,114 @@ document.addEventListener("DOMContentLoaded", function () {
     lightboxVideoSource.src = "";
     lightboxVideo.load();
     lightboxVideo.style.display = "none";
+
+    lightbox.hidden = true;
+    document.body.classList.remove("post-lightbox-open");
+    currentIndex = -1;
   }
 
-  items.forEach((item) => {
+  function openImage(src) {
+    lightboxVideo.pause();
+    lightboxVideoSource.src = "";
+    lightboxVideo.load();
+    lightboxVideo.style.display = "none";
+
+    lightboxImg.src = src;
+    lightboxImg.style.display = "block";
+  }
+
+  function openVideo(src) {
+    lightboxImg.src = "";
+    lightboxImg.style.display = "none";
+
+    lightboxVideoSource.src = src;
+    lightboxVideo.load();
+    lightboxVideo.style.display = "block";
+  }
+
+  function showItem(index) {
+    if (items.length === 0) return;
+
+    if (index < 0) {
+      index = items.length - 1;
+    }
+
+    if (index >= items.length) {
+      index = 0;
+    }
+
+    currentIndex = index;
+
+    const item = items[currentIndex];
+    const type = item.dataset.type;
+    const href = item.getAttribute("href");
+
+    if (type === "video") {
+      openVideo(href);
+    } else {
+      openImage(href);
+    }
+
+    lightbox.hidden = false;
+    document.body.classList.add("post-lightbox-open");
+  }
+
+  function showPrev() {
+    if (currentIndex === -1) return;
+    showItem(currentIndex - 1);
+  }
+
+  function showNext() {
+    if (currentIndex === -1) return;
+    showItem(currentIndex + 1);
+  }
+
+  items.forEach((item, index) => {
     item.addEventListener("click", function (e) {
       e.preventDefault();
-
-      const type = item.dataset.type;
-      const href = item.getAttribute("href");
-
-      if (type === "video") {
-        lightboxImg.style.display = "none";
-        
-        lightboxVideoSource.src = href;
-        lightboxVideo.load();
-        lightboxVideo.style.display = "block";
-        
-      } else {
-        lightboxVideo.pause();
-        lightboxVideoSource.src = "";
-        lightboxVideo.load();
-        lightboxVideo.style.display = "none";
-
-        lightboxImg.src = href;
-        lightboxImg.style.display = "block";
-      }
-
-      lightbox.classList.add("is-open");
+      e.stopPropagation();
+      e.stopImmediatePropagation();
+      showItem(index);
     });
   });
 
-  closeBtn.addEventListener("click", closeLightbox);
+  closeBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    e.stopImmediatePropagation();
+    closeLightbox();
+  });
+
+  prevBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    showPrev();
+  });
+
+  nextBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    showNext();
+  });
 
   lightbox.addEventListener("click", function (e) {
-    if (e.target === lightbox) {
+    if (!lightboxInner.contains(e.target) &&
+        !prevBtn.contains(e.target) &&
+        !nextBtn.contains(e.target) &&
+        !closeBtn.contains(e.target)) {
       closeLightbox();
+    }
+  });
+
+  document.addEventListener("keydown", function (e) {
+    if (lightbox.hidden) return;
+
+    if (e.key === "Escape") {
+      closeLightbox();
+    } else if (e.key === "ArrowLeft") {
+      showPrev();
+    } else if (e.key === "ArrowRight") {
+      showNext();
     }
   });
 });
