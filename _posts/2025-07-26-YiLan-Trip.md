@@ -217,15 +217,7 @@ gallery_items:
 <!--                     Article Text                      -->
 <!-- ===================================================== -->
 
-Write the main description of the event here.
-
-You can add multiple paragraphs describing the event, seminar,
-meeting, celebration, or conference.
-
-Example:
-Our lab held a seminar discussing the latest research on cancer
-evolution and resistance mechanisms. Members of the lab presented
-their work and exchanged ideas with visiting researchers.
+Trip to YiLan.
 
 <!-- ===================================================== -->
 <!--                     Photo Gallery                     -->
