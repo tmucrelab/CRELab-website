@@ -36,7 +36,7 @@ slider_images:
   - /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-13.jpg
   - /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-14.jpg
   - /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-15.jpg
-  - /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-16.PNG
+  - /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-16.jpg
   - /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-17.PNG
   - /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-18.jpg
   - /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-19.jpg
@@ -108,7 +108,7 @@ gallery_items:
     src: /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-15.jpg
     orientation: landscape
   - type: image
-    src: /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-16.PNG
+    src: /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-16.jpg
     orientation: landscape
   - type: image
     src: /assets/assets/images/Lab-Life/2025-07-26-YiLan-Trip/2025-07-26-YiLan-Trip-19.jpg
