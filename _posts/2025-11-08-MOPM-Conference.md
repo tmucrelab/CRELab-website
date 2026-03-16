@@ -28,6 +28,7 @@ slider_images:
 # ===== Photo Gallery (文章下方集錦) =====
 # 支援：橫式照片、直式照片、影片
   # 直式照片
+gallery_items:
   - type: image
     src: /assets/assets/images/Lab-Life/2025-11-08-MOPM-Conference/2025-11-08-MOPM-Conference-01.jpg
     orientation: portrait
@@ -71,7 +72,7 @@ slider_images:
 <!--                     Article Text                      -->
 <!-- ===================================================== -->
 
-COPM Conference.
+MOPM Conference.
 
 <!-- ===================================================== -->
 <!--                     Photo Gallery                     -->
