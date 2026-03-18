@@ -109,6 +109,8 @@ body {
 .layout--splash .initial-content {
   max-width: none !important;
   width: 100% !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 /* hero 背景滿版 */
@@ -124,6 +126,17 @@ body {
   width: 100%;
   padding: 0 !important;
   margin: 0 !important;
+}
+
+/* 首頁正文區要跟一般內文一樣有左右留白 */
+.layout--splash .page__content {
+  width: min(var(--site-outer-width), var(--site-max-width)) !important;
+  max-width: none !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: var(--site-side-pad) !important;
+  padding-right: var(--site-side-pad) !important;
+  box-sizing: border-box;
 }
 
 /* Hero title：和 home 正文同一條左邊界 */
