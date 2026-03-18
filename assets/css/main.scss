@@ -773,6 +773,24 @@ body.research-lightbox-open {
 }
 
 /* ===================================================== */
+/*  Header / Logo alignment                              */
+/*  讓 logo 與內容左邊對齊                                */
+/* ===================================================== */
+
+.masthead .wrapper {
+  max-width: none !important;
+  width: min(92vw, 1500px) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+
+  /* ⭐ 和內容區完全一致 */
+  padding-left: clamp(1.8rem, 4vw, 4rem) !important;
+  padding-right: clamp(1.8rem, 4vw, 4rem) !important;
+
+  box-sizing: border-box;
+}
+
+/* ===================================================== */
 /*  Responsive                                           */
 /* ===================================================== */
 
