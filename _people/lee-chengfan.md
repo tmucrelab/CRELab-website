@@ -2,10 +2,10 @@
 layout: single
 title: ""            # 讓頁首不要有可點大標
 header: false        # 不顯示上方 header 區塊（避免 theme 自動輸出）
-name: 'Dr. Cheng-Fan “Bryan” Lee'
-role: pi
+name: 'Bryan (Cheng-Fan) Lee'
+role: Principal Investigator
 position: Assistant Professor
-dept: Department of Biochemistry and Molecular Biology
+dept: Department of Biochemistry and Molecular Cell Biology
 org: Taipei Medical University
 photo: /assets/assets/images/Member-Profile/Lee_ChengFan.jpg
 # title: "People"
@@ -57,14 +57,17 @@ permalink: /people/lee-chengfan/
   National Taiwan University (NTU) *(2019–2021)*
 
 - Visiting PhD scholar  
-  UT southwestern Medicine (UTSW) *(2022–2024)*
+  UT southwestern Medicine (UTSW) *(2015–2018)*
   
 ---
 
 ## 🔬 Research Interests
 
-- Urological cancers
-- Cancer metabolism and lipid metabolism
+- Urological cancers (Prostate cancer)
+- Gastrointestinal cancers (Pancreatic cancer)
+- Cancer metabolism
+- Cancer resistance evolution
+- Lipid and Sphingolipid metabolism
 - Transcriptional and metabolic remodeling
 - Mechanisms of cancer therapy resistance
 
@@ -102,7 +105,7 @@ Email: bryancflee@tmu.edu.tw
 </div>
 
 ## 🎓 Education
-- **Ph.D.**, Graduate Institute of Biochemistry and Molecular Biology  
+- **Ph.D.**, Graduate Institute of Biochemistry and Molecular Biology,  
   College of Medicine, National Taiwan University, Taiwan  
  
 ---
@@ -141,9 +144,11 @@ Email: bryancflee@tmu.edu.tw
 ---
 
 ## 🔬 Research Interests
-- Urological cancers  
-- Cancer metabolism and lipid metabolism  
-- Transcriptional and metabolic remodeling  
+- Urological and Gastrointestinal cancers  
+- Cancer metabolism (Sphingolipid and lipid metabolism)  
+- Cancer resistance evolution
+- Transcriptional remodeling  
+- Mechanisms of cancer therapy resistance  
 - Mechanisms of cancer therapy resistance  
 - Predictive models for therapeutic targets
 **Contact**  
