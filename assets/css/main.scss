@@ -118,13 +118,14 @@ body {
 }
 
 /* Title area: wide, readable */
-.layout--splash .page__hero--overlay .page__title {
+.layout--splash .page__hero--overlay .page__title,
+.layout--splash .page__hero--overlay .page__excerpt{
   width: min(96vw, 1800px);
   max-width: none !important;
   margin-left: auto;
   margin-right: auto;
-  padding-left: clamp(1.25rem, 4vw, 4rem);
-  padding-right: clamp(1.25rem, 4vw, 4rem);
+  padding-left: clamp(1.5rem, 4vw, 4rem);
+  padding-right: clamp(1.5rem, 4vw, 4rem);
   box-sizing: border-box;
 }
 
