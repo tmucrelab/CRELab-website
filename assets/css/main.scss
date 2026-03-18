@@ -13,6 +13,7 @@ search: false
 /*  目標：讓一般頁面正文更寬，盡量接近 Home 的視覺寬度        */
 /* ===================================================== */
 
+<!--
 /* ===================================================== */
 /*  Global page width                                    */
 /*  目標：讓 People / Research / Lab Life 等一般頁面         */
@@ -58,9 +59,9 @@ search: false
   padding-right: clamp(1.25rem, 3vw, 3rem) !important;
   box-sizing: border-box;
 }
+-->
 
-
-<!--
+/* Regular pages: make text area much wider */
 .page,
 .page__inner-wrap,
 .archive {
@@ -77,7 +78,6 @@ search: false
   padding-right: 0 !important;
   box-sizing: border-box;
 }
--->
 
 /* 避免 accidental horizontal scroll */
 html,
@@ -90,6 +90,7 @@ body {
 /*  目標：首頁 hero 滿版，黑底文字帶滿版且左右留適當 padding */
 /* ===================================================== */
 
+/* Splash pages: remove inner width constraints */
 .layout--splash .page,
 .layout--splash .page__inner-wrap,
 .layout--splash .page__content,
@@ -100,6 +101,7 @@ body {
   padding-right: 0 !important;
 }
 
+/* Full-width hero area */
 .layout--splash .page__hero--overlay {
   width: 100vw;
   max-width: 100vw;
@@ -114,6 +116,7 @@ body {
   margin: 0 !important;
 }
 
+/* Title area: wide, readable */
 .layout--splash .page__hero--overlay .page__title {
   width: min(96vw, 1800px);
   max-width: none !important;
@@ -124,6 +127,7 @@ body {
   box-sizing: border-box;
 }
 
+/* Full-width dark band */
 .layout--splash .page__hero--overlay .page__excerpt {
   width: 100vw;
   max-width: 100vw;
@@ -139,6 +143,7 @@ body {
   box-sizing: border-box;
 }
 
+/* If theme outputs a lead block too, keep it aligned */
 .layout--splash .page__hero--overlay .page__lead {
   width: 100vw;
   max-width: 100vw;
@@ -289,7 +294,7 @@ body {
 }
 
 .home-news-feature__list {
-  padding-top: 3.1rem;
+  padding-top: 3.1rem; /* 讓右邊標題和左邊圖片區塊視覺對齊 */
 }
 
 .home-news-feature__list-title {
@@ -682,8 +687,8 @@ body.post-lightbox-open {
 
 .research-slider {
   width: 100%;
-  max-width: none;
-  margin: 0;
+  max-width: none;   /* max-width: 720px; 讓輪播不要太大，想再改小可用600px */
+  margin: 0;  /* margin: 0 auto;置中 */
 }
 
 .research-slider.simple-slider {
@@ -842,502 +847,6 @@ body.research-lightbox-open {
 
 
 
-
-
-.profile-photo{
-  width: 320px;     /* 長方形大圖 */
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-  object-fit: cover;
-}
-
-.profile-info{
-  flex: 1;
-  min-width: 240px;
-}
-
-.profile-name{
-  margin: 0 0 .5rem;
-}
-
-.profile-title{
-  margin: 0 0 1rem;
-  opacity: .85;
-}
-
-.profile-bio{
-  margin: 0;
-}
-
-/* Mobile: stack */
-@media (max-width: 700px){
-  .profile-header{
-    flex-direction: column;
-  }
-  .profile-photo{
-    width: 100%;
-    max-width: 420px;
-  }
-}
-
-
-/* People page (Stanford-style list) */
-.people-section {
-  margin: 2rem 0 2.5rem;
-}
-
-.people-section__title {
-  margin: 0 0 1rem;
-}
-
-.people-list {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-}
-
-.person {
-  display: grid;
-  grid-template-columns: 72px 1fr;
-  gap: 16px;
-  align-items: center;
-}
-
-.person__photoLink {
-  display: block;
-  width: 72px;
-  height: 72px;
-}
-
-.person__photo {
-  width: 72px;
-  height: 72px;
-  border-radius: 50%;
-  /* border-radius: 999px; */
-  object-fit: cover;
-  object-position: 50% 25%; /* 預設值，可被每個人的 thumb_position 覆蓋 */
-  display: block;
-}
-
-.person__meta {
-  min-width: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.person__name {
-  margin: 0;
-  font-size: 1rem;
-  line-height: 1.2;
-}
-
-.person__name a {
-  text-decoration: none;
-}
-
-.person__name a:hover {
-  text-decoration: underline;
-}
-
-.person__title {
-  margin: 0.25rem 0 0;
-  font-size: 0.95rem;
-  opacity: 0.85;
-  /* line-height: 1.35; */
-}
-
-.person__sep {
-  opacity: 0.6;
-}
-
-.affil-dept {
-  display: inline-block;
-}
-
-.affil-org {
-  display: inline-block;
-}
-
-@media (min-width: 700px) {
-  .affil-dept {
-    white-space: nowrap;
-  }
-}
-
-@media (max-width: 699px) {
-  .affil-dept {
-    white-space: normal;
-  }
-}
-
-/* Optional: wider screens show 2 columns (still list-like) */
-@media (min-width: 1400px) {
-  .people-list {
-    grid-template-columns: 1fr 1fr;
-    column-gap: 2.5rem;
-    row-gap: 1.25rem;
-  }
-}
-@media (max-width: 1399px) {
-  .people-list {
-    grid-template-columns: 1fr;
-  }
-}
-
-
-
-
-.home-panels {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  margin: 3rem 0;
-}
-
-.home-panel h2 {
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-
-.simple-slider {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  overflow: hidden;
-  border-radius: 12px;
-}
-
-.simple-slider__track {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.simple-slider__slides {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.simple-slider__img {
-  position: absolute;
-  inset: 0;
-  opacity: 0;
-  transition: opacity 0.8s ease;
-  display: block;
-  pointer-events: none;
-  z-index: 1;
-}
-
-.simple-slider__img.is-active {
-  opacity: 1;
-  pointer-events: auto;
-  z-index: 2;
-}
-
-.simple-slider__img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.simple-slider__arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 3;
-  width: 42px;
-  height: 42px;
-  border: none;
-  border-radius: 999px;
-  background: rgba(0, 0, 0, 0.45);
-  color: #fff;
-  font-size: 1.2rem;
-  line-height: 1;
-  cursor: pointer;
-}
-
-.simple-slider__arrow--prev {
-  left: 12px;
-}
-
-.simple-slider__arrow--next {
-  right: 12px;
-}
-
-.simple-slider__arrow:hover {
-  background: rgba(0, 0, 0, 0.65);
-}
-
-.simple-slider__dots {
-  position: absolute;
-  left: 50%;
-  bottom: 14px;
-  transform: translateX(-50%);
-  z-index: 3;
-  display: flex;
-  gap: 8px;
-}
-
-.simple-slider__dot {
-  width: 10px;
-  height: 10px;
-  border: none;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.55);
-  cursor: pointer;
-  padding: 0;
-}
-
-.simple-slider__dot.is-active {
-  background: rgba(255, 255, 255, 1);
-}
-
-
-@media (max-width: 700px) {
-  .home-panels {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* lab life照片輪播 */
-.life-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.life-card {
-  border: 1px solid #ddd;
-  border-radius: 14px;
-  overflow: hidden;
-  background: #fff;
-}
-
-.life-card__media {
-  display: block;
-  text-decoration: none;
-}
-
-.life-card__slider {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  overflow: hidden;
-  background: #f4f4f4;
-}
-
-.life-card__img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0;
-  transition: opacity 0.8s ease;
-}
-
-.life-card__img.is-active {
-  opacity: 1;
-}
-
-.life-card__content {
-  padding: 1rem 1.25rem 1.25rem;
-}
-
-.life-card__title {
-  margin: 0 0 0.35rem;
-  font-size: 1.15rem;
-}
-
-.life-card__title a {
-  text-decoration: none;
-}
-
-.life-card__title a:hover {
-  text-decoration: underline;
-}
-
-.life-card__date {
-  margin: 0 0 0.75rem;
-  font-size: 0.9rem;
-  opacity: 0.7;
-}
-
-.life-card__excerpt p {
-  margin-bottom: 0;
-}
-
-@media (max-width: 800px) {
-  .life-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-
-.post-slider {
-  margin-bottom: 1.5rem;
-}
-
-.post-gallery {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-.post-gallery__item {
-  display: block;
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  overflow: hidden;
-  border-radius: 10px;
-  background: #f3f3f3;
-}
-
-.post-gallery__item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  display: block;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-/* 直式照片在縮圖區仍維持同一尺寸，只是裁切方式較穩 */
-.post-gallery__item.is-portrait img {
-  object-fit: cover;
-  object-position: center;
-}
-
-.post-gallery__video-badge {
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-  width: 34px;
-  height: 34px;
-  border-radius: 999px;
-  background: rgba(0, 0, 0, 0.65);
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.95rem;
-  pointer-events: none;
-}
-
-.post-gallery__video-placeholder {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #ddd;
-  color: #444;
-  font-weight: 600;
-}
-
-.post-lightbox[hidden] {
-  display: none !important;
-}
-
-.post-lightbox {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.82);
-  z-index: 99999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-  box-sizing: border-box;
-}
-
-.post-lightbox__inner {
-  position: relative;
-  max-width: 90vw;
-  max-height: 85vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#post-lightbox-img,
-#post-lightbox-video {
-  display: none;
-  max-width: 90vw;
-  max-height: 85vh;
-  border-radius: 10px;
-}
-
-.post-lightbox__close {
-  position: absolute;
-  top: 20px;
-  right: 24px;
-  width: 44px;
-  height: 44px;
-  border: none;
-  background: transparent;
-  color: #fff;
-  font-size: 2rem;
-  line-height: 1;
-  cursor: pointer;
-  padding: 0;
-  z-index: 100000;
-}
-
-body.post-lightbox-open {
-  overflow: hidden;
-}
-
-.post-lightbox__nav {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 46px;
-  height: 46px;
-  border: none;
-  border-radius: 999px;
-  background: rgba(0, 0, 0, 0.45);
-  color: #fff;
-  font-size: 1.5rem;
-  line-height: 1;
-  cursor: pointer;
-  z-index: 100000;
-}
-
-.post-lightbox__nav--prev {
-  left: 24px;
-}
-
-.post-lightbox__nav--next {
-  right: 24px;
-}
-
-.post-lightbox__nav:hover {
-  background: rgba(0, 0, 0, 0.65);
-}
-
-@media (max-width: 700px) {
-  .post-lightbox__nav {
-    width: 40px;
-    height: 40px;
-    font-size: 1.2rem;
-  }
-
-  .post-lightbox__nav--prev {
-    left: 12px;
-  }
-
-  .post-lightbox__nav--next {
-    right: 12px;
-  }
-}
 
 
 <!--
