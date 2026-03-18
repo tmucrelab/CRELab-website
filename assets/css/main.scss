@@ -53,7 +53,7 @@ search: false
 .layout--single .page__inner-wrap,
 .layout--archive .page__inner-wrap,
 .layout--home .page__inner-wrap {
-  width: min(92vw, 1500px) !important;
+  width: min(88vw, 1400px) !important;
   max-width: none !important;
   margin-left: auto !important;
   margin-right: auto !important;
@@ -69,8 +69,8 @@ search: false
   width: 100% !important;
   max-width: none !important;
   margin: 0 !important;
-  padding-left: clamp(1.8rem, 4vw, 4rem) !important;
-  padding-right: clamp(1.8rem, 4vw, 4rem) !important;
+  padding-left: clamp(2.4rem, 5vw, 5rem) !important;
+  padding-right: clamp(2.4rem, 5vw, 5rem) !important;
   float: none !important;
   box-sizing: border-box;
 }
@@ -779,19 +779,23 @@ body.research-lightbox-open {
 
 .masthead .wrapper {
   max-width: none !important;
-  width: min(92vw, 1500px) !important;
+  width: min(88vw, 1400px) !important;
   margin-left: auto !important;
   margin-right: auto !important;
-
-  /* ⭐ 和內容區完全一致 */
-  padding-left: clamp(1.8rem, 4vw, 4rem) !important;
-  padding-right: clamp(1.8rem, 4vw, 4rem) !important;
-
+  padding-left: clamp(2.4rem, 5vw, 5rem) !important;
+  padding-right: clamp(2.4rem, 5vw, 5rem) !important;
   box-sizing: border-box;
+}
+
+.masthead__inner-wrap,
+.greedy-nav {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 .site-title {
   margin-left: 0 !important;
+  padding-left: 0 !important;
 }
 
 /* ===================================================== */
