@@ -10,28 +10,58 @@ search: false
 
 /* ===================================================== */
 /*  Global page width                                    */
-/*  目標：讓一般頁面正文更寬，盡量接近 Home 的視覺寬度        */
+/*  目標：一般頁面左右留白對稱，並和 Home 的寬版視覺接近     */
 /* ===================================================== */
 
-/* Regular pages: make text area much wider */
+/* 基本外層不要限制寬度 */
 .page,
 .page__inner-wrap,
-.archive {
+.archive,
+.initial-content {
   max-width: none !important;
 }
 
-.page__content,
-.archive {
-  width: min(96vw, 1800px);
+/* single / archive 頁面不要再保留 sidebar 版型造成的偏移 */
+.layout--single .page,
+.layout--archive .page,
+.layout--home .page {
+  float: none !important;
+  width: 100% !important;
   max-width: none !important;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 0 !important;
   padding-right: 0 !important;
+  margin: 0 !important;
+}
+
+/* 若 theme 產生 sidebar，直接隱藏，避免左側預留空間 */
+.layout--single .sidebar,
+.layout--archive .sidebar {
+  display: none !important;
+}
+
+/* 真正控制一般頁面內容寬度的地方 */
+.layout--single .page__inner-wrap,
+.layout--archive .page__inner-wrap,
+.layout--home .page__inner-wrap {
+  width: min(96vw, 1800px) !important;
+  max-width: none !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: clamp(1.25rem, 3vw, 3rem) !important;
+  padding-right: clamp(1.25rem, 3vw, 3rem) !important;
   box-sizing: border-box;
 }
 
-/* 避免 accidental horizontal scroll */
+/* 內容本身不要再另外撐寬，避免右邊多出去 */
+.layout--single .page__content,
+.layout--archive .archive {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+}
+
+/* accidental horizontal scroll */
 html,
 body {
   overflow-x: hidden;
