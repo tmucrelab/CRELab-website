@@ -7,7 +7,7 @@ role: formermembers
 position: Undergraduate
 dept: Pharmacy
 org: USYD
-photo: /assets/assets/images/Member-Profile/anonymous-user.jpg
+photo: /assets/assets/images/Member-Profile/Miro.jpg
 thumb_position: 50% 25%
 
 order: 3
