@@ -76,7 +76,9 @@ search: false
 }
 
 /* 隱藏標題 */
-.layout--single .page__header {
+.layout--single .page__header,
+.layout--single .page__title, 
+.layout--single .archive__subtitle {
   display: none;
 }
 
@@ -117,22 +119,18 @@ body {
   margin: 0 !important;
 }
 
-/* Title area: wide, readable */
-.layout--splash .page__title {
-  margin-left: 0 !important;
-}
-.layout--splash .page__hero--overlay .page__title,
-.layout--splash .page__hero--overlay .page__excerpt{
+/* Hero title 與 excerpt 文字對齊 */
+.layout--splash .page__hero--overlay .page__title {
   width: min(96vw, 1800px);
   max-width: none !important;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: auto !important;
+  margin-right: auto !important;
   padding-left: clamp(1.5rem, 4vw, 4rem);
   padding-right: clamp(1.5rem, 4vw, 4rem);
   box-sizing: border-box;
 }
 
-/* Full-width dark band */
+/* Full-width hero area */
 .layout--splash .page__hero--overlay .page__excerpt {
   width: 100vw;
   max-width: 100vw;
@@ -143,19 +141,33 @@ body {
   background: rgba(0, 0, 0, 0.45);
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-  padding-left: clamp(1.25rem, 4vw, 4rem);
-  padding-right: clamp(1.25rem, 4vw, 4rem);
+  padding-left: 0;
+  padding-right: 0;
   box-sizing: border-box;
 }
 
-/* If theme outputs a lead block too, keep it aligned */
+/* excerpt 裡真正的文字區，和 title 對齊 */
+.layout--splash .page__hero--overlay .page__excerpt {
+  text-align: left;
+}
+.layout--splash .page__hero--overlay .page__excerpt > * {
+  width: min(96vw, 1800px);
+  max-width: none !important;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(1.5rem, 4vw, 4rem);
+  padding-right: clamp(1.5rem, 4vw, 4rem);
+  box-sizing: border-box;
+}
+
+/* 若 theme 有輸出 lead，也一起對齊 */
 .layout--splash .page__hero--overlay .page__lead {
-  width: 100vw;
-  max-width: 100vw;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
-  padding-left: clamp(1.25rem, 4vw, 4rem);
-  padding-right: clamp(1.25rem, 4vw, 4rem);
+  width: min(96vw, 1800px);
+  max-width: none !important;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(1.5rem, 4vw, 4rem);
+  padding-right: clamp(1.5rem, 4vw, 4rem);
   box-sizing: border-box;
 }
 
