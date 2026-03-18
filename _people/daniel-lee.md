@@ -7,7 +7,7 @@ role: comentor
 position: Co-Mentor/ Clinical Physician
 dept: Department of Medicine
 org: Fu Jen Catholic University
-photo: /assets/assets/images/Member-Profile/anonymous-user.jpg
+photo: /assets/assets/images/Member-Profile/Daniel-Lee.png
 # title: "People"
 # permalink: /people/
 # name: 'Dr. Cheng-Fan “Bryan” Lee (李丞釩)'
