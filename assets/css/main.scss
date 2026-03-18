@@ -18,6 +18,7 @@ search: false
 .page__inner-wrap,
 .archive,
 .initial-content {
+#main {
   max-width: none !important;
 }
 
@@ -28,7 +29,7 @@ search: false
   float: none !important;
   width: 100% !important;
   max-width: none !important;
-  padding-right: 0 !important;
+  padding: 0 !important;
   margin: 0 !important;
 }
 
@@ -36,6 +37,16 @@ search: false
 .layout--single .sidebar,
 .layout--archive .sidebar {
   display: none !important;
+}
+
+/* 讓 single / archive 的主要容器真正置中 */
+.layout--single #main,
+.layout--archive #main,
+.layout--home #main {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
 }
 
 /* 真正控制一般頁面內容寬度的地方 */
@@ -58,6 +69,7 @@ search: false
   max-width: none !important;
   margin: 0 !important;
   padding: 0 !important;
+  float: none !important;
   box-sizing: border-box;
 }
 
@@ -825,57 +837,4 @@ body.research-lightbox-open {
     max-width: 100%;
   }
 }
-
-
-
-
-
-
-<!--
-.lightbox {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.82);
-  display: none;
-  align-items: center;
-  justify-content: center;
-  z-index: 9999;
-  padding: 2rem;
-}
-
-.lightbox.is-open {
-  display: flex;
-}
-
-.lightbox img,
-.lightbox video {
-  max-width: 90vw;
-  max-height: 85vh;
-  border-radius: 10px;
-}
-
-#lightbox-img,
-#lightbox-video {
-  display: none;
-}
-
-.lightbox__close {
-  position: absolute;
-  top: 20px;
-  right: 24px;
-  font-size: 2rem;
-  color: #fff;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-}
--->
-
-
-@media (max-width: 700px) {
-  .post-gallery {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
 
