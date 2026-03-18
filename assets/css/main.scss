@@ -793,6 +793,20 @@ body.research-lightbox-open {
   padding-right: 0 !important;
 }
 
+/* 這個是最上方 logo 圖片連結區塊 */
+.site-logo {
+  margin-left: 0 !important;
+  margin-right: 0.75rem !important;
+  padding-left: 0 !important;
+}
+
+/* 這個是 logo 圖片本身 */
+.site-logo img {
+  display: block;
+  margin-left: 0 !important;
+}
+
+/* 站名文字若有出現，也不要額外推開 */
 .site-title {
   margin-left: 0 !important;
   padding-left: 0 !important;
