@@ -16,9 +16,8 @@ search: false
 :root {
   --content-max-width: 1400px;
   --content-outer-width: 88vw;
-  --content-pad: clamp(3.2rem, 7vw, 7rem);
+  --content-pad: clamp(2.8rem, 6vw, 6rem);
 }
-
 
 /* ===================================================== */
 /*  Global page width                                    */
@@ -33,10 +32,10 @@ search: false
   max-width: none !important;
 }
 
-/* 拿掉 single/archive 預設 sidebar 造成的偏移 */
 .layout--single .page,
 .layout--archive .page,
-.layout--home .page {
+.layout--home .page,
+.layout--splash .page {
   float: none !important;
   width: 100% !important;
   max-width: none !important;
@@ -51,18 +50,20 @@ search: false
 
 .layout--single #main,
 .layout--archive #main,
-.layout--home #main {
+.layout--home #main,
+.layout--splash #main {
   width: 100% !important;
   max-width: none !important;
   margin: 0 auto !important;
   padding: 0 !important;
 }
 
-/* 外層容器寬度 */
+/* 外層統一寬度 */
 .layout--single .page__inner-wrap,
 .layout--archive .page__inner-wrap,
-.layout--home .page__inner-wrap {
-  width: min(var(--content-outer-width), var(--content-max-width)) !important;
+.layout--home .page__inner-wrap,
+.layout--splash .page__inner-wrap {
+  width: min(var(--site-outer-width), var(--site-max-width)) !important;
   max-width: none !important;
   margin-left: auto !important;
   margin-right: auto !important;
@@ -71,15 +72,16 @@ search: false
   box-sizing: border-box;
 }
 
-/* 真正內文區：左右留白一致 */
+/* 一般頁面正文 + Home 正文，統一左右留白 */
 .layout--single .page__content,
 .layout--archive .archive,
-.layout--home .page__content {
+.layout--home .page__content,
+.layout--splash .page__content {
   width: 100% !important;
   max-width: none !important;
   margin: 0 !important;
-  padding-left: var(--content-pad) !important;
-  padding-right: var(--content-pad) !important;
+  padding-left: var(--site-side-pad) !important;
+  padding-right: var(--site-side-pad) !important;
   float: none !important;
   box-sizing: border-box;
 }
@@ -96,7 +98,6 @@ body {
   overflow-x: hidden;
 }
 
-
 /* ===================================================== */
 /*  Splash / Home hero                                   */
 /*  Home 黑底 hero：滿版，但文字與內文起點對齊             */
@@ -108,8 +109,6 @@ body {
 .layout--splash .initial-content {
   max-width: none !important;
   width: 100% !important;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
 }
 
 /* hero 背景滿版 */
@@ -127,14 +126,14 @@ body {
   margin: 0 !important;
 }
 
-/* 標題本身與正文左邊界一致 */
+/* Hero title：和 home 正文同一條左邊界 */
 .layout--splash .page__hero--overlay .page__title {
-  width: min(var(--content-outer-width), var(--content-max-width));
+  width: min(var(--site-outer-width), var(--site-max-width));
   max-width: none !important;
   margin-left: auto !important;
   margin-right: auto !important;
-  padding-left: var(--content-pad);
-  padding-right: var(--content-pad);
+  padding-left: var(--site-side-pad);
+  padding-right: var(--site-side-pad);
   box-sizing: border-box;
 }
 
@@ -155,28 +154,27 @@ body {
   text-align: left;
 }
 
-/* excerpt 裡的真正文字區，和 page title 完全對齊 */
+/* excerpt 內容與 hero title / home 正文對齊 */
 .layout--splash .page__hero--overlay .page__excerpt > * {
-  width: min(var(--content-outer-width), var(--content-max-width));
+  width: min(var(--site-outer-width), var(--site-max-width));
   max-width: none !important;
   margin-left: auto;
   margin-right: auto;
-  padding-left: var(--content-pad);
-  padding-right: var(--content-pad);
+  padding-left: var(--site-side-pad);
+  padding-right: var(--site-side-pad);
   box-sizing: border-box;
 }
 
 /* 若 theme 有輸出 lead，也一起對齊 */
 .layout--splash .page__hero--overlay .page__lead {
-  width: min(var(--content-outer-width), var(--content-max-width));
+  width: min(var(--site-outer-width), var(--site-max-width));
   max-width: none !important;
   margin-left: auto;
   margin-right: auto;
-  padding-left: var(--content-pad);
-  padding-right: var(--content-pad);
+  padding-left: var(--site-side-pad);
+  padding-right: var(--site-side-pad);
   box-sizing: border-box;
 }
-
 
 /* ===================================================== */
 /*  Header / Logo alignment                              */
@@ -185,11 +183,11 @@ body {
 
 .masthead .wrapper {
   max-width: none !important;
-  width: min(var(--content-outer-width), var(--content-max-width)) !important;
+  width: min(var(--site-outer-width), var(--site-max-width)) !important;
   margin-left: auto !important;
   margin-right: auto !important;
-  padding-left: var(--content-pad) !important;
-  padding-right: var(--content-pad) !important;
+  padding-left: var(--site-side-pad) !important;
+  padding-right: var(--site-side-pad) !important;
   box-sizing: border-box;
 }
 
@@ -199,15 +197,12 @@ body {
   padding-right: 0 !important;
 }
 
-/* logo 圖片連結 */
 .site-logo {
   margin-left: 0 !important;
   margin-right: 0.75rem !important;
   padding-left: 0 !important;
-  transform: translateX(-0.2rem); /* 想再更左可改成 -0.4rem */
 }
 
-/* logo 圖片本身 */
 .site-logo img {
   display: block;
   margin-left: 0 !important;
