@@ -5,14 +5,6 @@ permalink: /people/
 classes: wide
 ---
 
-.people-section,
-.life-grid,
-.research-project {
-  width: 100%;
-  max-width: none;
-}
-
-
 <section class="people-section">
   <h2 class="people-section__title">Principal Investigator</h2>
 
