@@ -53,22 +53,23 @@ search: false
 .layout--single .page__inner-wrap,
 .layout--archive .page__inner-wrap,
 .layout--home .page__inner-wrap {
-  width: min(96vw, 1800px) !important;
+  width: min(94vw, 1600px) !important;
   max-width: none !important;
   margin-left: auto !important;
   margin-right: auto !important;
-  padding-left: clamp(1.25rem, 3vw, 3rem) !important;
-  padding-right: clamp(1.25rem, 3vw, 3rem) !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
   box-sizing: border-box;
 }
 
-/* 內容本身不要再另外撐寬，避免右邊多出去 */
+/* 內容本身不要再另外撐寬，左右保留對稱 padding，避免貼邊 */
 .layout--single .page__content,
 .layout--archive .archive {
   width: 100% !important;
   max-width: none !important;
   margin: 0 !important;
-  padding: 0 !important;
+  padding-left: clamp(1.25rem, 2.5vw, 2.5rem) !important;
+  padding-right: clamp(1.25rem, 2.5vw, 2.5rem) !important;
   float: none !important;
   box-sizing: border-box;
 }
