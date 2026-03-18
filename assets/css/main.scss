@@ -75,6 +75,11 @@ search: false
   box-sizing: border-box;
 }
 
+/* 隱藏標題 */
+.layout--single .page__header {
+  display: none;
+}
+
 /* accidental horizontal scroll */
 html,
 body {
