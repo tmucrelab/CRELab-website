@@ -118,6 +118,9 @@ body {
 }
 
 /* Title area: wide, readable */
+.layout--splash .page__title {
+  margin-left: 0 !important;
+}
 .layout--splash .page__hero--overlay .page__title,
 .layout--splash .page__hero--overlay .page__excerpt{
   width: min(96vw, 1800px);
