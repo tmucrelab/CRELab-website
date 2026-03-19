@@ -10,7 +10,7 @@ org: Taipei Medical University
 photo: /assets/assets/images/Member-Profile/Mandy-Song.jpeg
 thumb_position: 50% 25%
 
-order: 21
+order: 15
 permalink: /people/mandy-song/
 ---
 
