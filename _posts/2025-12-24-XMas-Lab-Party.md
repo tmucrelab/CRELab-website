@@ -60,7 +60,8 @@ gallery_items:
     orientation: landscape
   - type: image
     src: /assets/assets/images/Lab-Life/2025-12-24-X'mas-Lab-Party/2025-12-24-X'mas-Lab-Party-10.jpg
-    orientation: landscap  - type: image
+    orientation: landscape
+  - type: image
     src: /assets/assets/images/Lab-Life/2025-12-24-X'mas-Lab-Party/2025-12-24-X'mas-Lab-Party-11.jpg
     orientation: landscape
   - type: image
