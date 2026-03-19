@@ -10,7 +10,7 @@ org: Taipei Medical University
 photo: /assets/assets/images/Member-Profile/Jolie-Ho.jpg
 thumb_position: 50% 25%
 
-order: 16
+order: 8
 permalink: /people/jolie-he/
 ---
 
