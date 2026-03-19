@@ -9,17 +9,23 @@ classes: wide
   <div class="people-list people-list--leaders">
     <div class="people-leader-card">
       <h2 class="people-section__title">Principal Investigator</h2>
-      <article class="person">
+
+      {% assign items = site.people | where: "role", "pi" | sort: "order" %}
+      {% for p in items %}
+        <article class="person">
           <a class="person__photoLink" href="{{ p.url | relative_url }}" aria-label="View profile: {{ p.name }}">
-            <img class="person__photo" src="{{ p.photo | relative_url }}" alt="{{ p.name }}"
-            {% if p.thumb_position %}style="object-position: {{ p.thumb_position }};"{% endif %}>
+            <img
+              class="person__photo"
+              src="{{ p.photo | relative_url }}"
+              alt="{{ p.name }}"
+              {% if p.thumb_position %}style="object-position: {{ p.thumb_position }};"{% endif %}>
           </a>
 
           <div class="person__meta">
             <h3 class="person__name">
               <a href="{{ p.url | relative_url }}">{{ p.name }}</a>
             </h3>
-            
+
             {% if p.dept or p.org %}
               <p class="person__title">
                 {% if p.dept %}{{ p.dept }}<br>{% endif %}
@@ -28,21 +34,28 @@ classes: wide
             {% endif %}
           </div>
         </article>
+      {% endfor %}
     </div>
 
     <div class="people-leader-card">
       <h2 class="people-section__title">Co-Mentor</h2>
-      <article class="person">
+
+      {% assign items = site.people | where: "role", "comentor" | sort: "order" %}
+      {% for p in items %}
+        <article class="person">
           <a class="person__photoLink" href="{{ p.url | relative_url }}" aria-label="View profile: {{ p.name }}">
-            <img class="person__photo" src="{{ p.photo | relative_url }}" alt="{{ p.name }}"
-            {% if p.thumb_position %}style="object-position: {{ p.thumb_position }};"{% endif %}>
+            <img
+              class="person__photo"
+              src="{{ p.photo | relative_url }}"
+              alt="{{ p.name }}"
+              {% if p.thumb_position %}style="object-position: {{ p.thumb_position }};"{% endif %}>
           </a>
 
           <div class="person__meta">
             <h3 class="person__name">
               <a href="{{ p.url | relative_url }}">{{ p.name }}</a>
             </h3>
-            
+
             {% if p.dept or p.org %}
               <p class="person__title">
                 {% if p.dept %}{{ p.dept }}<br>{% endif %}
@@ -51,6 +64,7 @@ classes: wide
             {% endif %}
           </div>
         </article>
+      {% endfor %}
     </div>
   </div>
 </section>
