@@ -10,7 +10,7 @@ org: Taipei Medical University
 photo: /assets/assets/images/Member-Profile/Louise-Hsieh.jpg
 thumb_position: 50% 25%
 
-order: 13
+order: 10
 permalink: /people/louies-hsieh/
 ---
 
