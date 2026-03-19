@@ -542,6 +542,17 @@ body {
   gap: 1.5rem;
 }
 
+.people-list--leaders .person {
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr);
+  gap: 16px;
+  align-items: center;
+}
+
+.people-leader-card .people-section__title {
+  margin: 0 0 1rem;
+}
+
 .people-leader-card {
   min-width: 0;
 }
@@ -615,6 +626,142 @@ body {
 }
 
 .life-card__excerpt p {
+  margin-bottom: 0;
+}
+
+/* ===================================================== */
+/*  Lab Life timeline                                    */
+/* ===================================================== */
+
+.life-timeline {
+  position: relative;
+  margin-top: 2rem;
+}
+
+.life-timeline__item {
+  display: grid;
+  grid-template-columns: 56px minmax(0, 1fr);
+  column-gap: 1.5rem;
+  position: relative;
+  padding-bottom: 2.25rem;
+}
+
+.life-timeline__rail {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.life-timeline__rail::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: -2.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  background: #d6d6d6;
+}
+
+.life-timeline__item:last-child .life-timeline__rail::before {
+  bottom: 0;
+}
+
+.life-timeline__dot {
+  position: relative;
+  z-index: 2;
+  width: 14px;
+  height: 14px;
+  margin-top: 0.35rem;
+  border-radius: 999px;
+  background: #222;
+  box-shadow: 0 0 0 4px #fff;
+}
+
+.life-timeline__main {
+  min-width: 0;
+  padding-bottom: 0.25rem;
+}
+
+.life-timeline__header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.35rem;
+}
+
+.life-timeline__date {
+  font-size: 0.95rem;
+  opacity: 0.7;
+  white-space: nowrap;
+}
+
+.life-timeline__tag {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #d8d8d8;
+  border-radius: 999px;
+  padding: 0.15rem 0.6rem;
+  font-size: 0.82rem;
+  line-height: 1.2;
+  opacity: 0.9;
+}
+
+.life-timeline__title {
+  margin: 0 0 0.75rem;
+  font-size: 1.15rem;
+  line-height: 1.35;
+}
+
+.life-timeline__title a {
+  text-decoration: none;
+}
+
+.life-timeline__title a:hover {
+  text-decoration: underline;
+}
+
+.life-timeline__preview {
+  display: grid;
+  grid-template-columns: minmax(280px, 420px) minmax(0, 1fr);
+  gap: 1.25rem;
+  align-items: start;
+}
+
+.life-timeline__thumbLink {
+  display: block;
+  text-decoration: none;
+}
+
+.life-timeline__thumbSlider {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 14px;
+  background: #f4f4f4;
+}
+
+.life-timeline__thumb {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.life-timeline__thumb.is-active {
+  opacity: 1;
+}
+
+.life-timeline__excerpt {
+  min-width: 0;
+}
+
+.life-timeline__excerpt p:last-child {
   margin-bottom: 0;
 }
 
