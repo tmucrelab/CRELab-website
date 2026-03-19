@@ -10,7 +10,7 @@ org: Taipei Medical University
 photo: /assets/assets/images/Member-Profile/Chloe-Chen.jpg
 thumb_position: 50% 25%
 
-order: 12
+order: 22
 permalink: /people/chloe-cheng/
 ---
 
