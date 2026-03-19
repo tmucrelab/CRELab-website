@@ -10,218 +10,63 @@ classes: wide
 We believe great science happens in a supportive and collaborative environment.  
 Here are moments from seminars, collaborations, conferences, and lab gatherings.
 
-<!-- ============================== -->
-<!--         RECENT EVENTS          -->
-<!-- ============================== -->
+{% assign life_posts = site.categories.lab-life | sort: "date" | reverse %}
 
-<section class="life-section">
-  <h2>Recent Events</h2>
+<section class="life-timeline">
+  {% for post in life_posts %}
+    <article class="life-timeline__item">
+      <div class="life-timeline__rail">
+        <div class="life-timeline__dot"></div>
+      </div>
 
-  <p>
-    The latest moments from CRE Lab, including seminars, social gatherings,
-    and academic activities. This section automatically displays the three
-    most recent events across all categories.
-  </p>
+      <div class="life-timeline__main">
+        <div class="life-timeline__header">
+          <time class="life-timeline__date" datetime="{{ post.date | date_to_xmlschema }}">
+            {{ post.date | date: "%Y.%m.%d" }}
+          </time>
 
-  <div class="life-grid">
-    {% assign recent_posts = site.categories.lab-life | sort: "date" | reverse %}
-
-    {% for post in recent_posts limit: 3 %}
-      <article class="life-card">
-        <a href="{{ post.url | relative_url }}" class="life-card__media">
-          <div class="life-card__slider">
-            {% if post.slider_images %}
-              {% for img in post.slider_images %}
-                <img
-                  src="{{ img | relative_url }}"
-                  alt="{{ post.title }}"
-                  class="life-card__img {% if forloop.first %}is-active{% endif %}">
-              {% endfor %}
-            {% elsif post.image %}
-              <img
-                src="{{ post.image | relative_url }}"
-                alt="{{ post.title }}"
-                class="life-card__img is-active">
+          <span class="life-timeline__tag">
+            {% if post.event_type == "academic" or post.event_type == "seminar" %}
+              Academic
+            {% else %}
+              Social
             {% endif %}
-          </div>
-        </a>
+          </span>
+        </div>
 
-        <div class="life-card__content">
-          <h3 class="life-card__title">
-            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-          </h3>
+        <h2 class="life-timeline__title">
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </h2>
 
-          <p class="life-card__date">{{ post.date | date: "%Y.%m.%d" }}</p>
+        <div class="life-timeline__preview">
+          {% if post.slider_images or post.image %}
+            <a href="{{ post.url | relative_url }}" class="life-timeline__thumbLink">
+              <div class="life-timeline__thumbSlider">
+                {% if post.slider_images %}
+                  {% for img in post.slider_images %}
+                    <img
+                      src="{{ img | relative_url }}"
+                      alt="{{ post.title }}"
+                      class="life-timeline__thumb {% if forloop.first %}is-active{% endif %}">
+                  {% endfor %}
+                {% elsif post.image %}
+                  <img
+                    src="{{ post.image | relative_url }}"
+                    alt="{{ post.title }}"
+                    class="life-timeline__thumb is-active">
+                {% endif %}
+              </div>
+            </a>
+          {% endif %}
 
-          <div class="life-card__excerpt">
+          <div class="life-timeline__excerpt">
             {{ post.summary }}
           </div>
         </div>
-      </article>
-    {% endfor %}
-  </div>
+      </div>
+    </article>
+  {% endfor %}
 </section>
-
-<hr>
-
-<!-- ============================== -->
-<!--        SEMINARS & TALKS        -->
-<!-- ============================== -->
-
-<section class="life-section">
-  <h2>Seminars & Talks</h2>
-
-  <p>
-    Seminars and invited talks organized by the CRE Lab, including guest speakers,
-    invited lectures, and internal research seminars hosted by our group.
-  </p>
-
-  <div class="life-grid">
-    {% assign seminar_posts = site.categories.lab-life | where: "event_type", "seminar" | sort: "date" | reverse %}
-
-    {% for post in seminar_posts %}
-      <article class="life-card">
-        <a href="{{ post.url | relative_url }}" class="life-card__media">
-          <div class="life-card__slider">
-            {% if post.slider_images %}
-              {% for img in post.slider_images %}
-                <img
-                  src="{{ img | relative_url }}"
-                  alt="{{ post.title }}"
-                  class="life-card__img {% if forloop.first %}is-active{% endif %}">
-              {% endfor %}
-            {% elsif post.image %}
-              <img
-                src="{{ post.image | relative_url }}"
-                alt="{{ post.title }}"
-                class="life-card__img is-active">
-            {% endif %}
-          </div>
-        </a>
-
-        <div class="life-card__content">
-          <h3 class="life-card__title">
-            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-          </h3>
-
-          <p class="life-card__date">{{ post.date | date: "%Y.%m.%d" }}</p>
-
-          <div class="life-card__excerpt">
-            {{ post.summary }}
-          </div>
-        </div>
-      </article>
-    {% endfor %}
-  </div>
-</section>
-
-<hr>
-
-<!-- ============================== -->
-<!--       LAB SOCIAL EVENTS        -->
-<!-- ============================== -->
-
-<section class="life-section">
-  <h2>Lab Social Events</h2>
-
-  <p>
-    Moments from dinners, celebrations, gatherings, and other social activities
-    that strengthen friendship and collaboration within the CRE Lab.
-  </p>
-
-  <div class="life-grid">
-    {% assign social_posts = site.categories.lab-life | where: "event_type", "social" | sort: "date" | reverse %}
-
-    {% for post in social_posts %}
-      <article class="life-card">
-        <a href="{{ post.url | relative_url }}" class="life-card__media">
-          <div class="life-card__slider">
-            {% if post.slider_images %}
-              {% for img in post.slider_images %}
-                <img
-                  src="{{ img | relative_url }}"
-                  alt="{{ post.title }}"
-                  class="life-card__img {% if forloop.first %}is-active{% endif %}">
-              {% endfor %}
-            {% elsif post.image %}
-              <img
-                src="{{ post.image | relative_url }}"
-                alt="{{ post.title }}"
-                class="life-card__img is-active">
-            {% endif %}
-          </div>
-        </a>
-
-        <div class="life-card__content">
-          <h3 class="life-card__title">
-            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-          </h3>
-
-          <p class="life-card__date">{{ post.date | date: "%Y.%m.%d" }}</p>
-
-          <div class="life-card__excerpt">
-            {{ post.summary }}
-          </div>
-        </div>
-      </article>
-    {% endfor %}
-  </div>
-</section>
-
-<hr>
-
-<!-- ============================== -->
-<!--        ACADEMIC EVENTS         -->
-<!-- ============================== -->
-
-<section class="life-section">
-  <h2>Academic Events</h2>
-
-  <p>
-    Academic activities related to our research interests, including conferences,
-    workshops, symposia, and scientific meetings attended by CRE Lab members.
-  </p>
-
-  <div class="life-grid">
-    {% assign academic_posts = site.categories.lab-life | where: "event_type", "academic" | sort: "date" | reverse %}
-
-    {% for post in academic_posts %}
-      <article class="life-card">
-        <a href="{{ post.url | relative_url }}" class="life-card__media">
-          <div class="life-card__slider">
-            {% if post.slider_images %}
-              {% for img in post.slider_images %}
-                <img
-                  src="{{ img | relative_url }}"
-                  alt="{{ post.title }}"
-                  class="life-card__img {% if forloop.first %}is-active{% endif %}">
-              {% endfor %}
-            {% elsif post.image %}
-              <img
-                src="{{ post.image | relative_url }}"
-                alt="{{ post.title }}"
-                class="life-card__img is-active">
-            {% endif %}
-          </div>
-        </a>
-
-        <div class="life-card__content">
-          <h3 class="life-card__title">
-            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-          </h3>
-
-          <p class="life-card__date">{{ post.date | date: "%Y.%m.%d" }}</p>
-
-          <div class="life-card__excerpt">
-            {{ post.summary }}
-          </div>
-        </div>
-      </article>
-    {% endfor %}
-  </div>
-</section>
-
-<hr>
 
 ### 📌 Want to join us?
 
@@ -229,10 +74,10 @@ If you are interested in joining CRE Lab, feel free to contact us.
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  const sliders = document.querySelectorAll(".life-card__slider");
+  const sliders = document.querySelectorAll(".life-timeline__thumbSlider");
 
   sliders.forEach((slider) => {
-    const images = slider.querySelectorAll(".life-card__img");
+    const images = slider.querySelectorAll(".life-timeline__thumb");
     let current = 0;
 
     if (images.length <= 1) return;
