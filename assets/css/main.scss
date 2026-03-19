@@ -1069,6 +1069,12 @@ body.research-lightbox-open {
   }
 }
 
+@media (max-width: 1000px) {
+  .life-timeline__preview {
+    display: none;
+  }
+}
+
 /* Mobile: stack */
 @media (max-width: 700px) {
   .profile-header {
