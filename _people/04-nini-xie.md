@@ -3,7 +3,7 @@ layout: single
 title: ""
 header: false
 name: "NiNi Xie"
-role: member
+role: formermembers
 position: Research Scientist
 dept: Biochemistry and Molecular Cell Biology, School of Medicine
 org: Taipei Medical University
