@@ -10,7 +10,7 @@ org: Taipei Medical University
 photo: /assets/assets/images/Member-Profile/Michelle-Hung.jpg
 thumb_position: 50% 5%
 
-order: 14
+order: 11
 permalink: /people/michelle-hung/
 ---
 
