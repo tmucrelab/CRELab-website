@@ -10,7 +10,7 @@ org: Taipei Medical University
 photo: /assets/assets/images/Member-Profile/NiNi-Xie.JPG
 thumb_position: 50% 25%
 
-order: 2
+order: 4
 permalink: /people/nini-xie/
 ---
 
