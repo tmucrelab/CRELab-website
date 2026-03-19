@@ -511,6 +511,17 @@ body {
   display: inline-block;
 }
 
+.people-top-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.people-top-grid > .people-section {
+  margin-top: 0;
+}
+
 /* ===================================================== */
 /*  Lab Life cards 照片輪播                               */
 /* ===================================================== */
@@ -825,7 +836,6 @@ body.research-lightbox-open {
 }
 
 
-
 /* ===================================================== */
 /*  Responsive                                           */
 /* ===================================================== */
@@ -842,6 +852,13 @@ body.research-lightbox-open {
 @media (max-width: 1399px) {
   .people-list {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .people-top-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 }
 
