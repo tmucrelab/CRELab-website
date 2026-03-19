@@ -3,7 +3,7 @@ layout: single
 title: ""
 header: false
 name: "William Zhu"
-role: formermembers
+role: member
 position: Undergraduate
 dept: Respiratory Therapy
 org: Taipei Medical University
