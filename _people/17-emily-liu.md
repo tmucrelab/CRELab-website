@@ -10,7 +10,7 @@ org: Taipei Medical University
 photo: /assets/assets/images/Member-Profile/Emily-Liu.jpg
 thumb_position: 50% 25%
 
-order: 23
+order: 17
 permalink: /people/emily-liu/
 ---
 
