@@ -10,7 +10,7 @@ org: Taipei Medical University
 photo: /assets/assets/images/Member-Profile/Lulu-Sung.jpg
 thumb_position: 50% 25%
 
-order: 19
+order: 20
 permalink: /people/lulu-sung/
 ---
 
