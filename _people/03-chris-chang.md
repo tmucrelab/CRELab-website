@@ -10,7 +10,7 @@ org: Taipei Medical University
 photo: /assets/assets/images/Member-Profile/Chris-Chang.jpg
 thumb_position: 50% 25%
 
-order: 5
+order: 3
 permalink: /people/chris-chang/
 ---
 
