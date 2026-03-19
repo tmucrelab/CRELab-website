@@ -15,7 +15,7 @@ search: false
 
 :root {
   --site-max-width: 1400px;
-  --site-outer-width: 88vw;
+  --site-outer-width: 90vw; /* 數字越小，左右越寬 */
   --site-side-pad: clamp(2.8rem, 6vw, 6rem);
 }
 
