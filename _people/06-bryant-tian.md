@@ -10,7 +10,7 @@ org: Taipei Medical University
 photo: /assets/assets/images/Member-Profile/Bryant-Tian.jpg
 thumb_position: 50% 25%
 
-order: 7
+order: 6
 permalink: /people/bryant-tian/
 ---
 
