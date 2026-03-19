@@ -536,6 +536,16 @@ body {
   margin: 0 0 1rem;
 }
 
+.people-list--leaders {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.people-leader-card {
+  min-width: 0;
+}
+
 /* ===================================================== */
 /*  Lab Life cards 照片輪播                               */
 /* ===================================================== */
@@ -873,6 +883,14 @@ body.research-lightbox-open {
 @media (max-width: 1399px) {
   .people-list {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 1400px) {
+  .people-list--leaders {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2.5rem;
+    row-gap: 1.25rem;
   }
 }
 
