@@ -10,7 +10,7 @@ org: Taipei Medical University
 photo: /assets/assets/images/Member-Profile/Huong-Tran.jpg
 thumb_position: 50% 75%
 
-order: 4
+order: 2
 permalink: /people/huong-tran/
 ---
 
