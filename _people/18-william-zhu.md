@@ -10,7 +10,7 @@ org: Taipei Medical University
 photo: /assets/assets/images/Member-Profile/William-Zhu.jpg
 thumb_position: 50% 25%
 
-order: 4
+order: 18
 permalink: /people/william-zhu/
 ---
 
