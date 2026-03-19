@@ -10,7 +10,7 @@ org: Taipei Medical University
 photo: /assets/assets/images/Member-Profile/Yuna-Peng.jpg
 thumb_position: 50% 25%
 
-order: 11
+order: 23
 permalink: /people/yuna-peng/
 ---
 
