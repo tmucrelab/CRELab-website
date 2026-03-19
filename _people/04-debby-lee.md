@@ -10,7 +10,7 @@ org: Taipei Medical University
 photo: /assets/assets/images/Member-Profile/Debby-Lee.jpg
 thumb_position: 50% 25%
 
-order: 22
+order: 4
 permalink: /people/debby-lee/
 ---
 
