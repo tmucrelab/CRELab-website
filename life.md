@@ -10,6 +10,7 @@ classes: wide
 We believe great science happens in a supportive and collaborative environment.  
 Here are moments from seminars, collaborations, conferences, and lab gatherings.
 
+
 {% assign life_posts = site.categories.lab-life | sort: "date" | reverse %}
 
 <section class="life-timeline">
@@ -71,6 +72,7 @@ Here are moments from seminars, collaborations, conferences, and lab gatherings.
 ### 📌 Want to join us?
 
 If you are interested in joining CRE Lab, feel free to contact us.
+
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
