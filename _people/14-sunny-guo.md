@@ -10,7 +10,7 @@ org: Taipei Medical University
 photo: /assets/assets/images/Member-Profile/Sunny-Guo.jpg
 thumb_position: 50% 25%
 
-order: 20
+order: 14
 permalink: /people/sunny-guo/
 ---
 
