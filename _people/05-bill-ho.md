@@ -10,7 +10,7 @@ org: Taipei Medical University
 photo: /assets/assets/images/Member-Profile/Bill-Ho.jpg
 thumb_position: 50% 25%
 
-order: 6
+order: 5
 permalink: /people/bill-ho/
 ---
 
