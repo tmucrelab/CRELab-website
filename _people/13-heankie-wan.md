@@ -10,7 +10,7 @@ org: Taipei Medical University
 photo: /assets/assets/images/Member-Profile/Heankie-Wan.webp
 thumb_position: 50% 25%
 
-order: 8
+order: 13
 permalink: /people/heankie-wan/
 ---
 
