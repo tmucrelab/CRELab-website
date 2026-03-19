@@ -10,7 +10,7 @@ org: Taipei Medical University
 photo: /assets/assets/images/Member-Profile/William-Yang.jpg
 thumb_position: 50% 25%
 
-order: 10
+order: 24
 permalink: /people/william-yang/
 ---
 
