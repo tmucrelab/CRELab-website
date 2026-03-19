@@ -10,7 +10,7 @@ org: Taipei Medical University
 photo: /assets/assets/images/Member-Profile/Charlotte-Huang.jpg
 thumb_position: 50% 25%
 
-order: 15
+order: 9
 permalink: /people/charlotte-huang/
 ---
 
