@@ -17,7 +17,7 @@ classes: wide
 # ===== Lab Life 頁面卡片摘要 =====
 # 這段會顯示在 /life/ 的卡片介紹
 
-Christmas lab party.
+summary: "Christmas lab party."
 
 # ===== 上方照片輪播 (Slider) =====
 # 這裡只放圖片，會自動輪播
