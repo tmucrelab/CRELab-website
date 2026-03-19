@@ -522,6 +522,20 @@ body {
   margin-top: 0;
 }
 
+.people-feature-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.people-feature {
+  min-width: 0;
+}
+
+.people-feature .people-section__title {
+  margin: 0 0 1rem;
+}
+
 /* ===================================================== */
 /*  Lab Life cards 照片輪播                               */
 /* ===================================================== */
@@ -841,9 +855,16 @@ body.research-lightbox-open {
 /* ===================================================== */
 
 /* Optional: wider screens show 2 columns (still list-like) */
-@media (min-width: 1400px) {
-  .people-list {
+
+@media (min-width: 1400px) { /* 在 1400px 以上才雙欄 */
+  .people-feature-grid {
     grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    /* row-gap: 1.25rem; */
+  }
+
+  .people-list {
+    grid-template-columns: 1fr 1fr; /* grid-template-columns: 1fr; */
     column-gap: 2.5rem;
     row-gap: 1.25rem;
   }
@@ -852,13 +873,6 @@ body.research-lightbox-open {
 @media (max-width: 1399px) {
   .people-list {
     grid-template-columns: 1fr;
-  }
-}
-
-@media (min-width: 1400px) { /* 在 1400px 以上才雙欄 */
-  .people-top-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 2.5rem;
   }
 }
 
