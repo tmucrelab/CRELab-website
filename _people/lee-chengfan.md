@@ -3,7 +3,7 @@ layout: single
 title: ""            # 讓頁首不要有可點大標
 header: false        # 不顯示上方 header 區塊（避免 theme 自動輸出）
 name: 'Bryan (Cheng-Fan) Lee'
-role: Principal Investigator
+role: pi
 position: Assistant Professor
 dept: Department of Biochemistry and Molecular Cell Biology
 org: Taipei Medical University
