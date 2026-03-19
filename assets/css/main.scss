@@ -63,13 +63,10 @@ search: false
 .layout--archive .page__inner-wrap,
 .layout--home .page__inner-wrap,
 .layout--splash .page__inner-wrap {
-  width: min(var(--site-outer-width), var(--site-max-width)) !important;
+  width: 100% !important;
   max-width: none !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-  box-sizing: border-box;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 /* 一般頁面正文 + Home 正文，統一左右留白 */
@@ -77,9 +74,10 @@ search: false
 .layout--archive .archive,
 .layout--home .page__content,
 .layout--splash .page__content {
-  width: 100% !important;
+  width: min(var(--site-outer-width), var(--site-max-width)) !important;
   max-width: none !important;
-  margin: 0 !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
   padding-left: var(--site-side-pad) !important;
   padding-right: var(--site-side-pad) !important;
   float: none !important;
