@@ -6,7 +6,7 @@ name: "Jason Chuang, MD"
 role: member
 position: International Medical Student
 dept: Medical Student
-org: Department of Medicine, University of Lancashire (UCLan)
+org: Medicine, University of Lancashire (UCLan)
 photo: /assets/assets/images/Member-Profile/Jason-Chuang.png
 thumb_position: 50% 25%
 order: 1
