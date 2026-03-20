@@ -2,7 +2,7 @@
 layout: single
 title: ""
 header: false
-name: "Aaron Guo"
+name: "Aaron Kuo"
 role: member
 position: Undergraduate
 dept: Clinical Pharmacy
@@ -11,7 +11,7 @@ photo: /assets/assets/images/Member-Profile/Aaron-Guo.jpg
 thumb_position: 50% 25%
 
 order: 19
-permalink: /people/aaron-su/
+permalink: /people/aaron-kuo/
 ---
 
 <div class="profile-header">
