@@ -5,8 +5,8 @@ header: false
 name: "Aaron Kuo"
 role: member
 position: Undergraduate
-dept: Clinical Pharmacy
-org: Taipei Medical University
+dept: BS Student
+org: Clinical Pharmacy, Taipei Medical University
 photo: /assets/assets/images/Member-Profile/Aaron-Guo.jpg
 thumb_position: 50% 25%
 
