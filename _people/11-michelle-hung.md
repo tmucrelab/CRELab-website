@@ -5,8 +5,8 @@ header: false
 name: "Michelle Hung"
 role: member
 position: Undergraduate
-dept: Pharmacy
-org: Taipei Medical University
+dept: BS Student
+org: Pharmacy, Taipei Medical University
 photo: /assets/assets/images/Member-Profile/Michelle-Hung.jpg
 thumb_position: 50% 5%
 
