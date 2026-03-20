@@ -5,8 +5,8 @@ header: false        # 不顯示上方 header 區塊（避免 theme 自動輸出
 name: 'Daniel Lee, MD'
 role: comentor
 position: Co-Mentor/ Clinical Physician
-dept: Department of Medicine
-org: Fu Jen Catholic University
+dept: Co-Mentor
+org: Medicine, Fu Jen Catholic University
 photo: /assets/assets/images/Member-Profile/Daniel-Lee.png
 # title: "People"
 # permalink: /people/
