@@ -5,8 +5,8 @@ header: false
 name: "Yuna Peng"
 role: member
 position: Undergraduate
-dept: Nutrition
-org: Taipei Medical University
+dept: BS Student
+org: Nutrition, Taipei Medical University
 photo: /assets/assets/images/Member-Profile/Yuna-Peng.jpg
 thumb_position: 50% 25%
 
