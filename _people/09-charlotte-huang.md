@@ -5,8 +5,8 @@ header: false
 name: "Charlotte Huang"
 role: member
 position: Undergraduate
-dept: Pharmacy
-org: Taipei Medical University
+dept: BS Student
+org: Pharmacy, Taipei Medical University
 photo: /assets/assets/images/Member-Profile/Charlotte-Huang.jpg
 thumb_position: 50% 25%
 
