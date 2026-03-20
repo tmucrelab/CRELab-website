@@ -196,7 +196,7 @@ This page highlights publications, research grants, and awards & honors of Dr. C
       <div class="cv-year-group__items">
         <article class="cv-card">
           <div class="cv-card__rail"><div class="cv-card__dot"></div></div>
-          <div class="cv-card__media"><img src="/assets/assets/images/lee_chengfan.png" alt="Dr. Cheng-Fan Lee"></div>
+          <div class="cv-card__media"><img src="{{ '/assets/assets/images/Lee_ChengFan.jpg' | relative_url }}" alt="Dr. Cheng-Fan Lee"></div>
           <div class="cv-card__content">
             <h3 class="cv-card__title">衛服部癌症轉譯研究計畫</h3>
             <p class="cv-card__meta">Research Grant · 2026–2029</p>
@@ -210,7 +210,7 @@ This page highlights publications, research grants, and awards & honors of Dr. C
       <div class="cv-year-group__items">
         <article class="cv-card">
           <div class="cv-card__rail"><div class="cv-card__dot"></div></div>
-          <div class="cv-card__media"><img src="/assets/assets/images/lee_chengfan.png" alt="Dr. Cheng-Fan Lee"></div>
+          <div class="cv-card__media"><img src="{{ '/assets/assets/images/Lee_ChengFan.jpg' | relative_url }}" alt="Dr. Cheng-Fan Lee"></div>
           <div class="cv-card__content">
             <h3 class="cv-card__title">臺灣大學醫學院附設醫院暨臺北醫學大學合作計畫</h3>
             <p class="cv-card__meta">Collaborative Grant · 2026</p>
@@ -224,7 +224,7 @@ This page highlights publications, research grants, and awards & honors of Dr. C
       <div class="cv-year-group__items">
         <article class="cv-card">
           <div class="cv-card__rail"><div class="cv-card__dot"></div></div>
-          <div class="cv-card__media"><img src="/assets/assets/images/lee_chengfan.png" alt="Dr. Cheng-Fan Lee"></div>
+          <div class="cv-card__media"><img src="{{ '/assets/assets/images/Lee_ChengFan.jpg' | relative_url }}" alt="Dr. Cheng-Fan Lee"></div>
           <div class="cv-card__content">
             <h3 class="cv-card__title">TMU SPARK Program</h3>
             <p class="cv-card__meta">Research Grant · 2025</p>
@@ -233,7 +233,7 @@ This page highlights publications, research grants, and awards & honors of Dr. C
 
         <article class="cv-card">
           <div class="cv-card__rail"><div class="cv-card__dot"></div></div>
-          <div class="cv-card__media"><img src="/assets/assets/images/lee_chengfan.png" alt="Dr. Cheng-Fan Lee"></div>
+          <div class="cv-card__media"><img src="{{ '/assets/assets/images/Lee_ChengFan.jpg' | relative_url }}" alt="Dr. Cheng-Fan Lee"></div>
           <div class="cv-card__content">
             <h3 class="cv-card__title">TMU pre-SPARK Program</h3>
             <p class="cv-card__meta">Research Grant · 2025</p>
@@ -242,7 +242,7 @@ This page highlights publications, research grants, and awards & honors of Dr. C
 
         <article class="cv-card">
           <div class="cv-card__rail"><div class="cv-card__dot"></div></div>
-          <div class="cv-card__media"><img src="/assets/assets/images/lee_chengfan.png" alt="Dr. Cheng-Fan Lee"></div>
+          <div class="cv-card__media"><img src="{{ '/assets/assets/images/Lee_ChengFan.jpg' | relative_url }}" alt="Dr. Cheng-Fan Lee"></div>
           <div class="cv-card__content">
             <h3 class="cv-card__title">臺灣大學醫學院附設醫院暨臺北醫學大學合作計畫</h3>
             <p class="cv-card__meta">Collaborative Grant · 2025</p>
@@ -256,7 +256,7 @@ This page highlights publications, research grants, and awards & honors of Dr. C
       <div class="cv-year-group__items">
         <article class="cv-card">
           <div class="cv-card__rail"><div class="cv-card__dot"></div></div>
-          <div class="cv-card__media"><img src="/assets/assets/images/lee_chengfan.png" alt="Dr. Cheng-Fan Lee"></div>
+          <div class="cv-card__media"><img src="{{ '/assets/assets/images/Lee_ChengFan.jpg' | relative_url }}" alt="Dr. Cheng-Fan Lee"></div>
           <div class="cv-card__content">
             <h3 class="cv-card__title">國科會新進人員計畫</h3>
             <p class="cv-card__meta">Research Grant · 2024–2026</p>
@@ -270,7 +270,7 @@ This page highlights publications, research grants, and awards & honors of Dr. C
       <div class="cv-year-group__items">
         <article class="cv-card">
           <div class="cv-card__rail"><div class="cv-card__dot"></div></div>
-          <div class="cv-card__media"><img src="/assets/assets/images/lee_chengfan.png" alt="Dr. Cheng-Fan Lee"></div>
+          <div class="cv-card__media"><img src="{{ '/assets/assets/images/Lee_ChengFan.jpg' | relative_url }}" alt="Dr. Cheng-Fan Lee"></div>
           <div class="cv-card__content">
             <h3 class="cv-card__title">臺北醫學大學新進人員計畫</h3>
             <p class="cv-card__meta">Institutional Grant · 2024</p>
@@ -297,7 +297,7 @@ This page highlights publications, research grants, and awards & honors of Dr. C
 
         <article class="cv-card">
           <div class="cv-card__rail"><div class="cv-card__dot"></div></div>
-          <div class="cv-card__media"><img src="/assets/assets/images/lee_chengfan.png" alt="Dr. Cheng-Fan Lee"></div>
+          <div class="cv-card__media"><img src="{{ '/assets/assets/images/Lee_ChengFan.jpg' | relative_url }}" alt="Dr. Cheng-Fan Lee"></div>
           <div class="cv-card__content">
             <h3 class="cv-card__title">Metabolomics-Based Liquid Biopsy for Predicting Clinically Significant Prostate Cancer</h3>
             <p class="cv-card__authors">Yuan-Chi Lin, Chung-Hsin Chen, Ming-Shyue Lee, <strong>Cheng-Fan Lee</strong>, Pei-Wen Hsiao, Hsiang-Po Huang, Yeong-Shiau Pu</p>
@@ -308,7 +308,7 @@ This page highlights publications, research grants, and awards & honors of Dr. C
 
         <article class="cv-card">
           <div class="cv-card__rail"><div class="cv-card__dot"></div></div>
-          <div class="cv-card__media"><img src="/assets/assets/images/lee_chengfan.png" alt="Dr. Cheng-Fan Lee"></div>
+          <div class="cv-card__media"><img src="{{ '/assets/assets/images/Lee_ChengFan.jpg' | relative_url }}" alt="Dr. Cheng-Fan Lee"></div>
           <div class="cv-card__content">
             <h3 class="cv-card__title">Dual prophylactic and therapeutic potential of iPSC-based vaccines and neoantigen discovery in colorectal cancer</h3>
             <p class="cv-card__authors">Si-Han Jwo, Shang-Kok Ng, Chin-Tzu Li, Shao-Peng Chen, Li-Yu Chen, Pin-Jung Liu, Huai-Jie Wang, Jr-Shiuan Lin, Chun-Jung Ko, <strong>Cheng-Fan Lee</strong>, Chun-Hao Wang, Xiaoming Ouyang, Lin Wang, Tzu-Tang Wei</p>
@@ -319,7 +319,7 @@ This page highlights publications, research grants, and awards & honors of Dr. C
 
         <article class="cv-card">
           <div class="cv-card__rail"><div class="cv-card__dot"></div></div>
-          <div class="cv-card__media"><img src="/assets/assets/images/lee_chengfan.png" alt="Dr. Cheng-Fan Lee"></div>
+          <div class="cv-card__media"><img src="{{ '/assets/assets/images/Lee_ChengFan.jpg' | relative_url }}" alt="Dr. Cheng-Fan Lee"></div>
           <div class="cv-card__content">
             <h3 class="cv-card__title">The involvement of Cyclin-Dependent Kinase 7 (CDK7) and 9 (CDK9) in coordinating transcription and cell cycle checkpoint regulation</h3>
             <p class="cv-card__authors"><strong>Cheng-Fan Lee</strong>, Kenneth J. Pienta, Sarah R. Amend</p>
@@ -336,7 +336,7 @@ This page highlights publications, research grants, and awards & honors of Dr. C
       <div class="cv-year-group__items">
         <article class="cv-card">
           <div class="cv-card__rail"><div class="cv-card__dot"></div></div>
-          <div class="cv-card__media"><img src="/assets/assets/images/lee_chengfan.png" alt="Dr. Cheng-Fan Lee"></div>
+          <div class="cv-card__media"><img src="{{ '/assets/assets/images/Lee_ChengFan.jpg' | relative_url }}" alt="Dr. Cheng-Fan Lee"></div>
           <div class="cv-card__content">
             <h3 class="cv-card__title">Predicting clinically significant prostate cancer using urine metabolomics via liquid chromatography mass spectrometry</h3>
             <p class="cv-card__authors">Chung-Hsin Chen, Hsiang-Po Huang, Kai-Hsiung Chang, Ming-Shyue Lee, <strong>Cheng-Fan Lee</strong>, et al.</p>
@@ -352,7 +352,7 @@ This page highlights publications, research grants, and awards & honors of Dr. C
       <div class="cv-year-group__items">
         <article class="cv-card">
           <div class="cv-card__rail"><div class="cv-card__dot"></div></div>
-          <div class="cv-card__media"><img src="/assets/assets/images/lee_chengfan.png" alt="Dr. Cheng-Fan Lee"></div>
+          <div class="cv-card__media"><img src="{{ '/assets/assets/images/Lee_ChengFan.jpg' | relative_url }}" alt="Dr. Cheng-Fan Lee"></div>
           <div class="cv-card__content">
             <h3 class="cv-card__title">Prediction of clinically significant prostate cancer through urine metabolomic signatures: A large-scale validated study</h3>
             <p class="cv-card__authors">Hsiang-Po Huang, Chung-Hsin Chen, Kai-Hsiung Chang, Ming-Shyue Lee, <strong>Cheng-Fan Lee</strong>, et al.</p>
@@ -363,7 +363,7 @@ This page highlights publications, research grants, and awards & honors of Dr. C
 
         <article class="cv-card">
           <div class="cv-card__rail"><div class="cv-card__dot"></div></div>
-          <div class="cv-card__media"><img src="/assets/assets/images/lee_chengfan.png" alt="Dr. Cheng-Fan Lee"></div>
+          <div class="cv-card__media"><img src="{{ '/assets/assets/images/Lee_ChengFan.jpg' | relative_url }}" alt="Dr. Cheng-Fan Lee"></div>
           <div class="cv-card__content">
             <h3 class="cv-card__title">Novel urinary tract obstruction marker discovery by multi-marker profiling of urinary extracellular vesicles derived from a rat UTO model</h3>
             <p class="cv-card__authors">Nora M Haney, Chi-Ju Kim, Morgan D Kuczler, <strong>Cheng-Fan Lee</strong>, Kara Lombardo, Trinity J Bivalacqua, Kenneth J Pienta, Sarah R Amend</p>
@@ -379,7 +379,7 @@ This page highlights publications, research grants, and awards & honors of Dr. C
       <div class="cv-year-group__items">
         <article class="cv-card">
           <div class="cv-card__rail"><div class="cv-card__dot"></div></div>
-          <div class="cv-card__media"><img src="/assets/assets/images/lee_chengfan.png" alt="Dr. Cheng-Fan Lee"></div>
+          <div class="cv-card__media"><img src="{{ '/assets/assets/images/Lee_ChengFan.jpg' | relative_url }}" alt="Dr. Cheng-Fan Lee"></div>
           <div class="cv-card__content">
             <h3 class="cv-card__title">Nuclear morphology and functional characteristics that enable survival of cells in the polyaneuploid cancer cell state following cytotoxic chemotherapy</h3>
             <p class="cv-card__authors">Chi-Ju Kim, Anna LK Gonye, Kevin Truskowski, <strong>Cheng-Fan Lee</strong>, Kenneth J Pienta, Sarah R Amend</p>
@@ -390,7 +390,7 @@ This page highlights publications, research grants, and awards & honors of Dr. C
 
         <article class="cv-card">
           <div class="cv-card__rail"><div class="cv-card__dot"></div></div>
-          <div class="cv-card__media"><img src="/assets/assets/images/lee_chengfan.png" alt="Dr. Cheng-Fan Lee"></div>
+          <div class="cv-card__media"><img src="{{ '/assets/assets/images/Lee_ChengFan.jpg' | relative_url }}" alt="Dr. Cheng-Fan Lee"></div>
           <div class="cv-card__content">
             <h3 class="cv-card__title">Split-hand Index for Amyotrophic Lateral Sclerosis Diagnosis: A Frequentist and Bayesian Meta-analysis</h3>
             <p class="cv-card__authors">Wei-Zhen Lu, Hui-An Lin, Sen-Kuang Hou, <strong>Cheng-Fan Lee</strong>, Chyi-Huey Bai, Sheng-Feng Lin</p>
@@ -401,7 +401,7 @@ This page highlights publications, research grants, and awards & honors of Dr. C
 
         <article class="cv-card">
           <div class="cv-card__rail"><div class="cv-card__dot"></div></div>
-          <div class="cv-card__media"><img src="/assets/assets/images/lee_chengfan.png" alt="Dr. Cheng-Fan Lee"></div>
+          <div class="cv-card__media"><img src="{{ '/assets/assets/images/Lee_ChengFan.jpg' | relative_url }}" alt="Dr. Cheng-Fan Lee"></div>
           <div class="cv-card__content">
             <h3 class="cv-card__title">Matriptase-2/NR4A3 axis switches TGF-β action toward suppression of prostate cancer cell invasion, tumor growth, and metastasis</h3>
             <p class="cv-card__authors">Hsin-Ying Lin, Chun-Jung Ko, Tzu-Yu Lo, Shang-Ru Wu, Shao-Wei Lan, Chen-An Huang, Yi-Chin Lin, Hsin-Hsien Lin, Hsin-Fang Tu, <strong>Cheng-Fan Lee</strong>, et al.</p>
@@ -412,7 +412,7 @@ This page highlights publications, research grants, and awards & honors of Dr. C
 
         <article class="cv-card">
           <div class="cv-card__rail"><div class="cv-card__dot"></div></div>
-          <div class="cv-card__media"><img src="/assets/assets/images/lee_chengfan.png" alt="Dr. Cheng-Fan Lee"></div>
+          <div class="cv-card__media"><img src="{{ '/assets/assets/images/Lee_ChengFan.jpg' | relative_url }}" alt="Dr. Cheng-Fan Lee"></div>
           <div class="cv-card__content">
             <h3 class="cv-card__title">The central role of Sphingosine kinase 1 in the development of neuroendocrine prostate cancer (NEPC): A new targeted therapy of NEPC</h3>
             <p class="cv-card__authors"><strong>Cheng-Fan Lee</strong>, Yu-An Chen, Elizabeth Hernandez, Rey-Chen Pong, Shihong Ma, Mia Hofstad, Payal Kapur, Haiyen Zhau, Leland WK Chung, Chih-Ho Lai, Ho Lin, Ming-Shyue Lee, Ganesh V Raj, Jer-Tsong Hsieh</p>
