@@ -5,8 +5,8 @@ header: false
 name: "Laurent Lu"
 role: formermembers
 position: Postdoc fellow
-dept: Biochemistry and Molecular Cell Biology, School of Medicine
-org: Taipei Medical University
+dept: Postdoc fellow 
+org: Biochemistry and Molecular Cell Biology, Taipei Medical University
 photo: /assets/assets/images/Member-Profile/anonymous-user.jpg
 thumb_position: 50% 25%
 
