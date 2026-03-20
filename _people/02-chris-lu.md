@@ -5,7 +5,7 @@ header: false
 name: "Chris Lu"
 role: formermembers
 position: Undergraduate
-dept: Undergraduate, Environmental and Occupational Health Science
+dept: MS, Environmental and Occupational Health Science
 org: National Taiwan University
 photo: /assets/assets/images/Member-Profile/Chris-Lu.jpg
 thumb_position: 50% 25%
