@@ -5,8 +5,8 @@ header: false
 name: "William Zhu"
 role: member
 position: Undergraduate
-dept: Respiratory Therapy
-org: Taipei Medical University
+dept: BS Student
+org: Respiratory Therapy, Taipei Medical University
 photo: /assets/assets/images/Member-Profile/William-Zhu.jpg
 thumb_position: 50% 25%
 
