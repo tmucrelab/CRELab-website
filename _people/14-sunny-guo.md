@@ -5,8 +5,8 @@ header: false
 name: "Sunny Guo"
 role: member
 position: Undergraduate
-dept: MLSB
-org: Taipei Medical University
+dept: BS Student
+org: Medical Laboratory Science and Biotechnology, Taipei Medical University
 photo: /assets/assets/images/Member-Profile/Sunny-Guo.jpg
 thumb_position: 50% 25%
 
