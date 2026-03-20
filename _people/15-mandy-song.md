@@ -5,8 +5,8 @@ header: false
 name: "Mandy Song"
 role: member
 position: Undergraduate
-dept: MLSB
-org: Taipei Medical University
+dept: BS Student
+org: Medical Laboratory Science and Biotechnology, Taipei Medical University
 photo: /assets/assets/images/Member-Profile/Mandy-Song.jpeg
 thumb_position: 50% 25%
 
