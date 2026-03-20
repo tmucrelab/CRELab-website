@@ -5,8 +5,8 @@ header: false        # 不顯示上方 header 區塊（避免 theme 自動輸出
 name: 'Bryan (Cheng-Fan) Lee, PhD'
 role: pi
 position: Assistant Professor
-dept: Department of Biochemistry and Molecular Cell Biology
-org: Taipei Medical University
+dept: Assistant Professor
+org: Biochemistry and Molecular Cell Biology, Taipei Medical University
 photo: /assets/assets/images/Member-Profile/Lee_ChengFan.jpg
 # title: "People"
 # permalink: /people/
