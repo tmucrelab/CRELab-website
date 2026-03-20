@@ -5,8 +5,8 @@ header: false
 name: "Emily Liu"
 role: member
 position: Undergraduate
-dept: Medicine
-org: Taipei Medical University
+dept: Medical Student
+org: Medicine, Taipei Medical University
 photo: /assets/assets/images/Member-Profile/Emily-Liu.jpg
 thumb_position: 50% 25%
 
