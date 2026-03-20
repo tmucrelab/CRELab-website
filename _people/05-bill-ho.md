@@ -5,8 +5,8 @@ header: false
 name: "Bill Ho"
 role: member
 position: Undergraduate
-dept: Public Health
-org: Taipei Medical University
+dept: BS Student 
+org: Public Health, Taipei Medical University
 photo: /assets/assets/images/Member-Profile/Bill-Ho.jpg
 thumb_position: 50% 25%
 
