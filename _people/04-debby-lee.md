@@ -2,11 +2,11 @@
 layout: single
 title: ""
 header: false
-name: "Debby Lee"
+name: "Debby Lee, MD"
 role: member
 position: Undergraduate
-dept: Medicine
-org: Taipei Medical University
+dept: Medical Student
+org: Medicine, Taipei Medical University
 photo: /assets/assets/images/Member-Profile/Debby-Lee.jpg
 thumb_position: 50% 25%
 
