@@ -2,7 +2,7 @@
 layout: single
 title: ""
 header: false
-name: "Jason Chuang", MD
+name: "Jason Chuang, MD"
 role: member
 position: International student
 dept: Department of Medicine
