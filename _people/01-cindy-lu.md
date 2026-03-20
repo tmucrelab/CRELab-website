@@ -5,7 +5,7 @@ header: false
 name: "Cindy Lu"
 role: formermembers
 position: PhD
-dept: PhD
+dept: PhD Student
 org: University of Utah
 photo: /assets/assets/images/Member-Profile/Cindy-Lu.jpg
 thumb_position: 50% 10%
