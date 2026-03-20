@@ -2,9 +2,9 @@
 layout: single
 title: ""
 header: false
-name: "Jason Chuang"
+name: "Jason Chuang", MD
 role: member
-position: Undergraduate
+position: International student
 dept: Department of Medicine
 org: University of Lancashire (UCLan)
 photo: /assets/assets/images/Member-Profile/Jason-Chuang.png
