@@ -5,8 +5,8 @@ header: false
 name: "Heankie Wan"
 role: member
 position: Undergraduate
-dept: Nutrition
-org: Taipei Medical University
+dept: BS Student
+org: Nutrition, Taipei Medical University
 photo: /assets/assets/images/Member-Profile/Heankie-Wan.webp
 thumb_position: 50% 25%
 
