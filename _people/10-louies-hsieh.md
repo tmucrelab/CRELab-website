@@ -5,8 +5,8 @@ header: false
 name: "Louies Hsieh"
 role: member
 position: Undergraduate
-dept: Pharmacy
-org: Taipei Medical University
+dept: BS Student
+org: Pharmacy, Taipei Medical University
 photo: /assets/assets/images/Member-Profile/Louise-Hsieh.jpg
 thumb_position: 50% 25%
 
