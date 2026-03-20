@@ -2,9 +2,9 @@
 layout: single
 title: ""
 header: false
-name: "Huong Tran, MScPhm"
+name: "Huong Tran"
 role: member
-position: PhD
+position: PhD student
 dept: International Ph.D. Program in Medicine (IGPM)
 org: Taipei Medical University
 photo: /assets/assets/images/Member-Profile/Huong-Tran.jpg
