@@ -26,7 +26,7 @@ This page highlights publications, research grants, and awards & honors of Dr. C
             <div class="cv-card__dot"></div>
           </div>
           <div class="cv-card__media">
-            <img src=" /assets/assets/images/lee_chengfan.png" alt="Dr. Cheng-Fan Lee">
+            <img src="{{ '/assets/assets/images/Lee_ChengFan.jpg' | relative_url }}" alt="Dr. Cheng-Fan Lee">
           </div>
           <div class="cv-card__content">
             <h3 class="cv-card__title">22th National Innovation Award</h3>
@@ -37,7 +37,7 @@ This page highlights publications, research grants, and awards & honors of Dr. C
         <article class="cv-card">
           <div class="cv-card__rail"><div class="cv-card__dot"></div></div>
           <div class="cv-card__media">
-            <img src="/assets/assets/images/lee_chengfan.png" alt="Dr. Cheng-Fan Lee">
+            <img src="{{ '/assets/assets/images/Lee_ChengFan.jpg' | relative_url }}" alt="Dr. Cheng-Fan Lee">
           </div>
           <div class="cv-card__content">
             <h3 class="cv-card__title">Poster Session, Multiomics and Precision Medicine Joint Conference (MOPM)</h3>
@@ -48,7 +48,7 @@ This page highlights publications, research grants, and awards & honors of Dr. C
         <article class="cv-card">
           <div class="cv-card__rail"><div class="cv-card__dot"></div></div>
           <div class="cv-card__media">
-            <img src="/assets/assets/images/lee_chengfan.png" alt="Dr. Cheng-Fan Lee">
+            <img src="{{ '/assets/assets/images/Lee_ChengFan.jpg' | relative_url }}" alt="Dr. Cheng-Fan Lee">
           </div>
           <div class="cv-card__content">
             <h3 class="cv-card__title">Funding Initiative, TMU × UAAT / Tohoku University / University of Cagliari International Collaboration</h3>
@@ -59,7 +59,7 @@ This page highlights publications, research grants, and awards & honors of Dr. C
         <article class="cv-card">
           <div class="cv-card__rail"><div class="cv-card__dot"></div></div>
           <div class="cv-card__media">
-            <img src="/assets/assets/images/lee_chengfan.png" alt="Dr. Cheng-Fan Lee">
+            <img src="{{ '/assets/assets/images/Lee_ChengFan.jpg' | relative_url }}" alt="Dr. Cheng-Fan Lee">
           </div>
           <div class="cv-card__content">
             <h3 class="cv-card__title">Certificate of Completion, TMUH Quality Management Innovation Workshop</h3>
@@ -70,7 +70,7 @@ This page highlights publications, research grants, and awards & honors of Dr. C
         <article class="cv-card">
           <div class="cv-card__rail"><div class="cv-card__dot"></div></div>
           <div class="cv-card__media">
-            <img src="/assets/assets/images/lee_chengfan.png" alt="Dr. Cheng-Fan Lee">
+            <img src="{{ '/assets/assets/images/Lee_ChengFan.jpg' | relative_url }}" alt="Dr. Cheng-Fan Lee">
           </div>
           <div class="cv-card__content">
             <h3 class="cv-card__title">Moderator, Prostate Cancer International Symposium (PCIS25)</h3>
@@ -81,7 +81,7 @@ This page highlights publications, research grants, and awards & honors of Dr. C
         <article class="cv-card">
           <div class="cv-card__rail"><div class="cv-card__dot"></div></div>
           <div class="cv-card__media">
-            <img src="/assets/assets/images/lee_chengfan.png" alt="Dr. Cheng-Fan Lee">
+            <img src="{{ '/assets/assets/images/Lee_ChengFan.jpg' | relative_url }}" alt="Dr. Cheng-Fan Lee">
           </div>
           <div class="cv-card__content">
             <h3 class="cv-card__title">Guest Editor, Journal of Visualized Experiments (JoVE)</h3>
@@ -96,7 +96,7 @@ This page highlights publications, research grants, and awards & honors of Dr. C
       <div class="cv-year-group__items">
         <article class="cv-card">
           <div class="cv-card__rail"><div class="cv-card__dot"></div></div>
-          <div class="cv-card__media"><img src="/assets/assets/images/lee_chengfan.png" alt="Dr. Cheng-Fan Lee"></div>
+          <div class="cv-card__media"><img src="{{ '/assets/assets/images/Lee_ChengFan.jpg' | relative_url }}" alt="Dr. Cheng-Fan Lee"></div>
           <div class="cv-card__content">
             <h3 class="cv-card__title">Poster Session, Polyploidy Across the Tree of Life</h3>
             <p class="cv-card__meta">Conference Recognition · 2023</p>
@@ -105,7 +105,7 @@ This page highlights publications, research grants, and awards & honors of Dr. C
 
         <article class="cv-card">
           <div class="cv-card__rail"><div class="cv-card__dot"></div></div>
-          <div class="cv-card__media"><img src="/assets/assets/images/lee_chengfan.png" alt="Dr. Cheng-Fan Lee"></div>
+          <div class="cv-card__media"><img src="{{ '/assets/assets/images/Lee_ChengFan.jpg' | relative_url }}" alt="Dr. Cheng-Fan Lee"></div>
           <div class="cv-card__content">
             <h3 class="cv-card__title">Poster Session, American Association for Cancer Research (AACR)</h3>
             <p class="cv-card__meta">Conference Recognition · 2023</p>
@@ -119,7 +119,7 @@ This page highlights publications, research grants, and awards & honors of Dr. C
       <div class="cv-year-group__items">
         <article class="cv-card">
           <div class="cv-card__rail"><div class="cv-card__dot"></div></div>
-          <div class="cv-card__media"><img src="/assets/assets/images/lee_chengfan.png" alt="Dr. Cheng-Fan Lee"></div>
+          <div class="cv-card__media"><img src="{{ '/assets/assets/images/Lee_ChengFan.jpg' | relative_url }}" alt="Dr. Cheng-Fan Lee"></div>
           <div class="cv-card__content">
             <h3 class="cv-card__title">New Partnership Program for the Connection to the Top Labs in the World</h3>
             <p class="cv-card__meta">Program Support · 2021–2023</p>
@@ -133,7 +133,7 @@ This page highlights publications, research grants, and awards & honors of Dr. C
       <div class="cv-year-group__items">
         <article class="cv-card">
           <div class="cv-card__rail"><div class="cv-card__dot"></div></div>
-          <div class="cv-card__media"><img src="/assets/assets/images/lee_chengfan.png" alt="Dr. Cheng-Fan Lee"></div>
+          <div class="cv-card__media"><img src="{{ '/assets/assets/images/Lee_ChengFan.jpg' | relative_url }}" alt="Dr. Cheng-Fan Lee"></div>
           <div class="cv-card__content">
             <h3 class="cv-card__title">Postgraduate Outstanding and Academic Research Award</h3>
             <p class="cv-card__meta">Award · 2020</p>
@@ -147,7 +147,7 @@ This page highlights publications, research grants, and awards & honors of Dr. C
       <div class="cv-year-group__items">
         <article class="cv-card">
           <div class="cv-card__rail"><div class="cv-card__dot"></div></div>
-          <div class="cv-card__media"><img src="/assets/assets/images/lee_chengfan.png" alt="Dr. Cheng-Fan Lee"></div>
+          <div class="cv-card__media"><img src="{{ '/assets/assets/images/Lee_ChengFan.jpg' | relative_url }}" alt="Dr. Cheng-Fan Lee"></div>
           <div class="cv-card__content">
             <h3 class="cv-card__title">Higher Education Sprout Project</h3>
             <p class="cv-card__meta">Program Support · 2019–2021</p>
@@ -161,7 +161,7 @@ This page highlights publications, research grants, and awards & honors of Dr. C
       <div class="cv-year-group__items">
         <article class="cv-card">
           <div class="cv-card__rail"><div class="cv-card__dot"></div></div>
-          <div class="cv-card__media"><img src="/assets/assets/images/lee_chengfan.png" alt="Dr. Cheng-Fan Lee"></div>
+          <div class="cv-card__media"><img src="{{ '/assets/assets/images/Lee_ChengFan.jpg' | relative_url }}" alt="Dr. Cheng-Fan Lee"></div>
           <div class="cv-card__content">
             <h3 class="cv-card__title">Excellent Oral Presentation Award, Jun-Yaw Lin Science and Education Foundation</h3>
             <p class="cv-card__meta">Award · 2019</p>
@@ -170,7 +170,7 @@ This page highlights publications, research grants, and awards & honors of Dr. C
 
         <article class="cv-card">
           <div class="cv-card__rail"><div class="cv-card__dot"></div></div>
-          <div class="cv-card__media"><img src="/assets/assets/images/lee_chengfan.png" alt="Dr. Cheng-Fan Lee"></div>
+          <div class="cv-card__media"><img src="{{ '/assets/assets/images/Lee_ChengFan.jpg' | relative_url }}" alt="Dr. Cheng-Fan Lee"></div>
           <div class="cv-card__content">
             <h3 class="cv-card__title">Scholarship in Memory of Madam Mian Hsieh</h3>
             <p class="cv-card__meta">Scholarship · 2019</p>
