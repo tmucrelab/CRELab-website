@@ -5,8 +5,8 @@ header: false
 name: "NiNi Xie"
 role: formermembers
 position: Research Scientist
-dept: Biochemistry and Molecular Cell Biology, School of Medicine
-org: Taipei Medical University
+dept: RA
+org: Biochemistry and Molecular Cell Biology, Taipei Medical University
 photo: /assets/assets/images/Member-Profile/NiNi-Xie.JPG
 thumb_position: 50% 25%
 
