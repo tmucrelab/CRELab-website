@@ -5,9 +5,6 @@ permalink: /publications/
 ---
 ## Selected Publications
 
-**Dr. Cheng-Fan “Bryan” Lee (李丞釩)**  
-Assistant Professor, Taipei Medical University  
-
 ### Awards & Honors
 - 2025 22th National Innovation Award (二十二屆國家新創獎)
 - 2025 Poster session, Multiomics and Precision Medicine Joint Conference (MOPM)
