@@ -4,9 +4,9 @@ title: ""
 header: false
 name: "Chris Chang"
 role: member
-position: Master
-dept: Medical science
-org: Taipei Medical University
+position: MS Student
+dept: MS Student
+org: Medical science, Taipei Medical University
 photo: /assets/assets/images/Member-Profile/Chris-Chang.jpg
 thumb_position: 50% 25%
 
