@@ -5,8 +5,8 @@ header: false
 name: "Huong Tran"
 role: member
 position: PhD student
-dept: PhD Student, International Ph.D. Program in Medicine (IGPM)
-org: Taipei Medical University
+dept: PhD Student
+org: International Ph.D. Program in Medicine (IGPM), Taipei Medical University
 photo: /assets/assets/images/Member-Profile/Huong-Tran.jpg
 thumb_position: 50% 75%
 
