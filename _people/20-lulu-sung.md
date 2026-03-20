@@ -5,8 +5,8 @@ header: false
 name: "Lulu Sung"
 role: member
 position: Undergraduate
-dept: Clinical Pharmacy, School of Medicine
-org: Taipei Medical University
+dept: BS Student
+org: Clinical Pharmacy, Taipei Medical University
 photo: /assets/assets/images/Member-Profile/Lulu-Sung.jpg
 thumb_position: 50% 25%
 
