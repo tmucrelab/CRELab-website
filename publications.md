@@ -25,6 +25,7 @@ permalink: /publications/
 - 2014, Scholarship in LungYen Foundation 
 - 2013, Scholarship in LungYen Foundation 
 
+
 ### Research Grants
 - 2026-2029 衛服部癌症轉譯研究計畫 	
 - 2026 臺灣大學醫學院附設醫院暨臺北醫學大學合作計畫
@@ -33,6 +34,7 @@ permalink: /publications/
 - 2025 臺灣大學醫學院附設醫院暨臺北醫學大學合作計畫
 - 2024-2026 國科會新進人員計畫
 - 2024臺北醫學大學新進人員計畫
+
 
 ### Publications
 1. Metabolomics-Based Liquid Biopsy for Predicting Clinically Significant Prostate Cancer. Yuan-Chi Lin, Chung-Hsin Chen, Ming-Shyue Lee, <strong><u>Cheng-Fan Lee</u></strong>, Pei-Wen Hsiao, Hsiang-Po Huang, Yeong-Shiau Pu, Cancers, November 28, 2025
