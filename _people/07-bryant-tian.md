@@ -3,14 +3,14 @@ layout: single
 title: ""
 header: false
 name: "Bryant Tian"
-role: member
+role: formermembers
 position: Undergraduate
-dept: BS Student
-org: Public Health, Taipei Medical University
+dept: MS Student
+org: Biomedical Electronics and Bioinformatic, NTU
 photo: /assets/assets/images/Member-Profile/Bryant-Tian.jpg
 thumb_position: 50% 25%
 
-order: 6
+order: 7
 permalink: /people/bryant-tian/
 ---
 
