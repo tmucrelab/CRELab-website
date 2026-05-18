@@ -35,6 +35,7 @@ permalink: /publications/
 - 2024-2026 國科會新進人員計畫
 - 2024臺北醫學大學新進人員計畫
 
+<div class="pub-list">
 
 ### Publications
 1. Metabolomics-Based Liquid Biopsy for Predicting Clinically Significant Prostate Cancer. Yuan-Chi Lin, Chung-Hsin Chen, Ming-Shyue Lee, <strong><u>Cheng-Fan Lee</u></strong>, Pei-Wen Hsiao, Hsiang-Po Huang, Yeong-Shiau Pu, Cancers, November 28, 2025
@@ -73,6 +74,7 @@ permalink: /publications/
 
 18. Huntingtin-Associated Protein 1 Interacts with Breakpoint Cluster Region Protein to Regulate Differentiation, Huang PT, Chen CH, Hsu IU, Salim SA, Kao SH, Cheng CW, Lai CH, <strong><u>Lee CF</u></strong>, Lin YF, Plos one, 10(2): e0116372. 2015.
 
+</div>
 
 
 <!--
