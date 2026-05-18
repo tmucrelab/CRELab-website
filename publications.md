@@ -37,8 +37,6 @@ permalink: /publications/
 
 
 ### Publications
-<div class="publication-text">
-
 1. Metabolomics-Based Liquid Biopsy for Predicting Clinically Significant Prostate Cancer. Yuan-Chi Lin, Chung-Hsin Chen, Ming-Shyue Lee, <strong><u>Cheng-Fan Lee</u></strong>, Pei-Wen Hsiao, Hsiang-Po Huang, Yeong-Shiau Pu, Cancers, November 28, 2025
 
 2. Dual prophylactic and therapeutic potential of iPSC-based vaccines and neoantigen discovery in colorectal cancer. Si-Han Jwo, Shang-Kok Ng, Chin-Tzu Li, Shao-Peng Chen, Li-Yu Chen, Pin-Jung Liu, Huai-Jie Wang, Jr-Shiuan Lin, Chun-Jung Ko, <strong><u>Cheng-Fan Lee</u></strong>, Chun-Hao Wang, Xiaoming Ouyang, Lin Wang, Tzu-Tang Wei, Theranostics, April 28, 2025
@@ -74,8 +72,7 @@ permalink: /publications/
 17. Targeting annexin A2 reduces tumorigensis and therapeutic resistance of nasopharyngeal carcinoma, Chen CY, Lin YS, Chen CL, Chao PZ, Chiou JF, Kuo CC, Lee FP, Lin YF, Sung YH, Lin YT, <strong><u>Lee CF</u></strong>, Chen YJ, Chen CH, Oncotarget, Sep 29;6(29):26946-59, 2015.
 
 18. Huntingtin-Associated Protein 1 Interacts with Breakpoint Cluster Region Protein to Regulate Differentiation, Huang PT, Chen CH, Hsu IU, Salim SA, Kao SH, Cheng CW, Lai CH, <strong><u>Lee CF</u></strong>, Lin YF, Plos one, 10(2): e0116372. 2015.
- 
-</div>
+
 
 
 <!--
