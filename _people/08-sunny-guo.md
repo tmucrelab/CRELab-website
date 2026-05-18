@@ -3,14 +3,14 @@ layout: single
 title: ""
 header: false
 name: "Sunny Guo"
-role: member
+role: formermembers
 position: Undergraduate
-dept: BS Student
-org: Medical Laboratory Science and Biotechnology, Taipei Medical University
+dept: MS Student
+org: Biochemistry and Molecular Biology, NTU
 photo: /assets/assets/images/Member-Profile/Sunny-Guo.jpg
 thumb_position: 50% 25%
 
-order: 14
+order: 8
 permalink: /people/sunny-guo/
 ---
 
