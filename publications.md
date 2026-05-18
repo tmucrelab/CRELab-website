@@ -38,6 +38,7 @@ permalink: /publications/
 
 ### Publications
 <div class="publication-text">
+
 1. Metabolomics-Based Liquid Biopsy for Predicting Clinically Significant Prostate Cancer. Yuan-Chi Lin, Chung-Hsin Chen, Ming-Shyue Lee, <strong><u>Cheng-Fan Lee</u></strong>, Pei-Wen Hsiao, Hsiang-Po Huang, Yeong-Shiau Pu, Cancers, November 28, 2025
 
 2. Dual prophylactic and therapeutic potential of iPSC-based vaccines and neoantigen discovery in colorectal cancer. Si-Han Jwo, Shang-Kok Ng, Chin-Tzu Li, Shao-Peng Chen, Li-Yu Chen, Pin-Jung Liu, Huai-Jie Wang, Jr-Shiuan Lin, Chun-Jung Ko, <strong><u>Cheng-Fan Lee</u></strong>, Chun-Hao Wang, Xiaoming Ouyang, Lin Wang, Tzu-Tang Wei, Theranostics, April 28, 2025
