@@ -2,7 +2,7 @@
 layout: single
 title: ""
 header: false
-name: "Vincent"
+name: "Vincent Pan"
 role: member
 position: Undergraduate
 dept: BS Student
