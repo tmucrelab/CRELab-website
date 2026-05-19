@@ -238,6 +238,11 @@ collections:
     output: true
     permalink: /people/:name/
 
+  awards_news:
+    output: true
+    permalink: /awards-news/:name/
+
+
 # Pagination with jekyll-paginate
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
@@ -331,9 +336,3 @@ defaults:
       comments: # true
       share: true
       related: true
-
-# 管理 News
-collections:
-  awards_news:
-    output: true
-    permalink: /awards-news/:name/
