@@ -240,6 +240,19 @@ body {
   width: 100%;
 }
 
+.home-intro-image {
+  margin: 1.5rem 0 0;
+  text-align: center;
+}
+
+.home-intro-image img {
+  max-width: 100%;
+  width: 760px;
+  height: auto;
+  border-radius: 12px;
+  display: inline-block;
+}
+
 /* ===================================================== */
 /*  Generic slider                                       */
 /*  首頁 / post / research 共用的 slider 基礎樣式         */
