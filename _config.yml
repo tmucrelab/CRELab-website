@@ -331,3 +331,9 @@ defaults:
       comments: # true
       share: true
       related: true
+
+# 管理 News
+collections:
+  awards_news:
+    output: true
+    permalink: /awards-news/:name/
