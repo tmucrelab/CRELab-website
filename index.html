@@ -35,6 +35,8 @@ we bridge the gap between laboratory research and frontline precision medicine.<
 <!--                   Awards & News                       -->
 <!-- ===================================================== -->
 
+{% assign latest_news = site.categories.news | sort: "date" | reverse %}
+
 <section class="home-news-feature">
   <div class="home-news-feature__media">
     <h2>Awards &amp; News</h2>
@@ -43,17 +45,23 @@ we bridge the gap between laboratory research and frontline precision medicine.<
       <div class="simple-slider__track">
         <div class="simple-slider__slides">
 
-          <a href="{{ '/awards-news/#item-1' | relative_url }}" class="simple-slider__img is-active">
-            <img src="{{ '/assets/assets/images/News/Honor-Roll.png' | relative_url }}" alt="Award or News 1">
-          </a>
+          {% assign image_count = 0 %}
+          {% for post in latest_news %}
+            {% assign thumb = post.slider_images[0] %}
 
-          <a href="{{ '/awards-news/#item-2' | relative_url }}" class="simple-slider__img">
-            <img src="{{ '/assets/assets/images/News/Honor-Roll.png' | relative_url }}" alt="Award or News 2">
-          </a>
+            {% if thumb == nil or thumb == "" %}
+              {% assign thumb = post.image %}
+            {% endif %}
 
-          <a href="{{ '/awards-news/#item-3' | relative_url }}" class="simple-slider__img">
-            <img src="{{ '/assets/assets/images/News/Honor-Roll.png' | relative_url }}" alt="Award or News 3">
-          </a>
+            {% if thumb and thumb != "" and image_count < 3 %}
+              <a href="{{ post.url | relative_url }}"
+                 class="simple-slider__img {% if image_count == 0 %}is-active{% endif %}">
+                <img src="{{ thumb | relative_url }}" alt="{{ post.title }}">
+              </a>
+
+              {% assign image_count = image_count | plus: 1 %}
+            {% endif %}
+          {% endfor %}
 
         </div>
 
@@ -74,32 +82,27 @@ we bridge the gap between laboratory research and frontline precision medicine.<
     <h3 class="home-news-feature__list-title">Latest Updates</h3>
 
     <ul class="home-news-list">
-      <li id="item-1">
-        <a href="{{ '/awards-news/#item-1' | relative_url }}">
-          CRE Lab receives recognition for outstanding research presentation
-        </a>
-        <span class="home-news-list__date">2026.03.01</span>
-      </li>
-
-      <li id="item-2">
-        <a href="{{ '/awards-news/#item-2' | relative_url }}">
-          New invited seminar announced for spring research series
-        </a>
-        <span class="home-news-list__date">2026.02.20</span>
-      </li>
-
-      <li id="item-3">
-        <a href="{{ '/awards-news/#item-3' | relative_url }}">
-          CRE Lab featured in departmental academic highlights
-        </a>
-        <span class="home-news-list__date">2026.02.10</span>
-      </li>
-
+      {% for post in latest_news limit: 3 %}
+        <li>
+          <a href="{{ post.url | relative_url }}">
+            {{ post.title }}
+          </a>
+          <span class="home-news-list__date">
+            {{ post.date | date: "%Y.%m.%d" }}
+          </span>
+        </li>
+      {% endfor %}
     </ul>
+
+    <div class="home-news-more">
+      <a href="{{ '/awards-news/' | relative_url }}">More</a>
+    </div>
   </div>
 </section>
 
-
+<!-- ===================================================== -->
+<!--               Reseach Focus & Events                  -->
+<!-- ===================================================== -->
 
 <section class="home-panels">
 
