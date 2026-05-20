@@ -11,6 +11,34 @@ Highlights of awards, recognitions, media mentions, and important updates from C
 
 <hr>
 
+{% assign all_news = site.awards_news | sort: "date" | reverse %}
+
+<div class="news-index-list">
+  {% for item in all_news %}
+    <article class="news-index-item">
+      <div class="news-index-item__date">
+        {{ item.date | date: "%Y.%m.%d" }}
+      </div>
+
+      <h2 class="news-index-item__title">
+        <a href="{{ item.url | relative_url }}">
+          {{ item.title }}
+        </a>
+      </h2>
+
+      {% if item.excerpt %}
+        <div class="news-index-item__excerpt">
+          {{ item.excerpt | strip_html | truncate: 180 }}
+        </div>
+      {% endif %}
+    </article>
+
+    <hr>
+  {% endfor %}
+</div>
+
+
+<!--
 <section id="item-1">
   <h2>Item 1</h2>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -43,3 +71,4 @@ Highlights of awards, recognitions, media mentions, and important updates from C
   <h2>Item 5</h2>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 </section>
+-->
