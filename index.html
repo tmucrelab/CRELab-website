@@ -32,11 +32,76 @@ we bridge the gap between laboratory research and frontline precision medicine.<
   <div class="home-intro-image">
   <img src="{{ '/assets/assets/images/Lab-Introduction.png' | relative_url }}" alt="Bioinnovation and Clinical Translation">
 </div>
+</div>
 
 <!-- ===================================================== -->
 <!--                   Awards & News                       -->
 <!-- ===================================================== -->
 
+{% assign latest_news = site.awards_news | sort: "date" | reverse %}
+
+<section class="home-news-feature">
+  <div class="home-news-feature__media">
+    <h2>Awards &amp; News</h2>
+
+    <div class="simple-slider home-feature-slider" data-slider="awards-news">
+      <div class="simple-slider__track">
+        <div class="simple-slider__slides">
+
+          {% assign image_count = 0 %}
+          {% for post in latest_news %}
+            {% assign thumb = post.slider_images[0] %}
+            {% if thumb == nil or thumb == "" %}
+              {% assign thumb = post.image %}
+            {% endif %}
+
+            {% if thumb and thumb != "" and image_count < 3 %}
+              <a href="{{ post.url | relative_url }}"
+                 class="simple-slider__img {% if image_count == 0 %}is-active{% endif %}">
+                <img src="{{ thumb | relative_url }}" alt="{{ post.title }}">
+              </a>
+              {% assign image_count = image_count | plus: 1 %}
+            {% endif %}
+          {% endfor %}
+
+        </div>
+
+        <button class="simple-slider__arrow simple-slider__arrow--prev" type="button" aria-label="Previous slide">
+          &#10094;
+        </button>
+        <button class="simple-slider__arrow simple-slider__arrow--next" type="button" aria-label="Next slide">
+          &#10095;
+        </button>
+
+        <div class="simple-slider__dots"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="home-news-feature__list">
+    <h3 class="home-news-feature__list-title">Latest Updates</h3>
+
+    <ul class="home-news-list">
+      {% for post in latest_news limit: 3 %}
+        <li>
+          <a href="{{ post.url | relative_url }}">
+            {{ post.title }}
+          </a>
+          <span class="home-news-list__date">
+            {{ post.date | date: "%Y.%m.%d" }}
+          </span>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <div class="home-news-more">
+      <a href="{{ '/awards-news/' | relative_url }}">More</a>
+    </div>
+  </div>
+</section>
+
+
+<!--
 {% assign latest_news = site.awards_news | sort: "date" | reverse %}
 
 <ul class="home-news-list">
@@ -55,8 +120,7 @@ we bridge the gap between laboratory research and frontline precision medicine.<
 <div class="home-news-more">
   <a href="{{ '/awards-news/' | relative_url }}">More</a>
 </div>
-
-
+-->
 
 <!--
 <section class="home-news-feature">
