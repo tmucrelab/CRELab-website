@@ -39,6 +39,26 @@ we bridge the gap between laboratory research and frontline precision medicine.<
 
 {% assign latest_news = site.awards_news | sort: "date" | reverse %}
 
+<ul class="home-news-list">
+  {% for post in latest_news limit: 3 %}
+    <li>
+      <a href="{{ post.url | relative_url }}">
+        {{ post.title }}
+      </a>
+      <span class="home-news-list__date">
+        {{ post.date | date: "%Y.%m.%d" }}
+      </span>
+    </li>
+  {% endfor %}
+</ul>
+
+<div class="home-news-more">
+  <a href="{{ '/awards-news/' | relative_url }}">More</a>
+</div>
+
+
+
+<!--
 <section class="home-news-feature">
   <div class="home-news-feature__media">
     <h2>Awards &amp; News</h2>
@@ -101,6 +121,8 @@ we bridge the gap between laboratory research and frontline precision medicine.<
     </div>
   </div>
 </section>
+-->
+
 
 <!-- ===================================================== -->
 <!--               Reseach Focus & Events                  -->
