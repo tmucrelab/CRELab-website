@@ -16,9 +16,9 @@ Highlights of awards, recognitions, media mentions, and important updates from C
 <div class="news-index-list">
   {% for item in all_news %}
     <article class="news-index-item">
-      <div class="news-index-item__date">
+      <span class="news-index-item__date">
         {{ item.date | date: "%Y.%m.%d" }}
-      </div>
+      </span>
 
       <h2 class="news-index-item__title">
         <a href="{{ item.url | relative_url }}">
@@ -26,13 +26,15 @@ Highlights of awards, recognitions, media mentions, and important updates from C
         </a>
       </h2>
 
+      <!--
       {% if item.excerpt %}
         <div class="news-index-item__excerpt">
           {{ item.excerpt | strip_html | truncate: 180 }}
         </div>
       {% endif %}
+      -->
+      
     </article>
-
     <hr>
   {% endfor %}
 </div>
