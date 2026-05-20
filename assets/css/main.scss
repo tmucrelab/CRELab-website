@@ -392,6 +392,15 @@ body {
   aspect-ratio: 16 / 9;
 }
 
+.home-feature-slider .simple-slider__img {
+  background: #f4f4f4;
+}
+
+.home-feature-slider .simple-slider__img img {
+  object-fit: contain;
+  background: #f4f4f4;
+}
+
 .home-news-feature__list {
   padding-top: 3.1rem; /* 讓右邊標題和左邊圖片區塊視覺對齊 */
 }
@@ -859,6 +868,15 @@ body {
 
 .post-slider {
   margin-bottom: 1.5rem;
+}
+
+.post-slider .simple-slider__img {
+  background: #f4f4f4;
+}
+
+.post-slider .simple-slider__img img {
+  object-fit: contain;
+  background: #f4f4f4;
 }
 
 .post-gallery {
