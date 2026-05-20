@@ -1,0 +1,46 @@
+---
+layout: single
+---
+
+{% if page.slider_images %}
+<div class="simple-slider post-slider">
+  <div class="simple-slider__track">
+    <div class="simple-slider__slides">
+      {% for img in page.slider_images %}
+        <div class="simple-slider__img {% if forloop.first %}is-active{% endif %}">
+          <img src="{{ img | relative_url }}" alt="{{ page.title }} image {{ forloop.index }}">
+        </div>
+      {% endfor %}
+    </div>
+
+    {% if page.slider_images.size > 1 %}
+      <button class="simple-slider__arrow simple-slider__arrow--prev" type="button">&#10094;</button>
+      <button class="simple-slider__arrow simple-slider__arrow--next" type="button">&#10095;</button>
+      <div class="simple-slider__dots"></div>
+    {% endif %}
+  </div>
+</div>
+{% endif %}
+
+<div class="news-post-content">
+  {{ content }}
+</div>
+
+{% if page.gallery_items %}
+<h2>Photo Gallery</h2>
+
+<div class="post-gallery">
+  {% for item in page.gallery_items %}
+    {% if item.type == "image" %}
+      <a href="{{ item.src | relative_url }}"
+         class="post-gallery__item {% if item.orientation == 'portrait' %}is-portrait{% endif %}"
+         data-type="image">
+        <img src="{{ item.src | relative_url }}" alt="{{ page.title }} thumbnail {{ forloop.index }}">
+      </a>
+    {% endif %}
+  {% endfor %}
+</div>
+{% endif %}
+2. 修改單篇 news
+
+你的 _awards_news/2026-04-
