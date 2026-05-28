@@ -11,4 +11,6 @@ slider_images:
 
 ---
 
-News content here.
+Louise, Special Auditor Exchange Program, Hokkaido University, JP
+Yvonne, TMU-JHU Visiting Medical Student (VISMED) program, Johns Hopkins University, USA
+Michelle, Pharmaceutical Internship (藥業實習), TW
