@@ -11,4 +11,4 @@ slider_images:
 
 ---
 
-News content here.
+MS program applications.
