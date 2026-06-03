@@ -1,26 +1,39 @@
 ---
+# ===== 基本文章資訊 =====
 layout: single
-title: "Invited Dinner"
+title: "Invited Dinner with Professor Shao-Yuan"
 date: 2026-03-29
+
 categories: [lab-life]
+tags: [event, lab-life]
 event_type: social   # seminar / social / academic
-# image: assets/assets/images/Lab-Life/2026-03-29-SY-Invited-Dinner/2026-03-29-SY-Invited-Dinner.jpg
-permalink: /life/lorem-ipsum/
+# 文章網址，建議和 title 對應
+permalink: /life/20260329-Invited-Dinner/
+
+# 讓頁面使用較寬版面
 classes: wide
 
-# 自訂會顯示在縮圖的文章摘要
-summary: "Dinner with Professor Shao-Yuan Lo"
+# ===== Lab Life 頁面卡片摘要 =====
+# 這段會顯示在 /life/ 的卡片介紹
+summary: "Dinner with Professor Shao-Yuan Lo."
 
+# ===== 上方照片輪播 (Slider) =====
+# 這裡只放圖片，會自動輪播
 slider_images:
-  - /assets/assets/images/Lab-Life/2026-03-29-SY-Invited-Dinner/2026-03-29-SY-Invited-Dinner.jpg
+  - assets/assets/images/Lab-Life/2026-03-29-SY-Invited-Dinner/2026-03-29-SY-Invited-Dinner.jpg
 
+# ===== Photo Gallery (文章下方集錦) =====
+# 支援：橫式照片、直式照片、影片
 gallery_items:
+  # 橫式照片
   - type: image
-    src: /assets/assets/images/Lab-Life/2026-03-29-SY-Invited-Dinner/2026-03-29-SY-Invited-Dinner.jpg
+    src: assets/assets/images/Lab-Life/2026-03-29-SY-Invited-Dinner/2026-03-29-SY-Invited-Dinner.jpg
     orientation: landscape
-
-# excerpt_separator: <!--more-->
 ---
+
+<!-- ===================================================== -->
+<!--                     Photo Slider                      -->
+<!-- ===================================================== -->
 
 <div class="simple-slider post-slider">
   <div class="simple-slider__track">
@@ -32,40 +45,48 @@ gallery_items:
       {% endfor %}
     </div>
 
-    <button class="simple-slider__arrow simple-slider__arrow--prev" type="button" aria-label="Previous slide">
+    <!-- 左右箭頭 -->
+    <button class="simple-slider__arrow simple-slider__arrow--prev" type="button">
       &#10094;
     </button>
-    <button class="simple-slider__arrow simple-slider__arrow--next" type="button" aria-label="Next slide">
+    <button class="simple-slider__arrow simple-slider__arrow--next" type="button">
       &#10095;
     </button>
 
+    <!-- 小圓點導航 -->
     <div class="simple-slider__dots"></div>
   </div>
 </div>
 
-<!-- ![Lorem ipsum]({{ '/assets/assets/images/test-event-2.png' | relative_url }}) -->
+<!-- ===================================================== -->
+<!--                     Article Text                      -->
+<!-- ===================================================== -->
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Invited Dinner with Professor Shao-Yuan Lo.
 
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+<!-- ===================================================== -->
+<!--                     Photo Gallery                     -->
+<!-- ===================================================== -->
 
 ## Photo Gallery
-
 <div class="post-gallery">
   {% for item in page.gallery_items %}
     {% if item.type == "image" %}
       <a href="{{ item.src | relative_url }}"
          class="post-gallery__item {% if item.orientation == 'portrait' %}is-portrait{% endif %}"
          data-type="image">
-        <img src="{{ item.src | relative_url }}" alt="{{ page.title }} thumbnail {{ forloop.index }}">
+        <img src="{{ item.src | relative_url }}"
+             alt="{{ page.title }} thumbnail {{ forloop.index }}">
       </a>
+
     {% elsif item.type == "video" %}
       <a href="{{ item.src | relative_url }}"
          class="post-gallery__item is-video"
          data-type="video"
          {% if item.poster %}data-poster="{{ item.poster | relative_url }}"{% endif %}>
         {% if item.poster %}
-          <img src="{{ item.poster | relative_url }}" alt="{{ page.title }} video thumbnail {{ forloop.index }}">
+          <img src="{{ item.poster | relative_url }}"
+               alt="{{ page.title }} video thumbnail {{ forloop.index }}">
         {% else %}
           <div class="post-gallery__video-placeholder">Video</div>
         {% endif %}
@@ -75,17 +96,33 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
   {% endfor %}
 </div>
 
+<!-- ===================================================== -->
+<!--                   Lightbox，集錦                       -->
+<!-- ===================================================== -->
 
-<div class="lightbox" id="lightbox">
-  <button class="lightbox__close" type="button" aria-label="Close media">&times;</button>
+<div class="post-lightbox" id="post-lightbox" hidden>
+  <button class="post-lightbox__close" type="button" aria-label="Close media">&times;</button>
 
-  <img src="" alt="Expanded image" id="lightbox-img">
+  <button class="post-lightbox__nav post-lightbox__nav--prev" type="button" aria-label="Previous media">
+    &#10094;
+  </button>
 
-  <video id="lightbox-video" controls playsinline>
-    <source src="" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+  <div class="post-lightbox__inner">
+    <img src="" alt="Expanded image" id="post-lightbox-img">
+
+    <video id="post-lightbox-video" controls playsinline>
+      <source src="" type="video/mp4">
+    </video>
+  </div>
+
+  <button class="post-lightbox__nav post-lightbox__nav--next" type="button" aria-label="Next media">
+    &#10095;
+  </button>
 </div>
+
+<!-- ===================================================== -->
+<!--                     Slider Script                     -->
+<!-- ===================================================== -->
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
@@ -101,6 +138,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let intervalId = null;
 
     if (slides.length <= 1) return;
+
 
     function showSlide(index) {
       slides.forEach((slide, i) => {
@@ -133,36 +171,29 @@ document.addEventListener("DOMContentLoaded", function () {
       intervalId = null;
     }
 
-    if (dotsWrap) {
-      slides.forEach((_, i) => {
-        const dot = document.createElement("button");
-        dot.type = "button";
-        dot.className = "simple-slider__dot" + (i === 0 ? " is-active" : "");
-        dot.setAttribute("aria-label", `Go to slide ${i + 1}`);
-        dot.addEventListener("click", () => {
-          stopSlider();
-          showSlide(i);
-          startSlider();
-        });
-        dotsWrap.appendChild(dot);
-      });
-    }
-
-    if (prevBtn) {
-      prevBtn.addEventListener("click", () => {
+    slides.forEach((_, i) => {
+      const dot = document.createElement("button");
+      dot.className = "simple-slider__dot" + (i === 0 ? " is-active" : "");
+      dot.addEventListener("click", () => {
         stopSlider();
-        prevSlide();
+        showSlide(i);
         startSlider();
       });
-    }
 
-    if (nextBtn) {
-      nextBtn.addEventListener("click", () => {
-        stopSlider();
-        nextSlide();
-        startSlider();
-      });
-    }
+      dotsWrap.appendChild(dot);
+    });
+
+    prevBtn.addEventListener("click", () => {
+      stopSlider();
+      prevSlide();
+      startSlider();
+    });
+
+    nextBtn.addEventListener("click", () => {
+      stopSlider();
+      nextSlide();
+      startSlider();
+    });
 
     slider.addEventListener("mouseenter", stopSlider);
     slider.addEventListener("mouseleave", startSlider);
@@ -173,17 +204,24 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
 
+<!-- ===================================================== -->
+<!--                    Gallery Lightbox                   -->
+<!-- ===================================================== -->
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  const lightbox = document.getElementById("lightbox");
-  const lightboxImg = document.getElementById("lightbox-img");
-  const lightboxVideo = document.getElementById("lightbox-video");
+  const lightbox = document.getElementById("post-lightbox");
+  const lightboxInner = lightbox.querySelector(".post-lightbox__inner");
+  const lightboxImg = document.getElementById("post-lightbox-img");
+  const lightboxVideo = document.getElementById("post-lightbox-video");
   const lightboxVideoSource = lightboxVideo.querySelector("source");
-  const closeBtn = lightbox.querySelector(".lightbox__close");
-  const items = document.querySelectorAll(".post-gallery__item");
+  const closeBtn = lightbox.querySelector(".post-lightbox__close");
+  const prevBtn = lightbox.querySelector(".post-lightbox__nav--prev");
+  const nextBtn = lightbox.querySelector(".post-lightbox__nav--next");
+  const items = Array.from(document.querySelectorAll(".post-gallery__item"));
 
-    function closeLightbox() {
-    lightbox.classList.remove("is-open");
+  let currentIndex = -1;
+
+  function closeLightbox() {
     lightboxImg.src = "";
     lightboxImg.style.display = "none";
 
@@ -191,43 +229,116 @@ document.addEventListener("DOMContentLoaded", function () {
     lightboxVideoSource.src = "";
     lightboxVideo.load();
     lightboxVideo.style.display = "none";
+
+    lightbox.hidden = true;
+    document.body.classList.remove("post-lightbox-open");
+    currentIndex = -1;
   }
-  
-  items.forEach((item) => {
+
+  function openImage(src) {
+    lightboxVideo.pause();
+    lightboxVideoSource.src = "";
+    lightboxVideo.load();
+    lightboxVideo.style.display = "none";
+
+    lightboxImg.src = src;
+    lightboxImg.style.display = "block";
+  }
+
+  function openVideo(src) {
+    lightboxImg.src = "";
+    lightboxImg.style.display = "none";
+
+    lightboxVideoSource.src = src;
+    lightboxVideo.load();
+    lightboxVideo.style.display = "block";
+  }
+
+  function showItem(index) {
+    if (items.length === 0) return;
+
+    if (index < 0) {
+      index = items.length - 1;
+    }
+
+    if (index >= items.length) {
+      index = 0;
+    }
+
+    currentIndex = index;
+
+    const item = items[currentIndex];
+    const type = item.dataset.type;
+    const href = item.getAttribute("href");
+
+    if (type === "video") {
+      openVideo(href);
+    } else {
+      openImage(href);
+    }
+
+    lightbox.hidden = false;
+    document.body.classList.add("post-lightbox-open");
+  }
+
+  function showPrev() {
+    if (currentIndex === -1) return;
+    showItem(currentIndex - 1);
+  }
+
+  function showNext() {
+    if (currentIndex === -1) return;
+    showItem(currentIndex + 1);
+  }
+
+  items.forEach((item, index) => {
     item.addEventListener("click", function (e) {
       e.preventDefault();
-
-      const type = item.dataset.type;
-      const href = item.getAttribute("href");
-
-      if (type === "video") {
-        lightboxImg.style.display = "none";
-
-        lightboxVideoSource.src = href;
-        lightboxVideo.load();
-        lightboxVideo.style.display = "block";
-
-        lightbox.classList.add("is-open");
-      } else {
-        lightboxVideo.pause();
-        lightboxVideoSource.src = "";
-        lightboxVideo.load();
-        lightboxVideo.style.display = "none";
-
-        lightboxImg.src = href;
-        lightboxImg.style.display = "block";
-
-        lightbox.classList.add("is-open");
-      }
+      e.stopPropagation();
+      e.stopImmediatePropagation();
+      showItem(index);
     });
   });
-  
-  closeBtn.addEventListener("click", closeLightbox);
+
+  closeBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    e.stopImmediatePropagation();
+    closeLightbox();
+  });
+
+  prevBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    showPrev();
+  });
+
+  nextBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    showNext();
+  });
 
   lightbox.addEventListener("click", function (e) {
-    if (e.target === lightbox) {
+    if (!lightboxInner.contains(e.target) &&
+        !prevBtn.contains(e.target) &&
+        !nextBtn.contains(e.target) &&
+        !closeBtn.contains(e.target)) {
       closeLightbox();
+    }
+  });
+
+  document.addEventListener("keydown", function (e) {
+    if (lightbox.hidden) return;
+
+    if (e.key === "Escape") {
+      closeLightbox();
+    } else if (e.key === "ArrowLeft") {
+      showPrev();
+    } else if (e.key === "ArrowRight") {
+      showNext();
     }
   });
 });
 </script>
+
