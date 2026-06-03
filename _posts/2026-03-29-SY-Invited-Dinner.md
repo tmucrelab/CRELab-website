@@ -1,42 +1,23 @@
 ---
 layout: single
 title: "Lorem ipsum"
-date: 2026-03-09
+date: 2026-03-29
 categories: [lab-life]
 event_type: seminar   # seminar / social / academic
-# image: /assets/assets/images/test-event-2.png
+# image: /assets/assets/images/2026-03-29-SY-Invited-Dinner.jpg
 permalink: /life/lorem-ipsum/
 classes: wide
 
 # 自訂會顯示在縮圖的文章摘要
-summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+summary: "Dinner with Professor Shao-Yuan Lo"
 
 slider_images:
-  - /assets/assets/images/test-event-1.jpg
-  - /assets/assets/images/test-event-2.png
-  - /assets/assets/images/test-event-3.jpg
-  - /assets/assets/images/test-straight-photo.jpg
+  - /assets/assets/images/2026-03-29-SY-Invited-Dinner.jpg
 
 gallery_items:
   - type: image
-    src: /assets/assets/images/test-event-1.jpg
+    src: /assets/assets/images/2026-03-29-SY-Invited-Dinner.jpg
     orientation: landscape
-
-  - type: image
-    src: /assets/assets/images/test-event-2.png
-    orientation: landscape
-
-  - type: image
-    src: /assets/assets/images/test-event-3.jpg
-    orientation: landscape
-
-  - type: image
-    src: /assets/assets/images/test-straight-photo.jpg
-    orientation: portrait
-
-  - type: video
-    src: /assets/assets/images/test-video-straight.mp4
-    poster: /assets/assets/images/test-straight-photo.jpg
 
 # excerpt_separator: <!--more-->
 ---
