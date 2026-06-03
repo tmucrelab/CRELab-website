@@ -879,7 +879,6 @@ body {
   background: #f4f4f4;
 }
 
-/*
 .post-gallery {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -905,10 +904,9 @@ body {
   border-radius: 0;
   cursor: pointer;
 }
-*/
 
 /* 直式照片在縮圖區仍維持同一尺寸，只是裁切方式較穩 */
-/*
+
 .post-gallery__item.is-portrait img {
   object-fit: cover;
   object-position: center;
@@ -940,12 +938,11 @@ body {
   color: #444;
   font-weight: 600;
 }
-*/
 
 /* ===================================================== */
 /*  Post lightbox                                        */
 /* ===================================================== */
-/*
+
 .post-lightbox[hidden] {
   display: none !important;
 }
@@ -1026,7 +1023,7 @@ body {
 body.post-lightbox-open {
   overflow: hidden;
 }
-*/
+
 
 /* ===================================================== */
 /*  Research page                                        */
