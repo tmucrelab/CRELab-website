@@ -4,7 +4,7 @@ title: "Invited Dinner"
 date: 2026-03-29
 categories: [lab-life]
 event_type: social   # seminar / social / academic
-# image: /assets/assets/images/Lab-Life/2026-03-29-SY-Invited-Dinner.jpg
+# image: assets/assets/images/Lab-Life/2026-03-29-SY-Invited-Dinner/2026-03-29-SY-Invited-Dinner.jpg
 permalink: /life/lorem-ipsum/
 classes: wide
 
@@ -12,11 +12,11 @@ classes: wide
 summary: "Dinner with Professor Shao-Yuan Lo"
 
 slider_images:
-  - /assets/assets/images/Lab-Life/2026-03-29-SY-Invited-Dinner.jpg
+  - /assets/assets/images/Lab-Life/2026-03-29-SY-Invited-Dinner/2026-03-29-SY-Invited-Dinner.jpg
 
 gallery_items:
   - type: image
-    src: /assets/assets/images/Lab-Life/2026-03-29-SY-Invited-Dinner.jpg
+    src: /assets/assets/images/Lab-Life/2026-03-29-SY-Invited-Dinner/2026-03-29-SY-Invited-Dinner.jpg
     orientation: landscape
 
 # excerpt_separator: <!--more-->
