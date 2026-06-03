@@ -1,7 +1,7 @@
 ---
 # ===== 基本文章資訊 =====
 layout: single
-title: "Hallowen Party"
+title: "Halloween Party"
 date: 2025-10-14
 
 categories: [lab-life]
