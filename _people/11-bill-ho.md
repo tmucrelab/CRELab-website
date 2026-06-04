@@ -3,14 +3,14 @@ layout: single
 title: ""
 header: false
 name: "Bill Ho"
-role: member
+role: formermembers
 position: Undergraduate
 dept: BS Student 
-org: Public Health, Taipei Medical University
+org: Medicine Science, Taipei Medical University
 photo: /assets/assets/images/Member-Profile/Bill-Ho.jpg
 thumb_position: 50% 25%
 
-order: 5
+order: 11
 permalink: /people/bill-ho/
 ---
 
