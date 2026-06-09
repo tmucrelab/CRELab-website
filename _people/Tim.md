@@ -10,7 +10,7 @@ org: Biochemistry and Molecular Cell Biology, Taipei Medical University
 photo: /assets/assets/images/Member-Profile/Tim.jpg
 thumb_position: 40% 55%
 
-order: 1
+order: 2
 permalink: /people/tim/
 ---
 
