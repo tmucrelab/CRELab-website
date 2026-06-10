@@ -2,16 +2,16 @@
 layout: single
 title: ""
 header: false
-name: "Tim"
+name: "Tim Liu"
 role: labmanager
 position: Lab Manager
 dept: Lab Manager
 org: Biochemistry and Molecular Cell Biology, Taipei Medical University
-photo: /assets/assets/images/Member-Profile/Tim.jpg
+photo: /assets/assets/images/Member-Profile/Tim-Liu.jpg
 thumb_position: 40% 55%
 
 order: 2
-permalink: /people/tim/
+permalink: /people/tim-liu/
 ---
 
 <div class="profile-header">
