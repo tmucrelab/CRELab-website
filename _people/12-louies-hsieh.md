@@ -3,14 +3,14 @@ layout: single
 title: ""
 header: false
 name: "Louies Hsieh"
-role: member
+role: formermembers
 position: Undergraduate
 dept: BS Student
 org: Pharmacy, Taipei Medical University
 photo: /assets/assets/images/Member-Profile/Louise-Hsieh.jpg
 thumb_position: 50% 25%
 
-order: 10
+order: 12
 permalink: /people/louies-hsieh/
 ---
 
