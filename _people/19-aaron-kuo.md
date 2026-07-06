@@ -28,7 +28,7 @@ permalink: /people/aaron-kuo/
 </p>
 
 <p class="profile-bio">
-lorem ipson
+To see the world as it is and to love it.
 </p>
 
 </div>
