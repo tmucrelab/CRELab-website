@@ -2,16 +2,16 @@
 layout: single
 title: ""
 header: false
-name: "Hannah"
+name: "Hannah Wang"
 role: member
 position: Undergraduate
 dept: BS Student
 org: Clinical Pharmacy, Taipei Medical University
-photo: /assets/assets/images/Member-Profile/Hannah.jpg
+photo: /assets/assets/images/Member-Profile/Hannah-Wang.jpg
 thumb_position: 50% 25%
 
 order: 28
-permalink: /people/hannah/
+permalink: /people/hannah-wang/
 ---
 
 <div class="profile-header">
