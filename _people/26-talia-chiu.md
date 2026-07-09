@@ -2,7 +2,7 @@
 layout: single
 title: ""
 header: false
-name: "Talia"
+name: "Talia Chiu"
 role: member
 position: Undergraduate
 dept: BS Student
