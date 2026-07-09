@@ -7,11 +7,11 @@ role: member
 position: Undergraduate
 dept: BS Student
 org: Clinical Pharmacy, Taipei Medical University
-photo: /assets/assets/images/Member-Profile/Angel.jpg
+photo: /assets/assets/images/Member-Profile/Angel-Xie.jpg
 thumb_position: 50% 25%
 
 order: 27
-permalink: /people/angel/
+permalink: /people/angel-xie/
 ---
 
 <div class="profile-header">
