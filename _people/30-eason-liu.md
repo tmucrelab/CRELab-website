@@ -28,7 +28,8 @@ permalink: /people/eason-liu/
 </p>
 
 <p class="profile-bio">
-Hi everyone, I'm Eason from the School of Public Health. I’ll be a junior after this summer. I’m really excited to be joining the lab! As this is my first time in this kind of environment, I have a lot to pick up, but I’m ready to dive in. I’m looking forward to working with you all!
+Hi everyone, I'm Eason from the School of Public Health. I’ll be a junior after this summer. 
+I’m really excited to be joining the lab! As this is my first time in this kind of environment, I have a lot to pick up, but I’m ready to dive in. I’m looking forward to working with you all!
 </p>
 
 </div>
