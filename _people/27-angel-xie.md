@@ -2,7 +2,7 @@
 layout: single
 title: ""
 header: false
-name: "Angel"
+name: "Angel Xie"
 role: member
 position: Undergraduate
 dept: BS Student
