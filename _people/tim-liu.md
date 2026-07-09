@@ -28,7 +28,7 @@ permalink: /people/tim-liu/
 </p>
 
 <p class="profile-bio">
-<i>Somewhere, something incredible is waiting to be known.</i>
+<i>ipse se nihil scire id unum sciat</i>
 </p>
 
 </div>
