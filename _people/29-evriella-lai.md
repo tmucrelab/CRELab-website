@@ -2,16 +2,16 @@
 layout: single
 title: ""
 header: false
-name: "Evirllia"
+name: "Evriella Lai"
 role: member
 position: Undergraduate
 dept: BS Student
 org: Clinical Pharmacy, Taipei Medical University
-photo: /assets/assets/images/Member-Profile/Evirllia.jpg
+photo: /assets/assets/images/Member-Profile/Evriella-Lai.jpg
 thumb_position: 50% 25%
 
 order: 29
-permalink: /people/evirllia/
+permalink: /people/evriella-lai/
 ---
 
 <div class="profile-header">
